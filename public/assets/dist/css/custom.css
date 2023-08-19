@@ -1,0 +1,45 @@
+
+/* Added by  Alam */
+.productcard-plus p {
+    padding-left: 56px;
+  }
+  .productcard-plus img {
+    display: inline-block;
+    height: 40px;
+    margin-left: -55px;
+    padding-right: 0px;
+    position: absolute;
+    vertical-align: top;
+  }
+  
+  .productcard-plus .img-fluid {
+    max-width: 9%!important;
+    height: auto!important;
+    margin-right: 5px!important;
+  }
+  
+  .productcard-plus h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-left: 55px;
+    position: relative;
+  }
+
+  .bg-custom{
+    background: radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%);
+  }
+ 
+  .oos_img img {
+    height: 150px!important;
+  }
+  .ordercard h3 {
+    font-size:20px!important;
+  }
+
+  .blogs-details-page ul {
+    list-style: unset;
+}
+.blogs-details-page a {
+  color: blue!important;
+}
