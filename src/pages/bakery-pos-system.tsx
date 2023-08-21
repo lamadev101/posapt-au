@@ -2,13 +2,12 @@
 
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import { useDispatch } from "react-redux";
 import Head from "next/head";
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
+import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const Bakery = () => {
-  const dispatch = useDispatch();
   const featureDatas = [
     {
       title: `Analyze Your Sales & Reports`,
@@ -228,54 +227,13 @@ const Bakery = () => {
       <Layout>
         <>
           <ScrollToTop />
-          <section className="onlineordertop bg-overlay  d-flex align-items-center">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-12 col-md-7">
-                  <div className="heading_s1">
-                    {/* <span className="sub_heading font_style1 text-white text-center"><small>Seamless ordering, superior convenience
-                            </small>
-                            </span> */}
-                    <h1 className=" fw-bold text-capitalize  text-center color-yellow">
-                      Australia’s #1 Bakery POS System for SMB Businesses
-                    </h1>
-                  </div>
-                  <div className="subpara mt-3">
-                    <p className="text-center  text-white">
-                      Step up your baking game by installing a cloud-based
-                      Bakery POS system. Bake away as your POS takes care of the
-                      sales transactions, payments and inventory.
-                    </p>
-
-                    <div className="text-center">
-                      <a
-                        className="btn btn-white btn-red fw-bold"
-                        onClick={() => {
-                          dispatch({
-                            type: "OPEN_TRIAL_MODAL",
-                          });
-                        }}
-                      >
-                        Sign Up for a 30-Day Free Trial
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-5">
-                  <div className="order_top_img mt-5 mt-md-0">
-                    <span>
-                      <img
-                        src="/assets/dist/image/store/bakery_pos.webp"
-                        alt="Australia’s #1 Bakery POS System for SMB Businesses"
-                        title="Australia’s #1 Bakery POS System for SMB Businesses"
-                        className="welcome-animation d-block ml-auto"
-                      />
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <PosSysHeroSection
+            title="Australia's #1 Bakery POS System for SMB Businesses"
+            desc="Step up your baking game by installing a cloud-based
+            Bakery POS system. Bake away as your POS takes care of the
+            sales transactions, payments and inventory."
+            imgUrl="/assets/dist/image/store/bakery_pos.webp"
+          />
 
           <ContactFormSection
             businessTitle="bakery"

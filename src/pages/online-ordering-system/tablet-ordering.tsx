@@ -7,6 +7,7 @@ import { Antic_Slab } from "next/font/google";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
 import OosPricingSection from "@/sections/OosPricingSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const TabletOrdering: FC = () => {
     const dispatch = useDispatch();
@@ -240,40 +241,12 @@ const TabletOrdering: FC = () => {
             <Layout>
                 <>
                     <ScrollToTop />
-                    {/* <!-- about us --> */}
-                    <section className=" pt-1 pt-md-5 pb-50">
-                        <div className="container  text-center">
-                            <div className="row align-items-center justify-content-center gy-5">
-                                <div className="col-md-5">
-                                    <div className="row">
-                                        <div className="heading_s1">
-                                            <span className="sub_heading font_style1"><small>QR & Contactless Ordering with</small>
-                                            </span>
-                                            <h1 className=" fw-bold text-capitalize">Tablet Ordering System</h1>
-                                        </div>
-                                    </div>
-                                    <div className="subpara mt-3">
-
-                                        <p className="text-center"><span style={{ fontWeight: 400 }}>Long gone are the days of taking orders by scribbling down on a piece of paper. Infuse an advanced cloud-based Tablet Ordering System into your business and make ‘taking orders’ SUPER Simple & Intuitive.</span></p>
-
-                                        <div className="text-center">
-                                            <a className="btn btn-white btn-red fw-bold" onClick={() => {
-                                                dispatch({
-                                                    type: "OPEN_TRIAL_MODAL",
-                                                });
-                                            }}>Sign Up for a 30-Day Free Trial</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 ">
-                                    <div className="serv_left">
-                                        <img src="/assets/dist/image/orderingSystem/tablet.webp" className="img-fluid" alt="Tablet Ordering System" title="Tablet Ordering System" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
+                    <HeroSection
+                        tagline="QR & Contactless Ordering with"
+                        title="Tablet Ordering System"
+                        desc="Long gone are the days of taking orders by scribbling down on a piece of paper. Infuse an advanced cloud-based Tablet Ordering System into your business and make ‘taking orders’ SUPER Simple & Intuitive."
+                        imgUrl="/assets/dist/image/orderingSystem/tablet.webp"
+                    />
 
                     <section className="pb-50 pt-50">
                         <div className=" text-center">
@@ -378,13 +351,13 @@ const TabletOrdering: FC = () => {
                         </div>
                     </section>
 
-                    <OosPricingSection/>
+                    <OosPricingSection />
 
                     {/* <!-- faq --> */}
                     <section className="py-5 mb-lg-2 bg-custom">
                         <div className="container">
                             <div className="row py-2 py-md-4 py-lg-5">
-                                <MailAndCall/>
+                                <MailAndCall />
                                 <div className="col-md-7 offset-xl-1">
                                     <div className="accordion" id="faq">
 

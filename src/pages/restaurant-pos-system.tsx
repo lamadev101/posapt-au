@@ -2,13 +2,12 @@
 
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
+import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const Restuarant = () => {
-  const dispatch = useDispatch();
   const featureDatas = [
     {
       title: `All Orders In 1 Single App`,
@@ -38,7 +37,7 @@ const Restuarant = () => {
       title: `Employee Performance Tracking`,
       describe: `Our POS system also has employee performance tracking capabilities. It keeps track of individual employee work schedules, hours worked and more. This data helps identify high-performing staff members, provide targeted training, and incentivize employees based on their performance metrics.`
     }
-  ]
+  ];
   const faqDatas = [
     {
       qus: `1. What is a POS system in a restaurant?`,
@@ -245,41 +244,11 @@ At the end of every month, analyse the data and reports to make informed busines
       <Layout>
         <>
           <ScrollToTop />
-          <section className="onlineordertop bg-overlay  d-flex align-items-center">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-12 col-md-7">
-                  <div className="heading_s1">
-                    {/* <span className="sub_heading font_style1 text-white text-center"><small>Seamless ordering, superior convenience
-                            </small>
-                            </span> */}
-                    <h1 className=" fw-bold text-capitalize  text-center color-yellow">The Best Restaurant POS System Across Australia</h1>
-                  </div>
-                  <div className="subpara mt-3">
-
-                    <p className="text-center  text-white">
-                      Let your restaurant run smoother than a cube of butter down the pan. Give your restaurant the upgrade it deserves with an advanced POS system designed with restaurateurs like you in mind.
-                    </p>
-
-                    <div className="text-center">
-                      <a className="btn btn-white btn-red fw-bold"
-                        onClick={() => {
-                          dispatch({
-                            type: "OPEN_TRIAL_MODAL",
-                          });
-                        }}>Sign Up for a 30-Day Free Trial</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-5">
-                  <div className="order_top_img mt-5 mt-md-0"><span>
-                    <img src="/assets/dist/image/store/restaurant_pos.webp" alt="The Best Restaurant POS System Across Australia" title="The Best Restaurant POS System Across Australia" className="welcome-animation d-block ml-auto" /></span></div>
-                </div>
-              </div>
-            </div>
-
-          </section>
-
+          <PosSysHeroSection
+            title="The Best Restaurant POS System Across Australia"
+            desc="Let your restaurant run smoother than a cube of butter down the pan. Give your restaurant the upgrade it deserves with an advanced POS system designed with restaurateurs like you in mind."
+            imgUrl="/assets/dist/image/store/restaurant_pos.webp"
+          />
           <ContactFormSection
             businessTitle="restaurants"
           />

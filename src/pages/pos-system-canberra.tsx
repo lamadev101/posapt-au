@@ -1,6 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/LocationHeroSection';
+import LocationHeroSection from '@/sections/hero/LocationHeroSection';
 import SignUpSection from '@/sections/SignUpSection';
 import Head from 'next/head';
 

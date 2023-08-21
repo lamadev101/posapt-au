@@ -7,6 +7,7 @@ import { Antic_Slab } from "next/font/google";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
 import OosPricingSection from "@/sections/OosPricingSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const QROrdering: FC = () => {
     const dispatch = useDispatch();
@@ -232,40 +233,12 @@ const QROrdering: FC = () => {
             <Layout>
                 <>
                     <ScrollToTop />
-                    {/* <!-- about us --> */}
-                    <section className=" pt-1 pt-md-5 pb-50">
-                        <div className="container  text-center">
-                            <div className="row align-items-center justify-content-center gy-5">
-                                <div className="col-md-5">
-                                    <div className="row">
-                                        <div className="heading_s1">
-                                            <span className="sub_heading font_style1"><small>Simple Yet Revolutionary</small>
-                                            </span>
-                                            <h1 className=" fw-bold text-capitalize">QR Ordering System</h1>
-                                        </div>
-                                    </div>
-                                    <div className="subpara mt-3">
-
-                                        <p className="text-center"><span style={{ fontWeight: 400 }}>Make your customers have a personal look into your restaurant's food items with POSApt’s QR code ordering system. It is just the tip of the iceberg of the possibilities a QR can bring to businesses. Let’s explore!</span></p>
-
-                                        <div className="text-center">
-                                            <a className="btn btn-white btn-red fw-bold" onClick={() => {
-                                                dispatch({
-                                                    type: "OPEN_TRIAL_MODAL",
-                                                });
-                                            }}>Sign Up for a 30-Day Free Trial</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 ">
-                                    <div className="serv_left">
-                                        <img src="/assets/dist/image/orderingSystem/qr.webp" className="img-fluid" alt="QR Ordering Online System" title="QR Ordering Online System" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
+                    <HeroSection
+                        tagline="Simple Yet Revolutionary"
+                        title="QR Ordering System"
+                        desc="Make your customers have a personal look into your restaurant's food items with POSApt's QR code ordering system. It is just the tip of the iceberg of the possibilities a QR can bring to businesses. Let's explore!"
+                        imgUrl="/assets/dist/image/orderingSystem/qr.webp"
+                    />
 
                     <section className="pb-50 pt-50">
                         <div className=" text-center">
@@ -368,8 +341,8 @@ const QROrdering: FC = () => {
                             </div>
                         </div>
                     </section>
-                    
-                    <OosPricingSection/>
+
+                    <OosPricingSection />
 
                     {/* <!-- faq --> */}
                     <section className="py-5 mb-lg-2 bg-custom">

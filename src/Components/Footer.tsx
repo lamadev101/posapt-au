@@ -16,7 +16,6 @@ const Footer: FC = () => {
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/"}>Home</Link>
                 </li>
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/products"}>Products</Link>
@@ -69,18 +68,14 @@ const Footer: FC = () => {
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/online-ordering-system"}>Online Ordering System</Link>
                 </li>
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/retail-pos-system"}>Retail POS System</Link>
                 </li>
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/hospitality-pos-system"}>Hospitality POS System</Link>
                 </li>
-
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/pos-system-for-cafe"}>Cafe POS System</Link>
@@ -90,33 +85,30 @@ const Footer: FC = () => {
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/coffee-shop-pos-system"}>Coffee POS System</Link>
                 </li>
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/tablet-pos-system"}>Tablet POS System</Link>
                 </li>
-
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/pos-system-for-bar"}>Bar POS System</Link>
                 </li>
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/enterprise-pos-system"}>Enterprise POS System</Link>
                 </li>
-
-
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/custom-pos-system"}>Custom POS System</Link>
                 </li>
-
-
-                
-
-
+                <li>
+                  <i className="bx bx-chevron-right" />{" "}
+                  <Link href={"/pizza-pos"}>Pizza Pos</Link>
+                </li>
+                <li>
+                  <i className="bx bx-chevron-right" />{" "}
+                  <Link href={"/quick-service-restaurant-pos"}>QSR Pos</Link>
+                </li>
               </ul>
             </div>
 
@@ -141,6 +133,12 @@ const Footer: FC = () => {
                 </li>
                 <li>
                   <Link href="/pos-system-canberra">Canberra</Link>
+                </li>
+                <li>
+                  <Link href="/retail-pos-system/jewellery-store">Jewellery Store</Link>
+                </li>
+                <li>
+                  <Link href="/retail-pos-system/gift-and-toy-shop">Gift and Toy Shop</Link>
                 </li>
               </ul>
             </div>

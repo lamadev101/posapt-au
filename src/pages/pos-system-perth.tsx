@@ -1,6 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/LocationHeroSection';
+import LocationHeroSection from '@/sections/hero/LocationHeroSection';
 import SignUpSection from '@/sections/SignUpSection';
 import Head from 'next/head';
 
@@ -188,18 +188,11 @@ const PosSystemPerth = () => {
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
                       <h2 className="fw-bold text-capitalize mb-3">Your Cloud-Based POS System <br /><span className="text-theme">in Perth</span></h2>
-
-                      <p>It’s not easy to light your way to business success, even in this city of lights. Whether you’re in the food industry or in the retail business, one crucial step you cannot ignore is getting yourself a ‘POS System’.</p>
-
+                      <p>It's not easy to light your way to business success, even in this city of lights. Whether you’re in the food industry or in the retail business, one crucial step you cannot ignore is getting yourself a ‘POS System’.</p>
                       <p>Perth is where the tempo is fast, and businesses need to stay in tune with the latest technology. The same concept trickles down to your Point of sale system as well. If everything in your business is on par with today’s technological standards but not your POS, means you are lacking behind. </p>
-
                       <p>POSApt's cloud-based POS solution ensures your POS system is ready to accompany your business’s journey to the top of the chart. Experience the seamless operational performance, freeing your business from the shackles of outdated systems.</p>
-
                       <p>Whether you're already using a POS system or exploring the possibilities, you can't afford to miss out on POSApt. It is a system tailored for all types of businesses in Perth. Try all our melody-making features free for 30 days, no commitments required!</p>
-
-
                     </div>
-
                   </div>
                 </div>
                 <div className="col-md-6 m-auto ">

@@ -1,7 +1,7 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/LocationHeroSection';
 import SignUpSection from '@/sections/SignUpSection';
+import LocationHeroSection from '@/sections/hero/LocationHeroSection';
 import Head from 'next/head';
 
 const PosSystemMelbourne = () => {

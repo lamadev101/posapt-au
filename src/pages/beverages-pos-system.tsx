@@ -2,13 +2,12 @@
 
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import { useDispatch } from "react-redux";
 import Head from "next/head";
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
+import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const Beverages = () => {
-  const dispatch = useDispatch();
   const featureDatas = [
     {
       title: `Low Stock Alert`,
@@ -225,39 +224,11 @@ const Beverages = () => {
       <Layout>
         <>
           <ScrollToTop />
-          <section className="onlineordertop bg-overlay  d-flex align-items-center">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-12 col-md-7">
-                  <div className="heading_s1">
-                    {/* <span className="sub_heading font_style1 text-white text-center"><small>Seamless ordering, superior convenience
-                            </small>
-                            </span> */}
-                    <h1 className=" fw-bold text-capitalize  text-center color-yellow">Simplify Your Liquor Store with A Beverage POS System</h1>
-                  </div>
-                  <div className="subpara mt-3">
-
-                    <p className="text-center  text-white">
-                      Let a smart POS system take care of most of the tedious and time-consuming tasks of your Grocery store. Order management, sales tracking and inventory management and more.
-                    </p>
-
-                    <div className="text-center">
-                      <a className="btn btn-white btn-red fw-bold"
-                        onClick={() => {
-                          dispatch({
-                            type: "OPEN_TRIAL_MODAL",
-                          });
-                        }}>Sign Up for a 30-Day Free Trial</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-5">
-                  <div className="order_top_img mt-5 mt-md-0"><span>
-                    <img src="/assets/dist/image/store/beverages_pos.webp" alt="Simplify Your Liquor Store with A Beverage POS System" title="Simplify Your Liquor Store with A Beverage POS System" className="welcome-animation d-block ml-auto" /></span></div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <PosSysHeroSection
+            title="Simplify Your Liquor Store with A Beverage POS System"
+            desc="Let a smart POS system take care of most of the tedious and time-consuming tasks of your Grocery store. Order management, sales tracking and inventory management and more."
+            imgUrl="/assets/dist/image/store/beverages_pos.webp"
+          />
 
           <ContactFormSection
             businessTitle="beverage shop"

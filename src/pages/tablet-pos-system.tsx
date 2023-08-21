@@ -10,6 +10,7 @@ import MailAndCall from "@/Components/MailAndCall";
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const TabletPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
@@ -191,50 +192,12 @@ const TabletPosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50">
-            <div className="container  text-center">
-              <div className="row align-items-center justify-content-center gy-5">
-                <div className="col-md-5">
-                  <div className="row">
-                    <div className="heading_s1">
-                      <span className="sub_heading font_style1">
-                        <small>Time to ditch your traditional tech and join the future with</small>
-                      </span>
-                      <h1 className=" fw-bold text-capitalize">
-                        POSApt's Tablet POS System
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="subpara mt-3">
-                    <p className="text-center">
-                      It is time to convert your simple tablet into a powerful point-of-sale (POS) system with POSApt. Perfect for any Android tablet to automate your business processes. Expect faster transactions, error-free data entry, seamless inventory management, higher profits and happier customers.
-                    </p>
-                    <div className="text-center">
-                      <a onClick={() => {
-                        dispatch({
-                          type: "OPEN_TRIAL_MODAL",
-                        });
-                      }}
-                        className="btn btn-white btn-red fw-bold" href="#">
-                        Sign Up for a 30-Day Free Trial
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 ">
-                  <div className="serv_left">
-                    <img
-                      src="assets/dist/image/ServicesImages/tablet.webp"
-                      className="img-fluid"
-                      alt="Best Tablet POS System"
-                      title="Best Tablet POS System"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <HeroSection
+            tagline="Time to ditch your traditional tech and join the future with"
+            title="POSApt's Tablet POS System"
+            desc="It is time to convert your simple tablet into a powerful point-of-sale (POS) system with POSApt. Perfect for any Android tablet to automate your business processes. Expect faster transactions, error-free data entry, seamless inventory management, higher profits and happier customers."
+            imgUrl="assets/dist/image/ServicesImages/tablet.webp"
+          />
 
           {/* benefits */}
           <section className="pb-50 pt-50 bg-gradient1 ">

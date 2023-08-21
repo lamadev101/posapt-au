@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import Link from "next/link";
 import MailAndCall from "@/Components/MailAndCall";
+import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const OnlineOrderingSystem = () => {
     const dispatch = useDispatch();
@@ -313,41 +314,12 @@ const OnlineOrderingSystem = () => {
 
             <Layout>
                 <ScrollToTop />
-                <section className=" onlineordertop bg-overlay  d-flex align-items-center">
-                    <div className="container">
-                        <div className="row align-items-center">
-                            <div className="col-12 col-md-7">
-                                <div className="heading_s1">
-                                    <span className="sub_heading font_style1 text-white text-center"><small>Seamless ordering, superior convenience
-                                    </small>
-                                    </span>
-                                    <h1 className=" fw-bold text-capitalize  text-center color-yellow">POSApt Online Ordering System</h1>
-                                </div>
-                                <div className="subpara mt-3">
-
-                                    <p className="text-center  text-white">
-                                        From restaurants to retailers, from businesses to suppliers, POSApt empowers all types of businesses to effortlessly connect with their customers and simplify their ordering process. Embrace the future of online ordering with POSApt and let the fun begin!
-                                    </p>
-
-                                    <div className="text-center">
-                                        <a className="btn btn-white btn-red fw-bold"
-                                            onClick={() => {
-                                                dispatch({
-                                                    type: "OPEN_TRIAL_MODAL",
-                                                });
-                                            }}>Sign Up for a 30-Day Free Trial</a>
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="col-12 col-md-5">
-                                <div className="order_top_img mt-5 mt-md-0"><span><img src="/assets/dist/image/orderingSystem/online_order.webp" alt="" className="welcome-animation d-block ml-auto" /></span></div>
-                            </div>
-                        </div>
-                    </div>
-                    {/* <div className="shape order_shape"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 100" preserveAspectRatio="none" fill="#FFFFFF"><path d="M421.9,6.5c22.6-2.5,51.5,0.4,75.5,5.3c23.6,4.9,70.9,23.5,100.5,35.7c75.8,32.2,133.7,44.5,192.6,49.7
-c23.6,2.1,48.7,3.5,103.4-2.5c54.7-6,106.2-25.6,106.2-25.6V0H0v30.3c0,0,72,32.6,158.4,30.5c39.2-0.7,92.8-6.7,134-22.4
-c21.2-8.1,52.2-18.2,79.7-24.2C399.3,7.9,411.6,7.5,421.9,6.5z" className="shape-fill"></path></svg></div> */}
-                </section>
+                <PosSysHeroSection
+                    tagline="Seamless ordering, superior convenience"
+                    title="POSApt Online Ordering System"
+                    desc="From restaurants to retailers, from businesses to suppliers, POSApt empowers all types of businesses to effortlessly connect with their customers and simplify their ordering process. Embrace the future of online ordering with POSApt and let the fun begin!"
+                    imgUrl="/assets/dist/image/orderingSystem/online_order.webp"
+                />
 
                 {/* <!-- what is oos --> */}
                 <section className="pb-50 pt-50">

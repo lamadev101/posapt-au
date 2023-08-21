@@ -7,6 +7,7 @@ import { Antic_Slab } from "next/font/google";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
 import OosPricingSection from "@/sections/OosPricingSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const FoodOrdering: FC = () => {
     const dispatch = useDispatch();
@@ -263,40 +264,12 @@ const FoodOrdering: FC = () => {
             <Layout>
                 <>
                     <ScrollToTop />
-                    {/* <!-- about us --> */}
-                    <section className=" pt-1 pt-md-5 pb-50">
-                        <div className="container  text-center">
-                            <div className="row align-items-center justify-content-center gy-5">
-                                <div className="col-md-5">
-                                    <div className="row">
-                                        <div className="heading_s1">
-                                            <span className="sub_heading font_style1"><small>Exquisite dining made effortless with</small>
-                                            </span>
-                                            <h1 className=" fw-bold text-capitalize">Online Food Ordering System</h1>
-                                        </div>
-                                    </div>
-                                    <div className="subpara mt-3">
-
-                                        <p className="text-center"><span style={{ fontWeight: 400 }}>Have a food service establishment that’s not yet online? Time to expand your customer base and start catering to your online audience with the best Online Food Ordering System across Australia. Reach a bigger audience, get more orders and generate higher sales.</span></p>
-
-                                        <div className="text-center">
-                                            <a className="btn btn-white btn-red fw-bold" onClick={() => {
-                                                dispatch({
-                                                    type: "OPEN_TRIAL_MODAL",
-                                                });
-                                            }}>Sign Up for a 30-Day Free Trial</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 ">
-                                    <div className="serv_left">
-                                        <img src="/assets/dist/image/orderingSystem/online_food_ordering.webp" className="img-fluid" alt="Food Online Ordering System" title="Food Online Ordering System" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
+                    <HeroSection
+                        tagline="Exquisite dining made effortless with<"
+                        title="Online Food Ordering System"
+                        desc="Have a food service establishment that’s not yet online? Time to expand your customer base and start catering to your online audience with the best Online Food Ordering System across Australia. Reach a bigger audience, get more orders and generate higher sales."
+                        imgUrl="/assets/dist/image/orderingSystem/online_food_ordering.webp"
+                    />
 
                     <section className="pb-50 pt-50">
                         <div className=" text-center">
@@ -390,14 +363,14 @@ const FoodOrdering: FC = () => {
                             </div>
                         </div>
                     </section>
-                    
-                    <OosPricingSection/>
+
+                    <OosPricingSection />
 
                     {/* <!-- faq --> */}
                     <section className="py-5 mb-lg-2 bg-custom">
                         <div className="container">
                             <div className="row py-2 py-md-4 py-lg-5">
-                                <MailAndCall/>
+                                <MailAndCall />
                                 <div className="col-md-7 offset-xl-1">
                                     <div className="accordion" id="faq">
 

@@ -9,6 +9,7 @@ import OurHardwareSystem from "@/Components/OurHardwareSystem";
 import Features from "@/Components/Features";
 import MailAndCall from "@/Components/MailAndCall";
 import SignUpSection from "@/sections/SignUpSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -279,57 +280,14 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <section className=" pt-1 pt-md-5 pb-1">
-          <div className="container  text-center">
-            <div className="row align-items-center justify-content-center gy-5">
-              <div className="col-md-5">
-                <div className="row">
-                  <div className="heading_s1">
-                    <span className="sub_heading font_style1">
-                      <small>Selling Made Simpler.</small>
-                    </span>
-                    <h1 className=" fw-bold text-capitalize">
-                      The Perfect Point-of-Sale to Sell
-                    </h1>
-                  </div>
-                </div>
-                <div className="subpara mt-3">
-                  <p className="text-center">
-                    <span style={{ fontWeight: 400 }}>
-                      An advanced POS system to enable hospitality and retail
-                      businesses not just to sell their products and services
-                      but also to make offline selling experiences simpler,
-                      safer and better.
-                    </span>
-                  </p>
-                  <div className="text-center">
-                    <a
-                      onClick={() => {
-                        dispatch({
-                          type: "OPEN_TRIAL_MODAL",
-                        });
-                      }}
-                      className="btn btn-white btn-red fw-bold"
-                      href="#"
-                    >
-                      Sign Up for a 30-Day Free Trial
-                    </a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-md-6 ">
-                <div className="serv_left">
-                  <img
-                    title="Best POS System Software"
-                    src="/assets/dist/image/Best_POS_System_Software.webp"
-                    className="img-fluid"
-                    alt="Best POS System Software"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+
+        <HeroSection
+          tagline="Selling Made Simpler."
+          title="The Perfect Point-of-Sale to Sell"
+          desc="An advanced POS system to enable hospitality and retail businesses not just to sell their products and services but also to make offline selling experiences simpler, and better."
+          imgUrl="/assets/dist/image/Best_POS_System_Software.webp"
+        />
+        
         <section
           className=" text-center pb-5 pt-5"
           style={{
@@ -376,6 +334,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         {/* find store */}
         <section className="bg-light pt-50 pb-50">
           <div className="container">

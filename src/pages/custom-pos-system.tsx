@@ -10,6 +10,7 @@ import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const CustomPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
@@ -171,51 +172,13 @@ const CustomPosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50">
-            <div className="container  text-center">
-              <div className="row align-items-center justify-content-center gy-5">
-                <div className="col-md-5">
-                  <div className="row">
-                    <div className="heading_s1">
-                      <span className="sub_heading font_style1">
-                        <small>Tailored To You</small>
-                      </span>
-                      <h1 className=" fw-bold text-capitalize">
-                        POSApt Custom POS System
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="subpara mt-3">
-                    <p className="text-center">
-                      Why settle for an off-the-shelf solution when you can have a custom point-of-sale system that's perfectly suited to your needs? Whether you're in the hospitality industry or the retail side of things,  POSApt's custom point-of-sale system can help you run your business more efficiently.
-                    </p>
-                    <div className="text-center">
-                      <a onClick={() => {
-                        dispatch({
-                          type: "OPEN_TRIAL_MODAL",
-                        });
-                      }}
-                        className="btn btn-white btn-red fw-bold" href="#">
-                        Sign Up for a 30-Day Free Trial
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 ">
-                  <div className="serv_left">
-                    <img
-                      src="/assets/dist/image/ServicesImages/custom.webp"
-                      className="img-fluid"
-                      alt="Best Custom POS System"
-                      title="Best Custom POS System"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
+          <HeroSection
+            tagline="Tailored To You"
+            title="POSApt Custom POS System"
+            desc="Why settle for an off-the-shelf solution when you can have a custom point-of-sale system that's perfectly suited to your needs? Whether you're in the hospitality industry or the retail side of things,  POSApt's custom point-of-sale system can help you run your business more efficiently."
+            imgUrl="/assets/dist/image/ServicesImages/custom.webp"
+          />
+          
           {/* benefits */}
           <section className="pb-50 pt-50 bg-gradient1 ">
             <div className="keyfeatures text-center  ">

@@ -6,7 +6,7 @@ const SignUpSection = () => {
   return (
     <section
       className="section bg_background p-100  mb-5"
-      style={{ backgroundImage: "url(assets/dist/image/newImages/bg2.webp)" }}
+      style={{ backgroundImage: "url(/assets/dist/image/newImages/bg2.webp)" }}
     >
       <div className="container">
         <div className="row">

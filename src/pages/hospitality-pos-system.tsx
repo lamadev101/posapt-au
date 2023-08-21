@@ -10,6 +10,7 @@ import MailAndCall from "@/Components/MailAndCall";
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 
 const HospitalityPosSystem = () => {
@@ -205,51 +206,12 @@ const HospitalityPosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50">
-            <div className="container  text-center">
-              <div className="row align-items-center justify-content-center gy-5">
-                <div className="col-md-5">
-                  <div className="row">
-                    <div className="heading_s1">
-                      <span className="sub_heading font_style1">
-                        <small>The Choice of Top Hospitality Establishments</small>
-                      </span>
-                      <h1 className=" fw-bold text-capitalize">
-                        POSApt’s Hospitality POS System
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="subpara mt-3">
-                    <p className="text-center">
-                      A Hospitality-centric cloud-based POS system delivering flexibility and scalability for 2023’s business needs. Manage sales, orders, inventories, payments, customer relationships & employee relationships with one complete system.
-                    </p>
-                    <div className="text-center">
-                      <a
-                        onClick={() => {
-                          dispatch({
-                            type: "OPEN_TRIAL_MODAL",
-                          });
-                        }}
-                        className="btn btn-white btn-red fw-bold" href="#">
-                        Sign Up for a 30-Day Free Trial
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 ">
-                  <div className="serv_left">
-                    <img
-                      src="assets/dist/image/ServicesImages/hospitality.webp"
-                      className="img-fluid"
-                      alt="Best Hospitality POS System"
-                      title="Best Hospitality POS System"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <HeroSection
+            tagline="The Choice of Top Hospitality Establishments"
+            title="POSApt’s Hospitality POS System"
+            desc="A Hospitality-centric cloud-based POS system delivering flexibility and scalability for 2023’s business needs. Manage sales, orders, inventories, payments, customer relationships & employee relationships with one complete system."
+            imgUrl="assets/dist/image/ServicesImages/hospitality.webp"
+          />
 
           {/* benefits */}
           <section className="pb-50 pt-50 bg-gradient1 ">

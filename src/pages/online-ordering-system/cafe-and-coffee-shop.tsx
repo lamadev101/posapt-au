@@ -7,6 +7,7 @@ import { Antic_Slab } from "next/font/google";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
 import OosPricingSection from "@/sections/OosPricingSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const CoffeeShop: FC = () => {
     const dispatch = useDispatch();
@@ -248,40 +249,13 @@ const CoffeeShop: FC = () => {
             <Layout>
                 <>
                     <ScrollToTop />
-                    {/* <!-- about us --> */}
-                    <section className=" pt-1 pt-md-5 pb-50">
-                        <div className="container  text-center">
-                            <div className="row align-items-center justify-content-center gy-5">
-                                <div className="col-md-5">
-                                    <div className="row">
-                                        <div className="heading_s1">
-                                            <span className="sub_heading font_style1"><small>Enjoy Efficiency and Convenience with our</small>
-                                            </span>
-                                            <h1 className=" fw-bold text-capitalize">Cafe & Coffee Shop Ordering System</h1>
-                                        </div>
-                                    </div>
-                                    <div className="subpara mt-3">
 
-                                        <p className="text-center"><span style={{ fontWeight: 400 }}>It’s time to say goodbye to long queues and time-consuming orders! Streamline your cafe and coffee shop operations and provide a seamless ordering experience for your customers. With POSApt’s robust ordering system, your customers can place their orders with just a few taps on their phones.</span></p>
-
-                                        <div className="text-center">
-                                            <a className="btn btn-white btn-red fw-bold" onClick={() => {
-                                                dispatch({
-                                                    type: "OPEN_TRIAL_MODAL",
-                                                });
-                                            }}>Sign Up for a 30-Day Free Trial</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 ">
-                                    <div className="serv_left">
-                                        <img src="/assets/dist/image/orderingSystem/coffee.webp" className="img-fluid" alt="Coffee Shop Ordering System" title="Coffee Shop Ordering System" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
+                    <HeroSection
+                        tagline="Enjoy Efficiency and Convenience with our"
+                        title="Cafe & Coffee Shop Ordering System"
+                        desc="It’s time to say goodbye to long queues and time-consuming orders! Streamline your cafe and coffee shop operations and provide a seamless ordering experience for your customers. With POSApt's robust ordering system, your customers can place their orders with just a few taps on their phones."
+                        imgUrl="/assets/dist/image/orderingSystem/coffee.webp"
+                    />
 
                     <section className="pb-50 pt-50">
                         <div className=" text-center">
@@ -381,8 +355,8 @@ const CoffeeShop: FC = () => {
                         </div>
                     </section>
 
-                    <OosPricingSection/>
-                    
+                    <OosPricingSection />
+
                     {/* <!-- faq --> */}
                     <section className="py-5 mb-lg-2 bg-custom">
                         <div className="container">

@@ -10,6 +10,7 @@ import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const coffeeShopPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
@@ -183,50 +184,12 @@ const coffeeShopPosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50">
-            <div className="container  text-center">
-              <div className="row align-items-center justify-content-center gy-5">
-                <div className="col-md-5">
-                  <div className="row">
-                    <div className="heading_s1">
-                      <span className="sub_heading font_style1">
-                        <small>The unsung hero of your morning caffeine fix</small>
-                      </span>
-                      <h1 className=" fw-bold text-capitalize">
-                        POSApt’s Coffee Shop POS System
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="subpara mt-3">
-                    <p className="text-center">
-                      We understand that running a coffee shop is more than just brewing a good cup of joe. That's why we've got the perfect solution for you: a coffee shop point-of-sale system. It will help you streamline your coffee shop operations so that you can serve your best brews with a smile.
-                    </p>
-                    <div className="text-center">
-                      <a onClick={() => {
-                        dispatch({
-                          type: "OPEN_TRIAL_MODAL",
-                        });
-                      }}
-                        className="btn btn-white btn-red fw-bold" href="#">
-                        Sign Up for a 30-Day Free Trial
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 ">
-                  <div className="serv_left">
-                    <img
-                      src="/assets/dist/image/orderingSystem/coffee.webp"
-                      className="img-fluid"
-                      alt="Best Coffee Shop POS System"
-                      title="Best Coffee Shop POS System"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <HeroSection
+            tagline="The unsung hero of your morning caffeine fix"
+            title="POSApt’s Coffee Shop POS System"
+            desc="We understand that running a coffee shop is more than just brewing a good cup of joe. That's why we've got the perfect solution for you: a coffee shop point-of-sale system. It will help you streamline your coffee shop operations so that you can serve your best brews with a smile."
+            imgUrl="/assets/dist/image/orderingSystem/coffee.webp"
+          />
 
           {/* benefits */}
           <section className="pb-50 pt-50 bg-gradient1 ">

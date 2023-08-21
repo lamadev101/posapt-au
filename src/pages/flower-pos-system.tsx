@@ -2,13 +2,12 @@
 
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
+import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const Flower = () => {
-  const dispatch = useDispatch();
   const featureDatas = [
     {
       title: `Fast & Effective Order Management`,
@@ -214,39 +213,11 @@ const Flower = () => {
       <Layout>
         <>
           <ScrollToTop />
-          <section className="onlineordertop bg-overlay  d-flex align-items-center">
-            <div className="container">
-              <div className="row align-items-center">
-                <div className="col-12 col-md-7">
-                  <div className="heading_s1">
-                    {/* <span className="sub_heading font_style1 text-white text-center"><small>Seamless ordering, superior convenience
-                            </small>
-                            </span> */}
-                    <h1 className=" fw-bold text-capitalize  text-center color-yellow">Grow Your Flower Business with Floral POS Software</h1>
-                  </div>
-                  <div className="subpara mt-3">
-
-                    <p className="text-center  text-white">
-                      Let your flower shop bloom like a garden of dreams. Set up a custom POS System for your flower business that offers all the functionalities and features you need to grow your floral empire.
-                    </p>
-
-                    <div className="text-center">
-                      <a className="btn btn-white btn-red fw-bold"
-                        onClick={() => {
-                          dispatch({
-                            type: "OPEN_TRIAL_MODAL",
-                          });
-                        }}>Sign Up for a 30-Day Free Trial</a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-12 col-md-5">
-                  <div className="order_top_img mt-5 mt-md-0"><span>
-                    <img src="/assets/dist/image/store/flower_pos.webp" alt="Grow Your Flower Business with Floral POS Software" title="Grow Your Flower Business with Floral POS Software" className="welcome-animation d-block ml-auto" /></span></div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <PosSysHeroSection
+            title="Grow Your Flower Business with Floral POS Software"
+            desc="Let your flower shop bloom like a garden of dreams. Set up a custom POS System for your flower business that offers all the functionalities and features you need to grow your floral empire."
+            imgUrl="/assets/dist/image/store/flower_pos.webp"
+          />
 
           <ContactFormSection
             businessTitle="flower shop"

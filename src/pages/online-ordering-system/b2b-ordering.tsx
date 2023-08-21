@@ -7,6 +7,7 @@ import { Antic_Slab } from "next/font/google";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
 import OosPricingSection from "@/sections/OosPricingSection";
+import HeroSection from "@/sections/hero/HeroSection";
 
 
 const B2BOrderingSystem: FC = () => {
@@ -32,7 +33,7 @@ const B2BOrderingSystem: FC = () => {
             describe: `Stay connected with your customers through our integrated messaging system. Respond to inquiries, provide updates on order status, and address any concerns promptly.`
         }
     ];
-    
+
     const sectionData3 = [
         {
             title: `Seamless Integration`,
@@ -47,7 +48,7 @@ const B2BOrderingSystem: FC = () => {
             describe: `Rest easy knowing that your business and customer data are protected with advanced security measures. Our B2B Online Ordering Software is built on a secure infrastructure, ensuring the confidentiality and integrity of your sensitive information.`
         }
     ]
-    
+
     const faqDatas = [
         {
             qus: `1. What is a B2B online ordering system?`,
@@ -219,40 +220,12 @@ const B2BOrderingSystem: FC = () => {
             <Layout>
                 <>
                     <ScrollToTop />
-                    {/* <!-- about us --> */}
-                    <section className=" pt-1 pt-md-5 pb-50">
-                        <div className="container  text-center">
-                            <div className="row align-items-center justify-content-center gy-5">
-                                <div className="col-md-5">
-                                    <div className="row">
-                                        <div className="heading_s1">
-                                            <span className="sub_heading font_style1"><small>Streamline Your Business Operations with our</small>
-                                            </span>
-                                            <h1 className=" fw-bold text-capitalize">B2B Online Ordering System</h1>
-                                        </div>
-                                    </div>
-                                    <div className="subpara mt-3">
-
-                                        <p className="text-center"><span style={{ fontWeight: 400 }}>Welcome to POSApt's new B2B Online Ordering System, the ideal solution for all businesses across Australia. Gone are the days of manual order management and tedious paperwork. With our user-friendly platform, you can now easily manage your B2B orders with a few clicks!.</span></p>
-
-                                        <div className="text-center">
-                                            <a className="btn btn-white btn-red fw-bold" onClick={() => {
-                                                dispatch({
-                                                    type: "OPEN_TRIAL_MODAL",
-                                                });
-                                            }}>Sign Up for a 30-Day Free Trial</a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-md-6 ">
-                                    <div className="serv_left">
-                                        <img src="/assets/dist/image/orderingSystem/B2B.webp" className="img-fluid" alt="B2B Online Ordering System" title="B2B Online Ordering System" />
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                    </section>
+                    <HeroSection
+                        tagline="Streamline Your Business Operations with our"
+                        title="B2B Online Ordering System"
+                        desc="Welcome to POSApt's new B2B Online Ordering System, the ideal solution for all businesses across Australia. Gone are the days of manual order management and tedious paperwork. With our user-friendly platform, you can now easily manage your B2B orders with a few clicks!."
+                        imgUrl="/assets/dist/image/orderingSystem/B2B.webp"
+                    />
 
                     <section className="pb-50 pt-50">
                         <div className=" text-center">

@@ -10,6 +10,7 @@ import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
+import HeroSection from "@/sections/hero/HeroSection";
 
 const EnterprisePosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
@@ -178,50 +179,12 @@ const EnterprisePosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50">
-            <div className="container  text-center">
-              <div className="row align-items-center justify-content-center gy-5">
-                <div className="col-md-5">
-                  <div className="row">
-                    <div className="heading_s1">
-                      <span className="sub_heading font_style1">
-                        <small>For Companies That Succeed</small>
-                      </span>
-                      <h1 className=" fw-bold text-capitalize">
-                        POSApt Enterprise POS Software
-                      </h1>
-                    </div>
-                  </div>
-                  <div className="subpara mt-3">
-                    <p className="text-center">
-                      Say goodbye to outdated cash registers and hello to user-friendly, intuitive Enterprise POS Software. Tailored to meet the unique needs of Australian businesses, ensuring compliance and offering customised solutions to meet your specific requirements. Join the ranks of successful businesses today.
-                    </p>
-                    <div className="text-center">
-                      <a onClick={() => {
-                        dispatch({
-                          type: "OPEN_TRIAL_MODAL",
-                        });
-                      }}
-                        className="btn btn-white btn-red fw-bold" href="#">
-                        Sign Up for a 30-Day Free Trial
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-6 ">
-                  <div className="serv_left">
-                    <img
-                      src="assets/dist/image/ServicesImages/enterprise.webp"
-                      className="img-fluid"
-                      alt="Best Enterprise POS System"
-                      title="Best Enterprise POS System"
-                    />
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <HeroSection
+            tagline="For Companies That Succeed"
+            title="POSApt Enterprise POS Software"
+            desc="Say goodbye to outdated cash registers and hello to user-friendly, intuitive Enterprise POS Software. Tailored to meet the unique needs of Australian businesses, ensuring compliance and offering customised solutions to meet your specific requirements. Join the ranks of successful businesses today."
+            imgUrl="/assets/dist/image/ServicesImages/enterprise.webp"
+          />
 
           {/* benefits */}
           <section className="pb-50 pt-50 bg-gradient1 ">
