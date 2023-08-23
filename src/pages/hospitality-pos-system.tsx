@@ -4,18 +4,14 @@ import React from "react";
 import Layout from "../Components/Layout";
 import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../Redux/reducers";
 import MailAndCall from "@/Components/MailAndCall";
-import PricingSection from "@/sections/PricingSection";
-import ContactFormSection from "@/sections/ContactFormSection";
-import SignUpSection from "@/sections/SignUpSection";
-import HeroSection from "@/sections/hero/HeroSection";
+import { Benefits, PosBanner, PosHeroSection, ReasonToChoose, WhyChoose } from "@/sections/pos-system";
 
 
 const HospitalityPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
-  const dispatch = useDispatch();
   const hospitalityService =
   {
     "@context": "https://schema.org/",
@@ -133,6 +129,113 @@ const HospitalityPosSystem = () => {
       }
     }]
   }
+
+  const benefitsData = {
+    title: "Benefits Of A Hospitality Point Of Sale Software",
+    imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+    content: [
+      {
+        imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+        title: "Improved Customer Service",
+        desc: "The right POS software enables your hospitality business to take orders quickly, process payments efficiently, and manage tables effectively. It also enables your business to offer more personalised services and rewards to your customers letting them know that you care about them.",
+      },
+      {
+        imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+        title: "Streamlined Operations",
+        desc: "The right POS software enables your hospitality business to take orders quickly, process payments efficiently, and manage tables effectively. It also enables your business to offer more personalised services and rewards to your customers letting them know that you care about them.",
+      },
+      {
+        imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+        title: "Accurate Pricing",
+        desc: "The primary difference you'll notice when you install the right Hospitality POS system is that there are fewer manual errors and most of the business processes are achieved quicker than ever. That is the beauty of getting a cloud-based POS system for your hospitality business.",
+      },
+    ]
+  }
+
+  const whyChooseData = {
+    title: "Why Choose POSapt's E-Commerce System?",
+    content: [
+      {
+        title: "Better Inventory Management",
+        desc: "Our simple, precise and real-time inventory system keeps your business running smoothly. With accurate and up-to-date information about your inventory, you can make informed decisions to increase profitability and provide a better customer experience.",
+      },
+      {
+        title: "Direct Integration to POS",
+        desc: "Direct Integration to POS Our E-Commerce System integrates seamlessly with our POS giving you access to all incoming orders from a single point-of-sale (POS) system to eliminate the need to switch between multiple applications for order and sales tracking.",
+      },
+      {
+        title: "Safe & Secure Payment Methods",
+        desc: "Offer multiple payment options including PayPal, Google Pay, and Stripe through our Online Ordering System. This allows your customers to choose the most convenient payment method for them, increasing your sales and their happiness.",
+      },
+      {
+        title: "Custom Website Inclusive",
+        desc: "Custom Website Inclusive We will design and build a custom website for you that is visually appealing, and fully functional. It will also allow your customers to purchase goods and services, all at no additional cost to you.",
+      },
+      {
+        title: "E-Gift Card",
+        desc: "Keep your customers interested, happy and tied to you with the help of POSApt-enabled gift cards, vouchers and loyalty points.",
+      },
+      {
+        title: "Loyalty and Marketing",
+        desc: "Our E-Commerce System can keep your customers interested, happy and tied to you with the help of POSApt vouchers and loyalty points.",
+      },
+    ]
+  }
+  const reasonToChooseData = {
+    title: "5 Reasons To Choose POSApt Hospitality POS Software",
+    content: [
+      {
+        imgUrl: "d6.png",
+        title: "Simple & Intuitive",
+        desc: "POSApt offers an easy-to-use interface that requires minimal training but doesn’t lack anything in the features department. The interface is designed to simplify transactions and minimize errors, allowing staff to focus on providing excellent customer service.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUr: "d2.png",
+        title: "Tailored To Hospitality’s Needs",
+        desc: "POSApt is custom-built with Hospitality businesses in mind. You can easily customize menus, and item options, update prices, take or manage orders, and even print orders directly to a dedicated kitchen printer. And the best part; everything happens in real-time.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUr: "d6.png",
+        title: "Integrated with Hospitality-Specific Systems",
+        desc: "POSApt is designed to integrate seamlessly with essential systems such as Xero and MYOB accounting software, inventory management, online ordering system, and customer relationship management (CRM) tools.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUr: "d4.png",
+        title: "Real-Time Reporting",
+        desc: "POSApt provides real-time reporting on sales, inventory, and other key metrics, allowing you to make informed business decisions on the go. This feature is particularly useful for hospitality businesses that need to make quick decisions based on real-time data.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUr: "d5.png",
+        title: "Franchise Business Support",
+        desc: "No matter the number of outlets your hospitality business has, POSApt has the power to support and manage all franchised businesses without the need for a separate software application for each of your outlets.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+    ]
+  }
   return (
     <>
       <Head>
@@ -206,360 +309,19 @@ const HospitalityPosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          <HeroSection
-            tagline="The Choice of Top Hospitality Establishments"
-            title="POSApt’s Hospitality POS System"
-            desc="A Hospitality-centric cloud-based POS system delivering flexibility and scalability for 2023’s business needs. Manage sales, orders, inventories, payments, customer relationships & employee relationships with one complete system."
-            imgUrl="assets/dist/image/ServicesImages/hospitality.webp"
+          <PosHeroSection
+            title="POSapt Hospitality POS System"
+            desc="Comprehensive yet intuitive point-of-sale system for hospitality businesses"
+            imgUrl="/assets/dist/image/Best_POS_System_Software.webp"
           />
-
-          {/* benefits */}
-          <section className="pb-50 pt-50 bg-gradient1 ">
-            <div className="keyfeatures text-center  ">
-              <div className="container">
-                <div className="row ">
-                  <div className="heading_s1 w-80 poshead">
-                    {/* <span class="sub_heading font_style1">Why Choose Us?</span> */}
-                    <h2 className=" fw-bold text-capitalize">
-                      Benefits of a{" "}
-                      <span className="text-theme">
-                        Hospitality Point of Sale Software
-                      </span>
-                    </h2>
-                  </div>
-                </div>
-                <div className="row g-3">
-                  <div className="col-md-4">
-                    <div className="card border-0  rounded-xs h-100">
-                      <div className="card-body service_item">
-                        <div className="ser_inner ">
-                          <div className="ser_img">
-                            <img
-                              src="assets/dist/posicons/hospitality/customer_service.png"
-                              className="img-fluid h-100"
-                              alt="Improved Customer Service"
-                              title="Improved Customer Service"
-                              data-pagespeed-url-hash={1416024010}
-                            />
-                          </div>
-                          <h3 className="mt-4 mb-3">Happier Customers</h3>
-                        </div>
-                        <p>
-                          The right POS software enables your hospitality business to take orders quickly, process payments efficiently, and manage tables effectively. It also enables your business to offer more personalised services and rewards to your customers. This lets customers know that you care about them.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div className="card border-0  rounded-xs h-100">
-                      <div className="card-body service_item">
-                        <div className="ser_inner ">
-                          <div className="ser_img">
-                            <img
-                              src="assets/dist/posicons/hospitality/operation.png"
-                              className="img-fluid h-100"
-                              alt="Streamlined Operations"
-                              title="Streamlined Operations"
-                              data-pagespeed-url-hash={1416024010}
-                            />
-                          </div>
-                          <h3 className="mt-4 mb-3">Streamlined Operations </h3>
-                        </div>
-                        <p>
-                          The primary difference you’ll notice after the installation of a POS system is that there are fewer manual errors. You will also notice that business processes are achieved quicker than ever. That is the beauty of getting a cloud-based POS system for your hospitality business.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-md-4">
-                    <div className="card border-0  rounded-xs h-100">
-                      <div className="card-body service_item">
-                        <div className="ser_inner ">
-                          <div className="ser_img">
-                            <img
-                              src="assets/dist/posicons/hospitality/revenue.png"
-                              className="img-fluid h-100"
-                              alt="Increased Revenue"
-                              title="Increased Revenue"
-                              data-pagespeed-url-hash={1416024010}
-                            />
-                          </div>
-                          <h3 className="mt-4 mb-3">Increased Revenue </h3>
-                        </div>
-                        <p>
-                          An efficient Point of Sale software helps your business to save time and resources. As your business operations are now managed you can focus on more productive tasks. Moreover, the system also helps upsell and cross-sell your products to generate more revenue.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-
-          <ContactFormSection
-            businessTitle="hospitality"
+          <Benefits
+            {...benefitsData}
           />
-
-          {/* features */}
-          <section className="pt-50 pb-50 bg-light">
-            <div className="container">
-              <div className="row text-center">
-                <div className="heading_s1 w-80 poshead text-center">
-                  <h2 className=" fw-bold text-capitalize">
-                    6 Must-Have Features of a{" "}
-                    <span className="text-theme">
-                      Hospitality Point of Sale System
-                    </span>
-                  </h2>
-                </div>
-              </div>
-              <div className="row g-4 row-cols-xl-3 row-cols-lg-4 row-cols-1 row-cols-md-2 mt-2">
-                <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
-                    <div className="card-body ">
-                      <div className="card_icon ">
-                        <i className="fas fa-universal-access"></i>
-                      </div>
-                      <h3 className="mb-2">User-Friendly Interface</h3>
-                      <p>
-                        A POS system for hospitality businesses should be easy to use. A simple and intuitive interface enables quick transactions and reduces the risk of errors. Less manual errors mean more productivity.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
-                    <div className="card-body ">
-                      <div className="card_icon ">
-                        <i className="fas fa-list"></i>
-                      </div>
-                      <h3 className="mb-2">Customisable Menus and Items</h3>
-                      <p>
-                        Your POS system should allow you to easily customise menus and item options to meet your specific needs and preferences. A customised menu based on customers' purchase history increases revenue.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
-                    <div className="card-body ">
-                      <div className="card_icon ">
-                        <i className="fas fa-desktop" />
-                      </div>
-                      <h3 className="mb-2">Integration with Other Systems</h3>
-                      <p>
-                        There’s more to a hospitality business than just what happens at the counter. So, a good POS  should be able to integrate with other systems such as accounting software, inventory management, and online ordering systems.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
-                    <div className="card-body ">
-                      <div className="card_icon ">
-                        <i className="fas fa-file-invoice" />
-                      </div>
-                      <h3 className="mb-2">Real-Time Reporting</h3>
-                      <p>
-                        Hospitality Point of Sale systems should provide real-time reports on sales, inventory, and other key metrics. This enables you to make informed business decisions and tactical future plans.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
-                    <div className="card-body ">
-                      <div className="card_icon ">
-                        <i className="fas fa-unlock" />
-                      </div>
-                      <h3 className="mb-2">Security and Compliance</h3>
-                      <p>
-                        A great POS system should be secure and compliant with industry standards. Protecting your business and customer data is key and you should thoroughly examine this feature before finalising a POS.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
-                    <div className="card-body ">
-                      <div className="card_icon ">
-                        <i className="fas fa-credit-card" />
-                      </div>
-                      <h3 className="mb-2">Omnichannel Support</h3>
-                      <p>
-                        An advanced POS system for the hospitality business should come with omnichannel support. This will help you manage online and offline sales with one robust system. Moreover, you will have accurate reporting for both.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <SignUpSection />
-
-          {/* reasons */}
-          <section>
-            <div className="container">
-              <div className="whychoose">
-                <div className="row text-center">
-                  <div className="heading_s1 w-80 poshead text-center">
-                    {/* <span class="sub_heading font_style1">Why Choose Us?</span> */}
-                    <h2 className=" fw-bold text-capitalize">
-                      6 Reasons to Choose{" "}
-                      <span className="text-theme">
-                        POSApt Hospitality POS Software
-                      </span>
-                    </h2>
-                  </div>
-                </div>
-                <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="chooseimg">
-                      <img
-                        src="assets/dist/image/reason/hospitality/simple_intuitive.png"
-                        className="img-fluid"
-                        alt="1. Simple and Intuitive"
-                        title="1. Simple and Intuitive"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="choose_para ser_inner">
-                      <h3 className="mt-4 mb-3">1. Simple &amp; Intuitive </h3>
-                      <p>
-                        POSApt offers an easy-to-use interface that requires minimal training but doesn’t lack anything in the features department. The interface is designed to simplify transactions and minimise errors. This allows staff to focus on providing excellent customer service.
-                      </p>
-                      <p>
-                        The system is also multi-platform compatible. This means you can use the system on desktop systems, laptops, tablets, or even smartphones.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="choose_para ser_inner">
-                      <h3 className="mt-4 mb-3">2. Tailored To Hospitality’s Needs</h3>
-                      <p>
-                        POSApt is custom-built with Hospitality businesses in mind. You can easily customise menus, update prices, manage orders, and send orders directly to a dedicated kitchen printer. The best part is everything happens in real time.
-                      </p>
-                      <p>
-                        Any time a customer places an order, the order is instantaneously transferred to those who prepare the order. Your staff will be able to manage multiple tables much quicker and with precision.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-md-6 order-first order-md-last">
-                    <div className="chooseimg">
-                      <img
-                        src="assets/dist/image/reason/hospitality/tailored.png"
-                        className="img-fluid"
-                        alt="2. Tailored To Hospitality’s Needs"
-                        title="2. Tailored To Hospitality’s Needs"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="chooseimg">
-                      <img
-                        src="assets/dist/image/reason/hospitality/integration.png"
-                        className="img-fluid"
-                        alt="3. Integrated with Hospitality-Specific Systems"
-                        title="3. Integrated with Hospitality-Specific Systems"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="choose_para ser_inner">
-                      <h3 className="mt-4 mb-3">
-                        3. Integrated with Hospitality-Specific Systems
-                      </h3>
-                      <p>
-                        POSApt is designed to integrate seamlessly with essential systems such as Xero and MYOB. Moreover, you can also integrate 3rd party software like accounting software, online ordering system, and CRM tools.
-                      </p>
-                      <p>
-                        You won’t have to stop using the systems that you’re already familiar with and love. All the data can be seamlessly synchronised to our POS system with relative ease.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="choose_para ser_inner">
-                      <h3 className="mt-4 mb-3">4. Real-Time Reporting</h3>
-                      <p>
-                        POSApt provides real-time reporting on sales, inventory, and other key metrics, allowing you to make tactical business decisions. This feature is particularly useful for hospitality businesses that need to make quick decisions based on real-time data.
-                      </p>
-                      <p>
-                        All key metrics are visible on the dashboard of our POS system as soon as you log into it. You can also download daily, weekly or monthly reports to explore them even further.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-md-6 order-first order-md-last">
-                    <div className="chooseimg">
-                      <img
-                        src="assets/dist/image/reason/hospitality/realtime.png"
-                        className="img-fluid"
-                        alt="4. Real-Time Reporting"
-                        title="4. Real-Time Reporting"
-                      />
-                    </div>
-                  </div>
-                </div>
-                <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="chooseimg">
-                      <img
-                        src="assets/dist/image/reason/hospitality/business.png"
-                        className="img-fluid"
-                        alt="5. Franchise Business Support"
-                        title="5. Franchise Business Support"
-                      />
-                    </div>
-                  </div>
-                  <div className="col-md-6">
-                    <div className="choose_para ser_inner">
-                      <h3 className="mt-4 mb-3">5. Franchise Business Support</h3>
-                      <p>
-                        No matter the number of outlets your hospitality business has, POSApt can easily manage all your franchised businesses. And you do not have to install a separate software application for each of your outlets.
-                      </p>
-                      <p>
-                        The system will be installed on all your outlets but the will be managed by a centralised server. You can look at the performance of all the outlets with one single app.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="row align-items-center">
-                  <div className="col-md-6">
-                    <div className="choose_para ser_inner">
-                      <h3 className="mt-4 mb-3">6. Excellent Customer Support</h3>
-                      <p>
-                        Trouble-free operation in your business is what we’re looking for. That is why, we’re offering 24*7 dedicated support for both hardware and software issues.
-                      </p>
-                      <p>
-                        And, unlike other POS providers who tend to charge hefty fees, we don’t charge you any extra penny. So, don’t shy away from reaching out to us whenever you run into an issue with POSApt.
-                      </p>
-                    </div>
-                  </div>
-                  <div className="col-md-6 order-first order-md-last">
-                    <div className="chooseimg">
-                      <img
-                        src="assets/dist/image/reason/retail/customer_support.png"
-                        className="img-fluid"
-                        alt="Excellent Customer Support"
-                        title="Excellent Customer Support"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-          {/* pricing */}
-          <PricingSection />
+          <WhyChoose
+            {...whyChooseData}
+          />
+          <PosBanner/>
+          {/* <ReasonToChoose/> */}
 
           {/* faq */}
           <section

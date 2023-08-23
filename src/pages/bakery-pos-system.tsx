@@ -6,6 +6,7 @@ import Head from "next/head";
 import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
+import Script from "next/script";
 
 const Bakery = () => {
   const featureDatas = [
@@ -156,11 +157,11 @@ const Bakery = () => {
     <>
       <Head>
         <title>Bakery POS System | Point of Sale Software Australia</title>
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }}
         />
-        <script
+        <Script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }}
         />

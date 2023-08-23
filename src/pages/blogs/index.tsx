@@ -1,38 +1,18 @@
 /** @format */
 
-import React, { useEffect, useState } from "react";
-// import Link from "next/link";
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import BlogCard from "@/Components/Blogs/BlogCard";
 import Head from 'next/head';
-import { useDispatch, useSelector } from "react-redux";
 import BlogCardDarft from "@/Components/Blogs/BlogCardDarft";
 import { Pagination } from "antd";
-import { RootState } from "@/Redux/reducers";
 import { useRouter } from "next/router";
 
 const blogs = ({blogItems}:any) => {
   
-  // const { blogsDatas, page } = useSelector((state: RootState) => state.BlogsReducer);
   const router = useRouter();
-  // const dispatch = useDispatch();
-
   const handlePaginationChange = (pageNumber: number) => {
     router.push(`/blogs?page=${pageNumber}`);
   };
-
-
-  // useEffect(() => {
-  //     dispatch({
-  //       type: 'GET_BLOGS_REQUEST',
-  //       payload: {
-  //         Page: 1,
-  //         PageSize: 12
-  //       }
-  //     });
-  // }, []);
-
 
 
   return (
@@ -180,28 +160,4 @@ export async function getServerSideProps(context: any) {
     };
   }
 }
-
-
-// const getData = async () => {
-
-//   const url = 'https://develop.api.posapt.au/api/common/listWebsiteBlogs';
-//   const sendData = {
-//     Page: page,
-//     PageSize: 10
-//   };
-//   const query = await fetch(url, {
-//     method: 'POST',
-//     headers: {
-//       'Content-Type': 'application/json'
-//     },
-//     body: JSON.stringify(sendData)
-//   });
-//   const responseData = await query.json();
-//   dispatch({
-//     type: "UPDATE_DATA",
-//     payload: responseData.data
-//   })
-
-
-// }
 

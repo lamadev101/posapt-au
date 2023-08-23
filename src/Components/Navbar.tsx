@@ -80,8 +80,7 @@ const Navbar: FC = () => {
         >
           <Modal.Header closeButton>
             <Modal.Title style={{ fontSize: "20px" }}>
-              {" "}
-              Enquire Now{" "}
+              Enquire Now
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
