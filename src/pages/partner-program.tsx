@@ -2,10 +2,8 @@ import Layout from '@/Components/Layout'
 import MailAndCall from '@/Components/MailAndCall'
 import Head from 'next/head'
 import Link from 'next/link';
-import { useDispatch } from 'react-redux';
 
 const Partners = () => {
-  const dispatch = useDispatch();
 
   return (
     <>
@@ -69,7 +67,7 @@ const Partners = () => {
                     <h3 style={{ fontSize: "2rem" }} className="pt-md-4 pb-lg-2 text-center col-md-6 col-6 text-theme">
                       <span className="d-block text-dark">Per Month</span>
                       20%
-                      <span className="d-block text-dark">Commission <br /> For 3 Years</span>
+                      <span className="d-block text-dark">Commission <br /> For 2 Years</span>
                     </h3>
                   </div>
                 </section>

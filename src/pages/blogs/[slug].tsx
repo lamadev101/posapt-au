@@ -101,13 +101,13 @@ const BlogDetails = (props: any) => {
 
                 while (nextSibling && nextSibling.nodeType === Node.ELEMENT_NODE && nextSibling.nodeName !== 'H2') {
                     if (nextSibling.nodeName === 'H3') {
-                        const h3Text = nextSibling.textContent || ''; // Use optional chaining and provide a default value
+                        const h3Text = nextSibling.textContent || ''; 
                         h3Elements.push(h3Text);
                     }
                     nextSibling = nextSibling.nextSibling;
                 }
 
-                const h2Text = h2Element.textContent || ''; // Use optional chaining and provide a default value
+                const h2Text = h2Element.textContent || ''; 
                 headingData.push({
                     h2: h2Text,
                     h3: h3Elements,

@@ -4,9 +4,8 @@ import React from "react";
 import Layout from "../Components/Layout";
 import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../Redux/reducers";
-import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
@@ -14,7 +13,6 @@ import HeroSection from "@/sections/hero/HeroSection";
 
 const CustomPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
-  const dispatch = useDispatch();
   const customService =
   {
     "@context": "https://schema.org/",
@@ -263,9 +261,7 @@ const CustomPosSystem = () => {
             </div>
           </section>
 
-          <ContactFormSection
-            businessTitle="custom"
-          />
+
 
           {/* features */}
           <section className="pt-50 pb-50 bg-light mt-5">
@@ -504,8 +500,9 @@ const CustomPosSystem = () => {
             </div>
           </section>
 
-          {/* pricing */}
-          <PricingSection />
+          <ContactFormSection
+            businessTitle="custom"
+          />
 
           {/* faq */}
           <section

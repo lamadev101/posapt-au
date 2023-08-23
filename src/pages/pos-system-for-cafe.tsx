@@ -7,7 +7,6 @@ import Head from 'next/head';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../Redux/reducers";
 import MailAndCall from "@/Components/MailAndCall";
-import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import HeroSection from "@/sections/hero/HeroSection";
@@ -282,9 +281,7 @@ const PosSystemForCafe = () => {
             </div>
           </section>
 
-          <ContactFormSection
-            businessTitle="cafe"
-          />
+          
 
           {/* features */}
           <section className="pt-50 pb-50 bg-light mt-5">
@@ -538,9 +535,9 @@ const PosSystemForCafe = () => {
             </div>
           </section>
 
-          {/* pricing */}
-          <PricingSection />
-
+          <ContactFormSection
+            businessTitle="cafe"
+          />
           {/* faq */}
           <section
             className=" pb-5 pt-0 "

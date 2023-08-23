@@ -1,5 +1,4 @@
 import Link from 'next/link'
-import React from 'react'
 
 const TableOfContent = ({tags}:any) => {
   return (
@@ -10,7 +9,7 @@ const TableOfContent = ({tags}:any) => {
         <ul className="serlist" style={{marginLeft:"0px"}}>
           {tags.map((tag:any, index:number)=>(
             <li key={index}>
-              <a href={`#blogtitle${index}`}>{tag.h2}</a>
+              <a href={`#blogtitle${index}`} >{tag.h2}</a>
               <div style={{marginLeft:"10px"}}>
                 {tag?.h3?.map((h3:string, index:number)=>(
                   <div key={index} style={{color:"#696969", fontWeight: "400"}}>{h3}</div>

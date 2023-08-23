@@ -3,7 +3,6 @@
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import Head from 'next/head';
-import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
@@ -249,9 +248,7 @@ At the end of every month, analyse the data and reports to make informed busines
             desc="Let your restaurant run smoother than a cube of butter down the pan. Give your restaurant the upgrade it deserves with an advanced POS system designed with restaurateurs like you in mind."
             imgUrl="/assets/dist/image/store/restaurant_pos.webp"
           />
-          <ContactFormSection
-            businessTitle="restaurants"
-          />
+          
 
           {/* <!-- start pos --> */}
           <section className="mt-5">
@@ -343,9 +340,9 @@ At the end of every month, analyse the data and reports to make informed busines
             </div>
           </section>
 
-
-          <PricingSection/>
-
+          <ContactFormSection
+            businessTitle="restaurants"
+          />
           {/* <!-- faq --> */}
           <section className="py-5 mb-lg-2 bg-custom">
             <div className="container">

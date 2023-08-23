@@ -4,7 +4,6 @@ import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import ContactFormSection from "@/sections/ContactFormSection";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
-import PricingSection from "@/sections/PricingSection";
 import Head from "next/head";
 
 const Grocery = () => {
@@ -251,9 +250,7 @@ Sales Reporting: The system collects data on sales, including the number of tran
             imgUrl="/assets/dist/image/store/grocery_pos.webp"
           />
 
-          <ContactFormSection
-            businessTitle="grocery store"
-          />
+          
 
           {/* <!-- start pos --> */}
           <section className="mt-5">
@@ -381,8 +378,9 @@ Sales Reporting: The system collects data on sales, including the number of tran
             </div>
           </section>
 
-          {/* pricing */}
-          <PricingSection/>
+          <ContactFormSection
+            businessTitle="grocery store"
+          />
 
           {/* <!-- faq --> */}
           <section className="py-5 mb-lg-2 bg-custom">

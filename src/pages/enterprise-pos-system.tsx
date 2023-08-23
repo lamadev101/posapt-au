@@ -6,7 +6,6 @@ import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../Redux/reducers";
-import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
@@ -14,7 +13,6 @@ import HeroSection from "@/sections/hero/HeroSection";
 
 const EnterprisePosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
-  const dispatch = useDispatch();
   const enterpriseService =
   {
     "@context": "https://schema.org/",
@@ -270,9 +268,6 @@ const EnterprisePosSystem = () => {
             </div>
           </section>
 
-          <ContactFormSection
-            businessTitle="businesses"
-          />
 
           {/* features */}
           <section className="pt-50 pb-50 bg-light mt-5">
@@ -512,8 +507,9 @@ const EnterprisePosSystem = () => {
             </div>
           </section>
           
-          {/* pricing */}
-          <PricingSection />
+          <ContactFormSection
+            businessTitle="businesses"
+          />
 
           {/* faq */}
           <section

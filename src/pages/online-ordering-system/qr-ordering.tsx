@@ -3,10 +3,8 @@ import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import { useDispatch } from "react-redux";
 import Head from 'next/head';
-import { Antic_Slab } from "next/font/google";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
-import OosPricingSection from "@/sections/OosPricingSection";
 import HeroSection from "@/sections/hero/HeroSection";
 
 const QROrdering: FC = () => {
@@ -273,9 +271,7 @@ const QROrdering: FC = () => {
                         </div>
                     </section>
 
-                    <ContactFormSection
-                        businessTitle="businesses"
-                    />
+                   
 
                     <section className="">
                         <div className="container">
@@ -342,7 +338,10 @@ const QROrdering: FC = () => {
                         </div>
                     </section>
 
-                    <OosPricingSection />
+                    <ContactFormSection
+                        businessTitle="businesses"
+                        price="119"
+                    />
 
                     {/* <!-- faq --> */}
                     <section className="py-5 mb-lg-2 bg-custom">

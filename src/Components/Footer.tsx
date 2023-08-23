@@ -101,14 +101,14 @@ const Footer: FC = () => {
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/custom-pos-system"}>Custom POS System</Link>
                 </li>
-                <li>
+                {/* <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/pizza-pos"}>Pizza Pos</Link>
                 </li>
                 <li>
                   <i className="bx bx-chevron-right" />{" "}
                   <Link href={"/quick-service-restaurant-pos"}>QSR Pos</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 
@@ -134,12 +134,12 @@ const Footer: FC = () => {
                 <li>
                   <Link href="/pos-system-canberra">Canberra</Link>
                 </li>
-                <li>
+                {/* <li>
                   <Link href="/retail-pos-system/jewellery-store">Jewellery Store</Link>
                 </li>
                 <li>
                   <Link href="/retail-pos-system/gift-and-toy-shop">Gift and Toy Shop</Link>
-                </li>
+                </li> */}
               </ul>
             </div>
 

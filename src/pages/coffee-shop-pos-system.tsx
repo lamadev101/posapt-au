@@ -6,7 +6,6 @@ import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../Redux/reducers";
-import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
@@ -249,49 +248,6 @@ const coffeeShopPosSystem = () => {
                     </div>
                   </div>
 
-                  {/* <div className="col-md-4">
-            <div className="card border-0  rounded-xs h-100">
-              <div className="card-body service_item">
-                <div className="ser_inner ">
-                  <div className="ser_img">
-                    <img
-                      src="assets/dist/image/app.svg"
-                      className="img-fluid h-100"
-                      alt=""
-                      data-pagespeed-url-hash={1416024010}
-                    />
-                  </div>
-                  <h3 className="mt-4 mb-3">Employee Management</h3>
-                </div>
-                <p>
-                Keeping your staff happy and productive is essential to your coffee shop's success. That’s why this system can help you manage schedules, and track work hours, and payroll, so you can focus on brewing the perfect cup.
-                </p>
-              </div>
-            </div>
-          </div> */}
-
-
-                  {/* <div className="col-md-4">
-            <div className="card border-0  rounded-xs h-100">
-              <div className="card-body service_item">
-                <div className="ser_inner ">
-                  <div className="ser_img">
-                    <img
-                      src="assets/dist/image/app.svg"
-                      className="img-fluid h-100"
-                      alt=""
-                      data-pagespeed-url-hash={1416024010}
-                    />
-                  </div>
-                  <h3 className="mt-4 mb-3">Customer Data Collection</h3>
-                </div>
-                <p>
-                Want to know what your customers love and what they don't? The POS system can collect valuable data on their buying habits and preferences, so you can create targeted marketing campaigns and keep them coming back for more.
-                </p>
-              </div>
-            </div>
-          </div> */}
-
                   <div className="col-md-4">
                     <div className="card border-0  rounded-xs h-100">
                       <div className="card-body service_item">
@@ -313,34 +269,12 @@ const coffeeShopPosSystem = () => {
                       </div>
                     </div>
                   </div>
-                  {/* <div className="col-md-4">
-            <div className="card border-0  rounded-xs h-100">
-              <div className="card-body service_item">
-                <div className="ser_inner ">
-                  <div className="ser_img">
-                    <img
-                      src="assets/dist/image/app.svg"
-                      className="img-fluid h-100"
-                      alt=""
-                      data-pagespeed-url-hash={1416024010}
-                    />
-                  </div>
-                  <h3 className="mt-4 mb-3">Payment Processing</h3>
-                </div>
-                <p>
-                Cash? Card? Mobile payments? No worries! The POS can handle it all, so your customers can pay the way they want, and you can keep the line moving.
-                </p>
-              </div>
-            </div>
-          </div> */}
                 </div>
               </div>
             </div>
           </section>
 
-          <ContactFormSection
-            businessTitle="coffee shop"
-          />
+          
 
           {/* features */}
           <section className="pt-50 pb-50 bg-light mt-5">
@@ -595,8 +529,9 @@ const coffeeShopPosSystem = () => {
             </div>
           </section>
 
-          {/* pricing */}
-          <PricingSection />
+          <ContactFormSection
+            businessTitle="coffee shop"
+          />
 
           {/* faq */}
           <section

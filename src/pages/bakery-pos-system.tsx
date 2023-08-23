@@ -3,7 +3,6 @@
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import Head from "next/head";
-import PricingSection from "@/sections/PricingSection";
 import ContactFormSection from "@/sections/ContactFormSection";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
@@ -235,9 +234,7 @@ const Bakery = () => {
             imgUrl="/assets/dist/image/store/bakery_pos.webp"
           />
 
-          <ContactFormSection
-            businessTitle="bakery"
-          />
+
           {/* <!-- start pos --> */}
           <section className="mt-5">
             <div className="container">
@@ -358,8 +355,9 @@ const Bakery = () => {
             </div>
           </section>
           
-          {/* pricing */}
-          <PricingSection />
+          <ContactFormSection
+            businessTitle="bakery"
+          />
 
           {/* <!-- faq --> */}
           <section className="py-5 mb-lg-2 bg-custom">

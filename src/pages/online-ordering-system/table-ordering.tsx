@@ -5,7 +5,6 @@ import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
-import OosPricingSection from "@/sections/OosPricingSection";
 import HeroSection from "@/sections/hero/HeroSection";
 
 const TableOrdering: FC = () => {
@@ -281,9 +280,7 @@ const TableOrdering: FC = () => {
                         </div>
                     </section>
 
-                    <ContactFormSection
-                        businessTitle="businesses"
-                    />
+
                     <section className="">
                         <div className="container">
                             <div className="row bg-light p-2 p-md-5">
@@ -349,7 +346,10 @@ const TableOrdering: FC = () => {
                         </div>
                     </section>
 
-                    <OosPricingSection />
+                    <ContactFormSection
+                        businessTitle="businesses"
+                        price="119"
+                    />
 
                     {/* <!-- faq --> */}
                     <section className="py-5 mb-lg-2 bg-custom">
