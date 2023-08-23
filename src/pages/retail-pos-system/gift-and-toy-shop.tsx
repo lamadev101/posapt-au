@@ -113,7 +113,7 @@ const GiftToyShop = () => {
           tagline="The Gift of Streamlined Operations with our"
           title="Sell Smarter with Gift & Toy Shop POS System"
           desc="Big or small, gift or souvenir, enhance the charm of your shop and make selling simpler with POSApt. And no matter how many locations you want to capitalise, our POS system can handle it all. Try today!"
-          imgUrl="/assets/dist/image/store/restaurant_pos.webp"
+          imgUrl="/assets/dist/image/gift.webp"
         />
 
         {/* An Advanced Gift & Toy Shop POS for Australian Businesses*/}

@@ -110,7 +110,7 @@ const PizzaPos = () => {
           tagline="Slice, Serve, Succeed"
           title="Point of Sale System for Pizza Shops in Australia"
           desc="Do you sell Pizza? Enhance the efficiency and success of your pizza shop with dedicated Pizza POS software. From easy order management to making customers happy, it’s time to redefine how you manage your pizzeria."
-          imgUrl="/assets/dist/image/store/restaurant_pos.webp"
+          imgUrl="/assets/dist/image/pizza.webp"
         />
 
         {/* Cloud-Based POS System for Pizza Shops*/}

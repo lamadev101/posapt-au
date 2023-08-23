@@ -114,7 +114,7 @@ const JewelleryStore = () => {
                     tagline="Sparkling Stones to Sparkling Sales"
                     title="Jewellery POS System for Australian Businesses"
                     desc="The jewellery business in Australia is as prestigious as ever. Every purchase needs to make the buyer feel valued and respected. One thing that would absolutely convey this feeling is an advanced Jewellery POS System. Try for free for 30 Days."
-                    imgUrl="/assets/dist/image/store/restaurant_pos.webp"
+                    imgUrl="/assets/dist/image/jewellery-shop.webp"
                 />
 
                 {/* Why POSApt’s Jewellery Store POS? */}
@@ -137,7 +137,12 @@ const JewelleryStore = () => {
                             </div>
                             <div className="col-md-6 m-auto ">
                                 {/* <div className="orderimg primg mt-3 mt-lg-0"> */}
-                                <img src="/assets/dist/image/location/4.webp" className="img-fluid h-100 w-100" alt="POS System for Melbourne" title="POS System for Melbourne" />
+                                <img 
+                                    src="/assets/dist/image/location/4.webp" 
+                                    alt="POS System for Melbourne" 
+                                    title="POS System for Melbourne" 
+                                    className="img-fluid h-100 w-100" 
+                                />
                                 {/* </div> */}
 
                             </div>
