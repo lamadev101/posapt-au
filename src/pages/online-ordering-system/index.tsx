@@ -1,14 +1,12 @@
 import React from "react";
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import Link from "next/link";
 import MailAndCall from "@/Components/MailAndCall";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const OnlineOrderingSystem = () => {
-    const dispatch = useDispatch();
 
     const managementSystemData = [
         {
