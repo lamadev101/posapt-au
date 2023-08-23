@@ -182,7 +182,8 @@ const HospitalityPosSystem = () => {
     ]
   }
   const reasonToChooseData = {
-    title: "5 Reasons To Choose POSApt Hospitality POS Software",
+    firstTitle: "5 Reasons To Choose",
+    lastTitle: "POSApt Hospitality POS Software",
     content: [
       {
         imgUrl: "d6.png",
@@ -195,7 +196,7 @@ const HospitalityPosSystem = () => {
         ]
       },
       {
-        imgUr: "d2.png",
+        imgUrl: "d2.png",
         title: "Tailored To Hospitality’s Needs",
         desc: "POSApt is custom-built with Hospitality businesses in mind. You can easily customize menus, and item options, update prices, take or manage orders, and even print orders directly to a dedicated kitchen printer. And the best part; everything happens in real-time.",
         list: [
@@ -205,7 +206,7 @@ const HospitalityPosSystem = () => {
         ]
       },
       {
-        imgUr: "d6.png",
+        imgUrl: "d6.png",
         title: "Integrated with Hospitality-Specific Systems",
         desc: "POSApt is designed to integrate seamlessly with essential systems such as Xero and MYOB accounting software, inventory management, online ordering system, and customer relationship management (CRM) tools.",
         list: [
@@ -215,7 +216,7 @@ const HospitalityPosSystem = () => {
         ]
       },
       {
-        imgUr: "d4.png",
+        imgUrl: "d4.png",
         title: "Real-Time Reporting",
         desc: "POSApt provides real-time reporting on sales, inventory, and other key metrics, allowing you to make informed business decisions on the go. This feature is particularly useful for hospitality businesses that need to make quick decisions based on real-time data.",
         list: [
@@ -225,7 +226,7 @@ const HospitalityPosSystem = () => {
         ]
       },
       {
-        imgUr: "d5.png",
+        imgUrl: "d5.png",
         title: "Franchise Business Support",
         desc: "No matter the number of outlets your hospitality business has, POSApt has the power to support and manage all franchised businesses without the need for a separate software application for each of your outlets.",
         list: [
@@ -321,7 +322,9 @@ const HospitalityPosSystem = () => {
             {...whyChooseData}
           />
           <PosBanner/>
-          {/* <ReasonToChoose/> */}
+          <ReasonToChoose
+            {...reasonToChooseData}
+          />
 
           {/* faq */}
           <section
