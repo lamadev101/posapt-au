@@ -39,14 +39,12 @@ const PosSysHeroSection: React.FC<PosSysHeroSectionProps> = ({ tagline, title, d
           </div>
           <div className="col-12 col-md-5">
             <div className="order_top_img mt-5 mt-md-0">
-              <span>
               <img 
                 src={imgUrl} 
                 alt={title}
                 title={title}
                 className="welcome-animation d-block ml-auto" 
               />
-              </span>
             </div>
           </div>
         </div>

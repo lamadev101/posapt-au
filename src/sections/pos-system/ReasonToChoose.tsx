@@ -29,8 +29,7 @@ const ReasonToChoose: React.FC<ReasonToChooseDataProps> = ({ firstTitle, lastTit
           {content.map((item, index) => (
             <div
               key={index}
-              className="row align-items-center"
-              // className={`align-items-center ${index % 2 === 0 ? "row" : "row-reverse"}`}
+              className={`align-items-center row ${index % 2 !== 0 && "flex-row-reverse"}`}
             >
                 <div className="col-md-6">
                   <div className="chooseimg">

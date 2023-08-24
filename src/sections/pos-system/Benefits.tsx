@@ -35,12 +35,13 @@ const Benefits: React.FC<BenefitsDataProps> = ({ title, imgUrl, content }) => {
                     />
                     <div className="media-body">
                       <h6 className="mb-2">
-                        {item.title} 
+                        <i className="fas fa-check-square me-3 d-md-none"></i>
+                        {item.title}
                       </h6>
                       <p>{item.desc}</p>
                     </div>
                   </div>
-                  {index !== content.length - 1  && <hr className="bg-white" />}
+                  {index !== content.length - 1 && <hr className="bg-white" />}
                 </div>
               ))}
             </div>

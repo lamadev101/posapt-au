@@ -6,12 +6,13 @@ import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
 import { useSelector } from "react-redux";
 import { RootState } from "../Redux/reducers";
-import MailAndCall from "@/Components/MailAndCall";
-import { Benefits, PosBanner, PosHeroSection, ReasonToChoose, WhyChoose } from "@/sections/pos-system";
+import { Benefits, FAQ, PosBanner, PosHeroSection, ReasonToChoose, TestSection, WhyChoose } from "@/sections/pos-system";
 
 
 const HospitalityPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
+
+  // SEO schemas
   const hospitalityService =
   {
     "@context": "https://schema.org/",
@@ -130,6 +131,7 @@ const HospitalityPosSystem = () => {
     }]
   }
 
+  // Body Content
   const benefitsData = {
     title: "Benefits Of A Hospitality Point Of Sale Software",
     imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
@@ -151,7 +153,6 @@ const HospitalityPosSystem = () => {
       },
     ]
   }
-
   const whyChooseData = {
     title: "Why Choose POSapt's E-Commerce System?",
     content: [
@@ -311,7 +312,7 @@ const HospitalityPosSystem = () => {
         <>
           <ScrollToTop />
           <PosHeroSection
-            title="POSapt Hospitality POS System"
+            title="POSApt Hospitality POS System"
             desc="Comprehensive yet intuitive point-of-sale system for hospitality businesses"
             imgUrl="/assets/dist/image/Best_POS_System_Software.webp"
           />
@@ -325,193 +326,8 @@ const HospitalityPosSystem = () => {
           <ReasonToChoose
             {...reasonToChooseData}
           />
-
-          {/* faq */}
-          <section
-            className=" pb-5 pt-0"
-            style={{
-              background:
-                "radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%)"
-            }}
-          >
-            <div className="container">
-              <div className="row py-2 py-md-4 py-lg-5">
-                <MailAndCall />
-                <div className="col-md-7 offset-xl-1">
-                  <div className="accordion" id="faq">
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h3 className="accordion-header" id="q1-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q1"
-                          aria-expanded="false"
-                          aria-controls="q1"
-                        >
-                          What is a Hospitality POS System?
-                        </button>
-                      </h3>
-                      <div
-                        id="q1"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q1-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            A Hospitality Point of Sale System is a business solution that helps businesses manage their sales transactions and inventory efficiently. It is the combination of both hardware and software that streamlines business operations.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h3 className="accordion-header" id="q2-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q2"
-                          aria-expanded="false"
-                          aria-controls="q2"
-                        >
-                          What are the benefits of using a Hospitality POS System?
-                        </button>
-                      </h3>
-                      <div
-                        id="q2"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q2-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            Some benefits of using a Hospitality POS Solution include:
-                          </p>
-                          <ul
-                            style={{
-                              listStyleType: "disc",
-                              paddingLeft: "20px",
-                            }}
-                          >
-                            <li>Improved efficiency in managing sales transactions and inventory</li>
-                            <li>Real-time reporting and analytics</li>
-                            <li>Better accuracy in order taking</li>
-                            <li>Reducing manual errors</li>
-                            <li>Accepts various forms of payment</li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h3 className="accordion-header" id="q3-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q3"
-                          aria-expanded="false"
-                          aria-controls="q3"
-                        >
-                          How much does Hospitality POS Software cost?
-                        </button>
-                      </h3>
-                      <div
-                        id="q3"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q3-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            The cost of hospitality POS software ranges anywhere between $60 to $300, depending upon the business need. POSApt has a starting price of $66/month for the basic setup.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h3 className="accordion-header" id="q4-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q4"
-                          aria-expanded="false"
-                          aria-controls="q4"
-                        >
-                          How long does it take to set up a Hospitality POS System?
-                        </button>
-                      </h3>
-                      <div
-                        id="q4"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q4-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            Normally, the setup time is around 1 - 2 hours. Given that you already have the hardware system ready. If not, the time will be consumed to purchase dedicated hardware based on your need. However, cloud-based systems such as POSApt can be set up quickly as compared to on-premise systems.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h3 className="accordion-header" id="q5-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q5"
-                          aria-expanded="false"
-                          aria-controls="q5"
-                        >
-                          What type of support is available for Hospitality POS Systems?
-                        </button>
-                      </h3>
-                      <div
-                        id="q5"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q5-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            Most Hospitality POS System providers offer various types of support, including phone and email support. Some providers may also offer additional support services, such as hardware repair and software customization. For POSApt, we offer all the above-mentioned support services almost instantly when you need us the most. Because we understand even the smallest of delays can have a massive impact on your business.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    {/* <div className="accordion-item border-0 rounded-3 shadow-sm">
-                      <h3 className="accordion-header" id="q6-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q6"
-                          aria-expanded="false"
-                          aria-controls="q6"
-                        >
-                          How long does it take to set up a Hospitality POS System?
-                        </button>
-                      </h3>
-                      <div
-                        id="q6"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q6-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            The time it takes to set up a POS System for your hospitality business varies on a number of factors such as the system provider, the complexity of the system and the number of locations you want to set it up, for instance; in a franchised business. Cloud-based systems such as POSApt can be set up quickly, while on-premises systems may take longer to install and configure.
-                          </p>
-                        </div>
-                      </div>
-                    </div> */}
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <FAQ/>
+          <TestSection/>
         </>
       </Layout>
     </>

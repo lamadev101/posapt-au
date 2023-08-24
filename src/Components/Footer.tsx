@@ -143,6 +143,12 @@ const Footer: FC = () => {
                 <li>
                   <Link href="/retail-pos-system/clothing-store">Clothing Store</Link>
                 </li>
+                <li>
+                  <Link href="/retail-pos-system/bike-and-bicycle-shop">Bike and Bicycle Shop</Link>
+                </li>
+                <li>
+                  <Link href="/retail-pos-system/salon-and-spa">Salon and Spa</Link>
+                </li>
               </ul>
             </div>
 
