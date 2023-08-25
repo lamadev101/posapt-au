@@ -94,7 +94,7 @@ const ecommerce = () => {
           {...customerSectionData2}
         />
         <FAQ 
-          {...faqData}
+          faqData = {faqData}
         />
       </Layout>
     </>
