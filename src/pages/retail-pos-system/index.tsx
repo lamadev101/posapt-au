@@ -8,8 +8,9 @@ import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import HeroSection from "@/sections/hero/HeroSection";
 import { RootState } from '@/Redux/reducers';
-import { Layout } from 'antd';
 import ScrollToTop from '@/Helpers/ScrollToTop';
+import Layout from '@/Components/Layout';
+import { StoreList } from '@/sections/pos-system';
 
 
 const RetailPosSystem = () => {
@@ -271,7 +272,7 @@ const RetailPosSystem = () => {
               </div>
             </div>
           </section>
-
+          <StoreList/>
           <ContactFormSection
             businessTitle="retail"
           />

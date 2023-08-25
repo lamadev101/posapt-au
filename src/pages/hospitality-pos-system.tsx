@@ -6,7 +6,8 @@ import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
 import { useSelector } from "react-redux";
 import { RootState } from "../Redux/reducers";
-import { Benefits, FAQ, PosBanner, PosHeroSection, ReasonToChoose, TestSection, WhyChoose } from "@/sections/pos-system";
+import { Benefits, ReasonToChoose } from "@/sections/pos-system";
+import { FAQ, HeroSection, PosBanner, WhyChoose } from "@/sections";
 
 
 const HospitalityPosSystem = () => {
@@ -311,7 +312,7 @@ const HospitalityPosSystem = () => {
       <Layout>
         <>
           <ScrollToTop />
-          <PosHeroSection
+          <HeroSection
             title="POSApt Hospitality POS System"
             desc="Comprehensive yet intuitive point-of-sale system for hospitality businesses"
             imgUrl="/assets/dist/image/Best_POS_System_Software.webp"
@@ -327,7 +328,6 @@ const HospitalityPosSystem = () => {
             {...reasonToChooseData}
           />
           <FAQ/>
-          <TestSection/>
         </>
       </Layout>
     </>

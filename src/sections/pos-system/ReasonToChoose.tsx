@@ -34,10 +34,11 @@ const ReasonToChoose: React.FC<ReasonToChooseDataProps> = ({ firstTitle, lastTit
                 <div className="col-md-6">
                   <div className="chooseimg">
                     <img
-                      src={`/assets/dist/image/possystem/hospitality/${item.imgUrl}`}
+                      src={`/assets/dist/image/posSys/hospitality/${item.imgUrl}`}
                       className="img-fluid"
                       alt={item.title}
                       title={item.title}
+                      style={{objectFit:'cover'}}
                     />
                   </div>
                 </div>

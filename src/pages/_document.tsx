@@ -63,7 +63,7 @@ gtag('config', 'G-QM35YBD0EJ');`;
             integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
             defer
           ></script> */}
-          <Script src="/assets/dist/js/bootstrap.bundle.min.js" defer></Script>
+          <script src="/assets/dist/js/bootstrap.bundle.min.js" defer></script>
           <Script
             dangerouslySetInnerHTML={{
               __html: `
