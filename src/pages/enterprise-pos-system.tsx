@@ -10,6 +10,7 @@ import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
 import HeroSection from "@/sections/hero/HeroSection";
+import Script from "next/script";
 
 const EnterprisePosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
@@ -108,10 +109,10 @@ const EnterprisePosSystem = () => {
       <Head>
         <title>Enterprise POS System | Enterprise Point of Sale Software</title>
 
-        <script type="application/ld+json"
+        <Script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(enterpriseService) }}
         />
-        <script type="application/ld+json"
+        <Script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(enterpriseFaq) }}
         />
         <meta

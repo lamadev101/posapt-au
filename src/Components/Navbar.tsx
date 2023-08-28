@@ -80,8 +80,7 @@ const Navbar: FC = () => {
         >
           <Modal.Header closeButton>
             <Modal.Title style={{ fontSize: "20px" }}>
-              {" "}
-              Enquire Now{" "}
+              Enquire Now
             </Modal.Title>
           </Modal.Header>
           <Modal.Body>
@@ -172,7 +171,11 @@ const Navbar: FC = () => {
                 />
               </div>
               <ul className="navbar-nav ms-md-auto mb-2 mb-md-0">
-
+              <li className="nav-item">
+                  <Link className="nav-link active" href={"/cloud-pos"}>
+                    Cloud pos
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link active" href={"/online-ordering-system"}>
                     OOS

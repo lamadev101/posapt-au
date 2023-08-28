@@ -4,7 +4,7 @@ import React from "react";
 import Layout from "../Components/Layout";
 import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../Redux/reducers";
 import MailAndCall from "@/Components/MailAndCall";
 import ContactFormSection from "@/sections/ContactFormSection";
@@ -14,7 +14,8 @@ import HeroSection from "@/sections/hero/HeroSection";
 
 const HospitalityPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
-  const dispatch = useDispatch();
+
+  // SEO schemas
   const hospitalityService =
   {
     "@context": "https://schema.org/",
@@ -132,6 +133,114 @@ const HospitalityPosSystem = () => {
       }
     }]
   }
+
+  // Body Content
+  const benefitsData = {
+    title: "Benefits Of A Hospitality Point Of Sale Software",
+    imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+    content: [
+      {
+        imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+        title: "Improved Customer Service",
+        desc: "The right POS software enables your hospitality business to take orders quickly, process payments efficiently, and manage tables effectively. It also enables your business to offer more personalised services and rewards to your customers letting them know that you care about them.",
+      },
+      {
+        imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+        title: "Streamlined Operations",
+        desc: "The right POS software enables your hospitality business to take orders quickly, process payments efficiently, and manage tables effectively. It also enables your business to offer more personalised services and rewards to your customers letting them know that you care about them.",
+      },
+      {
+        imgUrl: "/assets/dist/image/orderingSystem/of5.webp",
+        title: "Accurate Pricing",
+        desc: "The primary difference you'll notice when you install the right Hospitality POS system is that there are fewer manual errors and most of the business processes are achieved quicker than ever. That is the beauty of getting a cloud-based POS system for your hospitality business.",
+      },
+    ]
+  }
+  const whyChooseData = {
+    title: "Why Choose POSapt's E-Commerce System?",
+    content: [
+      {
+        title: "Better Inventory Management",
+        desc: "Our simple, precise and real-time inventory system keeps your business running smoothly. With accurate and up-to-date information about your inventory, you can make informed decisions to increase profitability and provide a better customer experience.",
+      },
+      {
+        title: "Direct Integration to POS",
+        desc: "Direct Integration to POS Our E-Commerce System integrates seamlessly with our POS giving you access to all incoming orders from a single point-of-sale (POS) system to eliminate the need to switch between multiple applications for order and sales tracking.",
+      },
+      {
+        title: "Safe & Secure Payment Methods",
+        desc: "Offer multiple payment options including PayPal, Google Pay, and Stripe through our Online Ordering System. This allows your customers to choose the most convenient payment method for them, increasing your sales and their happiness.",
+      },
+      {
+        title: "Custom Website Inclusive",
+        desc: "Custom Website Inclusive We will design and build a custom website for you that is visually appealing, and fully functional. It will also allow your customers to purchase goods and services, all at no additional cost to you.",
+      },
+      {
+        title: "E-Gift Card",
+        desc: "Keep your customers interested, happy and tied to you with the help of POSApt-enabled gift cards, vouchers and loyalty points.",
+      },
+      {
+        title: "Loyalty and Marketing",
+        desc: "Our E-Commerce System can keep your customers interested, happy and tied to you with the help of POSApt vouchers and loyalty points.",
+      },
+    ]
+  }
+  const reasonToChooseData = {
+    firstTitle: "5 Reasons To Choose",
+    lastTitle: "POSApt Hospitality POS Software",
+    content: [
+      {
+        imgUrl: "d6.png",
+        title: "Simple & Intuitive",
+        desc: "POSApt offers an easy-to-use interface that requires minimal training but doesn’t lack anything in the features department. The interface is designed to simplify transactions and minimize errors, allowing staff to focus on providing excellent customer service.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUrl: "d2.png",
+        title: "Tailored To Hospitality’s Needs",
+        desc: "POSApt is custom-built with Hospitality businesses in mind. You can easily customize menus, and item options, update prices, take or manage orders, and even print orders directly to a dedicated kitchen printer. And the best part; everything happens in real-time.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUrl: "d6.png",
+        title: "Integrated with Hospitality-Specific Systems",
+        desc: "POSApt is designed to integrate seamlessly with essential systems such as Xero and MYOB accounting software, inventory management, online ordering system, and customer relationship management (CRM) tools.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUrl: "d4.png",
+        title: "Real-Time Reporting",
+        desc: "POSApt provides real-time reporting on sales, inventory, and other key metrics, allowing you to make informed business decisions on the go. This feature is particularly useful for hospitality businesses that need to make quick decisions based on real-time data.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+      {
+        imgUrl: "d5.png",
+        title: "Franchise Business Support",
+        desc: "No matter the number of outlets your hospitality business has, POSApt has the power to support and manage all franchised businesses without the need for a separate software application for each of your outlets.",
+        list: [
+          "Speed Up Sales",
+          "Manage Multiple Stores",
+          "Speed Up Sales",
+        ]
+      },
+    ]
+  }
   return (
     <>
       <Head>
@@ -206,10 +315,9 @@ const HospitalityPosSystem = () => {
         <>
           <ScrollToTop />
           <HeroSection
-            tagline="The Choice of Top Hospitality Establishments"
-            title="POSApt’s Hospitality POS System"
-            desc="A Hospitality-centric cloud-based POS system delivering flexibility and scalability for 2023’s business needs. Manage sales, orders, inventories, payments, customer relationships & employee relationships with one complete system."
-            imgUrl="assets/dist/image/ServicesImages/hospitality.webp"
+            title="POSApt Hospitality POS System"
+            desc="Comprehensive yet intuitive point-of-sale system for hospitality businesses"
+            imgUrl="/assets/dist/image/Best_POS_System_Software.webp"
           />
 
           {/* benefits */}

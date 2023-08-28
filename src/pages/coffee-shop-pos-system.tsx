@@ -10,6 +10,7 @@ import ContactFormSection from "@/sections/ContactFormSection";
 import SignUpSection from "@/sections/SignUpSection";
 import MailAndCall from "@/Components/MailAndCall";
 import HeroSection from "@/sections/hero/HeroSection";
+import Script from "next/script";
 
 const coffeeShopPosSystem = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
@@ -114,10 +115,10 @@ const coffeeShopPosSystem = () => {
     <>
       <Head>
         <title>Coffee Shop POS System | Coffee Shop Point of Sale</title>
-        <script type="application/ld+json"
+        <Script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(coffeeshopService) }}
         />
-        <script type="application/ld+json"
+        <Script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(coffeeshopFaq) }}
         />
         <meta

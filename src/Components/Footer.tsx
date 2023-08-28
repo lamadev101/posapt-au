@@ -134,12 +134,21 @@ const Footer: FC = () => {
                 <li>
                   <Link href="/pos-system-canberra">Canberra</Link>
                 </li>
-                {/* <li>
+                 <li>
                   <Link href="/retail-pos-system/jewellery-store">Jewellery Store</Link>
                 </li>
                 <li>
                   <Link href="/retail-pos-system/gift-and-toy-shop">Gift and Toy Shop</Link>
-                </li> */}
+                </li>
+                <li>
+                  <Link href="/retail-pos-system/clothing-store">Clothing Store</Link>
+                </li>
+                <li>
+                  <Link href="/retail-pos-system/bike-and-bicycle-shop">Bike and Bicycle Shop</Link>
+                </li>
+                <li>
+                  <Link href="/retail-pos-system/salon-and-spa">Salon and Spa</Link>
+                </li>
               </ul>
             </div>
 
