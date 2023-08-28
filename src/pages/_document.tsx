@@ -1,7 +1,6 @@
 /** @format */
 
 import { Head, Html, Main, NextScript } from "next/document";
-import Script from "next/script";
 
 export default function Document() {
   const gtmTags = `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -20,10 +19,10 @@ gtag('config', 'G-QM35YBD0EJ');`;
     <Html lang="en">
       <Head>
         <>
-          <Script dangerouslySetInnerHTML={{ __html: gtmTags }} />
+          <script dangerouslySetInnerHTML={{ __html: gtmTags }} />
           {/* Google tag (gtag.js) */}
-          <Script async src="https://www.googletagmanager.com/gtag/js?id=G-QM35YBD0EJ"></Script>
-          <Script dangerouslySetInnerHTML={{ __html: JSON.stringify(gtag) }} />
+          <script async src="https://www.googletagmanager.com/gtag/js?id=G-QM35YBD0EJ"></script>
+          <script dangerouslySetInnerHTML={{ __html: JSON.stringify(gtag) }} />
           <link href="/assets/dist/css/bootstrap.min.css" rel="stylesheet" />
           <link
             href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap"
@@ -64,7 +63,7 @@ gtag('config', 'G-QM35YBD0EJ');`;
             defer
           ></script> */}
           <script src="/assets/dist/js/bootstrap.bundle.min.js" defer></script>
-          <Script
+          <script
             dangerouslySetInnerHTML={{
               __html: `
                 $(window).on('scroll', function() {

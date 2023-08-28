@@ -4,7 +4,6 @@ import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import Head from "next/head";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
-import Script from "next/script";
 import { ContactFormSection } from "@/sections";
 
 const Beverages = () => {
@@ -154,10 +153,10 @@ const Beverages = () => {
     <>
       <Head>
         <title>Beverage POS | Liquor Store POS System</title>
-        <Script type="application/ld+json"
+        <script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(service) }}
         />
-        <Script type="application/ld+json"
+        <script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(faq) }}
         />
         <meta

@@ -4,16 +4,14 @@ import React from "react";
 import Layout from "../Components/Layout";
 import ScrollToTop from "../Helpers/ScrollToTop";
 import Head from 'next/head';
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../Redux/reducers";
 import MailAndCall from "@/Components/MailAndCall";
-
 import HeroSection from "@/sections/hero/HeroSection";
 import { ContactFormSection, SignUpSection } from "@/sections";
 
 const PosSystemForCafe = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);
-  const dispatch = useDispatch();
   const cafeService =
   {
     "@context": "https://schema.org/",
@@ -117,6 +115,7 @@ const PosSystemForCafe = () => {
       }
     }]
   }
+
   return (
     <>
       <Head>
@@ -349,7 +348,7 @@ const PosSystemForCafe = () => {
                   </div>
                 </div>
                 <div className="col ">
-                  <div className="card h-100 service_box border-0 ">
+                  <div className="card h-100 service_box border-0">
                     <div className="card-body ">
                       <div className="card_icon ">
                         <i className="fas fa-users" />
