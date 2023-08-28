@@ -1,7 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import { ContactFormSection, SignUpSection } from '@/sections';
-import LocationHeroSection from '@/sections/hero/LocationHeroSection';
+import { ContactFormSection, LocationHeroSection, SignUpSection } from '@/sections';
 import Head from 'next/head';
 
 const PosSystemAdelaide = () => {
