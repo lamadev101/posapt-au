@@ -1,5 +1,5 @@
 import Layout from "@/Components/Layout"
-import { CustomerSection, FAQ, HeroSection } from "@/sections"
+import { CustomerSection, HeroSection } from "@/sections"
 import {  ListofFeature, SupportSystem } from "@/sections/pos-cloud"
 
 const CloudPos = () => {
@@ -42,7 +42,6 @@ const CloudPos = () => {
         <CustomerSection 
           {...customerSectionData2}
         />
-        <FAQ/>
       </Layout>
     </>
   )
