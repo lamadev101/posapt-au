@@ -1,7 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/hero/LocationHeroSection';
-import SignUpSection from '@/sections/SignUpSection';
+import { ContactFormSection, LocationHeroSection, SignUpSection } from '@/sections';
 import Head from 'next/head';
 
 const PosSystemBrisbane = () => {
@@ -187,7 +186,7 @@ const PosSystemBrisbane = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className="fw-bold text-capitalize mb-3">Point of Sale Solution for <br /> <span className="text-theme">Brisbanians</span></h2>
+                      <h2 className="fw-bold text-capitalize mb-3">Point of Sale Solution<br /> <span className="text-theme">for Brisbanians</span></h2>
                       <p>Brisbane is always flowing with possibilities and opportunities for businesses, old and new. And if you’re a business owner here, you’ve most likely experienced difficulties dealing with a generic POS system that doesn’t suit your business. That’s why we’ve brought you something that we’re sure you’ll love.</p>
                       <p>Explore POSApt, a customisable POS and online ordering solution for managing all your point of sale operations online and offline. We know that just like the vibrant city itself, Brisbane's businesses are diverse and have unique requirements for their POS systems. With our system, you get a solution that perfectly fits your business. From colours and logos to item data and tax values, personalise every aspect to showcase your brand identity.</p>
                       <p>Your POS should reflect who you are and support your business goal. That’s what POSApt is capable of. You’re already using another POS system? No worries, the switch is super simple and easy. The best part; POSApt is compatible with your older POS hardware as well. This means you won’t have to spend extra to buy exclusive hardware items just to use our software solution.</p>
@@ -204,8 +203,7 @@ const PosSystemBrisbane = () => {
                     <div className="row">
                       {featureDatas.map((item, index) => (
                         <div key={index} className="col-md-6">
-                          <h3 className="text-theme">
-                            <img src="assets/dist/image/icon1.png" className="img-fluid" alt={item.title} title={item.title} /> {item.title}</h3>
+                          <h3 className="text-theme">{item.title}</h3>
                           <p>{item.describe}</p>
                         </div>
                       ))}
@@ -228,7 +226,7 @@ const PosSystemBrisbane = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className=" fw-bold text-capitalize mb-3">Why choose POSApt as Your <br /> <span className="text-theme">Business Solution?</span></h2>
+                      <h2 className=" fw-bold text-capitalize mb-3">Why choose POSApt as <br /> <span className="text-theme">Your Business Solution?</span></h2>
 
                       {featureDatas2.map((item, index) => (
                         <div key={index} className="ordercard mt-2">
@@ -238,12 +236,6 @@ const PosSystemBrisbane = () => {
                           </p>
                         </div>
                       ))}
-
-                      <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
-                        <span>
-                          No Problem. We’ll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
-                        </span>
-                      </p>
                     </div>
 
                   </div>
@@ -253,6 +245,9 @@ const PosSystemBrisbane = () => {
               </div>
             </div>
           </section>
+          <ContactFormSection
+            businessTitle=''
+          />
         </>
       </Layout>
     </>

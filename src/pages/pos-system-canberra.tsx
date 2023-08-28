@@ -1,7 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/hero/LocationHeroSection';
-import SignUpSection from '@/sections/SignUpSection';
+import { ContactFormSection, LocationHeroSection, SignUpSection } from '@/sections';
 import Head from 'next/head';
 
 const PosSystemCanberra = () => {
@@ -226,7 +225,7 @@ const PosSystemCanberra = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className=" fw-bold text-capitalize mb-3">Why choose POSApt as Your <br /> <span className="text-theme">Business Solution?</span></h2>
+                      <h2 className=" fw-bold text-capitalize mb-3">Why choose POSApt as<br /> <span className="text-theme">Your Business Solution?</span></h2>
 
                       {featureDatas2.map((item, index) => (
                         <div key={index} className="ordercard mt-2">
@@ -236,21 +235,16 @@ const PosSystemCanberra = () => {
                           </p>
                         </div>
                       ))}
-
-                      <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
-                        <span>
-                          No Problem. We’ll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
-                        </span>
-                      </p>
                     </div>
-
                   </div>
                 </div>
-
-
               </div>
             </div>
           </section>
+
+          <ContactFormSection
+            businessTitle=''
+          />
         </>
       </Layout>
     </>

@@ -3,9 +3,9 @@
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import Head from "next/head";
-import ContactFormSection from "@/sections/ContactFormSection";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 import Script from "next/script";
+import { ContactFormSection } from "@/sections";
 
 const Bakery = () => {
   const featureDatas = [

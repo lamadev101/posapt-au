@@ -1,7 +1,7 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
+import { ContactFormSection, SignUpSection } from '@/sections';
 import LocationHeroSection from '@/sections/hero/LocationHeroSection';
-import SignUpSection from '@/sections/SignUpSection';
 import Head from 'next/head';
 
 const PosSystemAdelaide = () => {
@@ -13,8 +13,7 @@ const PosSystemAdelaide = () => {
       `
     },
     {
-      title: `Reporting & Cloud Accessibility
-      `,
+      title: `Reporting & Cloud Accessibility`,
       describe: `Data plays a big role in the success of a business. To give you a competitive edge, our system allows you to access and download key business transaction data to analyse them. Additionally, since the system is cloud-based, you can access this data and all its features from anywhere in the world. As long as you have an internet connection, you can log in to your POSApt account with ease.  `
     }, {
       title: `Reliable POS Hardware
@@ -55,6 +54,7 @@ const PosSystemAdelaide = () => {
     }
   ]
 
+  // SEO optimization
   const retailService = {
     "@context": "https://schema.org/",
     "@type": "Service",
@@ -178,33 +178,32 @@ const PosSystemAdelaide = () => {
             title="Simplify Your Business With POS System Adelaide"
             desc="Explore why POSApt is Adelaide’s top choice with a 30-Day Free Trial."
           />
-
           {/* <!-- start pos --> */}
           <section className="mt-5">
             <div className="container">
               <div className="row bg-light p-2 p-md-5">
-                  <div className="col-md-6">
-                    <div className="new-list ">
-                      <div className="heading_s1 hs2  text-start mt-4">
-                        <h2 className="fw-bold text-capitalize mb-3">Your Cloud-Based POS System <br /> <span className="text-theme">in Adelaide</span></h2>
+                <div className="col-md-6">
+                  <div className="new-list ">
+                    <div className="heading_s1 hs2  text-start mt-4">
+                      <h2 className="fw-bold text-capitalize mb-3">Your Cloud-Based POS <br /> <span className="text-theme">System in Adelaide</span></h2>
 
-                        <p>Adelaide’s businesses are as diverse as the city itself. And each business has its own set of requirements and needs when it comes to POS systems. With POSApt, you get a customisable solution that fits your business like a glove. From colours and logos to item data and tax values, personalise every aspect of our system to reflect your brand. </p>
+                      <p>Adelaide’s businesses are as diverse as the city itself. And each business has its own set of requirements and needs when it comes to POS systems. With POSApt, you get a customisable solution that fits your business like a glove. From colours and logos to item data and tax values, personalise every aspect of our system to reflect your brand. </p>
 
-                        <p>But hey, looks aren't everything! We don't just rely on good aesthetics; we've got the whole package. Our system is backed up by innovative features and unwavering support. And to top it all off, we also offer our own custom Online Ordering System integration which will take your business online. We’re a full POS and Online Ordering solution that’s perfect for your business in Adelaide.</p>
+                      <p>But hey, looks aren't everything! We don't just rely on good aesthetics; we've got the whole package. Our system is backed up by innovative features and unwavering support. And to top it all off, we also offer our own custom Online Ordering System integration which will take your business online. We’re a full POS and Online Ordering solution that’s perfect for your business in Adelaide.</p>
 
-                        <p>Whether you’re in the hospitality industry or do the retail side of things, POSApt can help you all. Don't just take our word for it, give us a try and see how it transforms your sales charts.</p>
-
-                      </div>
+                      <p>Whether you’re in the hospitality industry or do the retail side of things, POSApt can help you all. Don't just take our word for it, give us a try and see how it transforms your sales charts.</p>
 
                     </div>
+
                   </div>
-                  <div className="col-md-6 m-auto ">
-                    <img
-                      src="/assets/dist/image/orderingSystem/r7.webp"
-                      alt="POS System for Adelaide"
-                      title="POS System for Adelaide"
-                      className="img-fluid w-100"
-                    />
+                </div>
+                <div className="col-md-6 m-auto ">
+                  <img
+                    src="/assets/dist/image/orderingSystem/r7.webp"
+                    alt="POS System for Adelaide"
+                    title="POS System for Adelaide"
+                    className="img-fluid w-100"
+                  />
                 </div>
                 <hr />
                 <div className="col-md-12">
@@ -248,21 +247,16 @@ const PosSystemAdelaide = () => {
                           </p>
                         </div>
                       ))}
-                      {/* <!-- <a className="btn btn-white btn-red fw-bold py-3 px-2" href="#">Request a Demo</a> --> */}
-                      <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
-                        <span>
-                          No Problem. We’ll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
-                        </span>
-                      </p>
                     </div>
-
                   </div>
                 </div>
-
-
               </div>
             </div>
           </section>
+
+          <ContactFormSection
+            businessTitle=""
+          />
         </>
       </Layout>
     </>

@@ -3,8 +3,8 @@
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import Head from 'next/head';
-import ContactFormSection from "@/sections/ContactFormSection";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
+import { ContactFormSection } from "@/sections";
 
 const Flower = () => {
   const featureDatas = [

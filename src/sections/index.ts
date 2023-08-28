@@ -3,6 +3,12 @@ import FAQ from "./common/FAQ";
 import PosBanner from "./common/PosBanner";
 import WhyChoose from "./common/WhyChoose";
 import CustomerSection from "./common/CustomerSection";
+import ContactFormSection from "./common/ContactFormSection";
+import SignUpSection from "./common/SignUpSection";
+import LocationHeroSection from "./common/LocationHeroSection";
+
+import RetailSignUpSection from "./retail-pos/RetailSignUpSection";
+
 
 export {
   HeroSection,
@@ -10,5 +16,10 @@ export {
   PosBanner,
   WhyChoose,
   CustomerSection,
+  ContactFormSection,
+  SignUpSection,
+  LocationHeroSection,
+
+  RetailSignUpSection,
 
 }

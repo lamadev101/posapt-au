@@ -1,14 +1,14 @@
 import React from "react";
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
+import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import Link from "next/link";
 import MailAndCall from "@/Components/MailAndCall";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
-import { FAQ, PosBanner, PosHeroSection } from "@/sections/pos-system";
-import { CustomerSection } from "@/sections/pos-cloud";
 
 const OnlineOrderingSystem = () => {
+    const dispatch = useDispatch();
 
     const managementSystemData = [
         {
@@ -241,19 +241,6 @@ const OnlineOrderingSystem = () => {
         ]
     }
 
-    const customerSectionData1 = {
-        title: "We Upload Products For You",
-        desc: "POSapt Online Ordering is an ideal for small businesses having less than 500 products. All you need is a phone or a tablet to take full control of your online store and you’ll see sells increasing. Whether you own a restaurant, cafe, bakery, clothing, flower or liquor store, you can start online ordering immediately once received our system as we set up everything for you. You will be able to customize your online store as per your need and get niche-specific tools to run your store smoothly. Custom Website inclusive that cater to your preferences.",
-        reverse: true,
-        list: [
-          "Speed Up Sales",
-          "Manage Multiple Stores",
-          "Speed Up Sales"
-        ]
-
-      }
-    
-
     return (
         <>
             <Head>
@@ -327,15 +314,13 @@ const OnlineOrderingSystem = () => {
 
             <Layout>
                 <ScrollToTop />
-                <PosHeroSection
-                    title="POSapt Online Ordering System"
-                    desc="For Both Hospitalities and Retail Business"
-                    imgUrl=""
+                <PosSysHeroSection
+                    tagline="Seamless ordering, superior convenience"
+                    title="POSApt Online Ordering System"
+                    desc="From restaurants to retailers, from businesses to suppliers, POSApt empowers all types of businesses to effortlessly connect with their customers and simplify their ordering process. Embrace the future of online ordering with POSApt and let the fun begin!"
+                    imgUrl="/assets/dist/image/orderingSystem/online_order.webp"
                 />
-                <CustomerSection
-                    {...customerSectionData1}
-                />
-                <PosBanner/>
+
                 {/* <!-- what is oos --> */}
                 <section className="pb-50 pt-50">
                     <div className="keyfeatures text-center">
@@ -418,7 +403,34 @@ const OnlineOrderingSystem = () => {
                 </section>
 
 
-                <FAQ/>
+                {/* <!-- faq --> */}
+                <section className="py-5 mb-lg-2 bg-custom">
+                    <div className="container">
+                        <div className="row py-2 py-md-4 py-lg-5">
+                            <MailAndCall/>
+                            <div className="col-md-7 offset-xl-1">
+                                <div className="accordion" id="faq">
+                                    {
+                                        faqDatas.map((item, index) => (
+                                            <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                                                <h3 className="accordion-header" id="q1-heading">
+                                                    <button className="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target={'#q' + index} aria-expanded="false" aria-controls={'#q' + index}>
+                                                        {item.qus}
+                                                    </button>
+                                                </h3>
+                                                <div id={'q' + index} className="accordion-collapse collapse" aria-labelledby={'#q' + index + '-heading"'} data-bs-parent="#faq">
+                                                    <div className="accordion-body fs-sm pt-0">
+                                                        <div dangerouslySetInnerHTML={{ __html: item.ans }}></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        ))
+                                    }
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </Layout>
         </>
     );

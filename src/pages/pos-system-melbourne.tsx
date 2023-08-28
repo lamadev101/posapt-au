@@ -1,7 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import SignUpSection from '@/sections/SignUpSection';
-import LocationHeroSection from '@/sections/hero/LocationHeroSection';
+import { ContactFormSection, LocationHeroSection, SignUpSection } from '@/sections';
 import Head from 'next/head';
 
 const PosSystemMelbourne = () => {
@@ -178,7 +177,7 @@ const PosSystemMelbourne = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className="fw-bold text-capitalize mb-3">Your loud-Based POS System <br /> <span className="text-theme">in Melbourne</span></h2>
+                      <h2 className="fw-bold text-capitalize mb-3">Your cloud-Based POS <br /> <span className="text-theme">System in Melbourne</span></h2>
 
                       <p>From small cafes to popular restaurants and flower shops to supermarkets, all businesses have equal opportunities to thrive and succeed. However, it’s not all sunshine and rainbows for every startup that’s looking to succeed in Melbourne. Sometimes, there are more than a couple of things that go wrong and that won’t go according to plan.</p>
 
@@ -204,8 +203,7 @@ const PosSystemMelbourne = () => {
                     <div className="row">
                       {featureDatas.map((item, index) => (
                         <div className="col-md-6" key={index}>
-                          <h3 className="text-theme">
-                            <img src="assets/dist/image/icon1.png" className="img-fluid" alt={item.title} title={item.title} /> {item.title}</h3>
+                          <h3 className="text-theme">{item.title}</h3>
                           <p>{item.describe}</p>
                         </div>
                       ))}
@@ -231,7 +229,7 @@ const PosSystemMelbourne = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className=" fw-bold text-capitalize mb-3"> POSApt as Your Business<br /> <span className="text-theme">Solution</span></h2>
+                      <h2 className=" fw-bold text-capitalize mb-3"> POSApt as Your<br /> <span className="text-theme">Business Solution</span></h2>
 
                       {featureDatas2.map((item, index) => (
                         <div className="ordercard mt-2" key={index}>
@@ -241,12 +239,6 @@ const PosSystemMelbourne = () => {
                           </p>
                         </div>
                       ))}
-                      {/* <!-- <a className="btn btn-white btn-red fw-bold py-3 px-2" href="#">Request a Demo</a> --> */}
-                      <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
-                        <span>
-                          No Problem. We’ll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
-                        </span>
-                      </p>
                     </div>
 
                   </div>
@@ -254,6 +246,9 @@ const PosSystemMelbourne = () => {
               </div>
             </div>
           </section>
+          <ContactFormSection
+            businessTitle=''
+          />
         </>
       </Layout>
     </>

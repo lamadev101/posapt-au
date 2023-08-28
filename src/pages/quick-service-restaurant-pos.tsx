@@ -1,8 +1,7 @@
 import Layout from '@/Components/Layout'
-import ContactFormSection from '@/sections/ContactFormSection'
+import { ContactFormSection, SignUpSection } from '@/sections'
 import PosSysHeroSection from '@/sections/hero/PosSysHeroSection'
 import { FirstSection, LastSection } from '@/sections/retail-pos'
-import SignUpSection from '@/sections/SignUpSection'
 import Head from 'next/head'
 import Script from 'next/script'
 

@@ -4,8 +4,8 @@ import ScrollToTop from "@/Helpers/ScrollToTop";
 import { useDispatch } from "react-redux";
 import Head from 'next/head';
 import MailAndCall from "@/Components/MailAndCall";
-import ContactFormSection from "@/sections/ContactFormSection";
 import HeroSection from "@/sections/hero/HeroSection";
+import { ContactFormSection } from "@/sections";
 
 const QROrdering: FC = () => {
     const dispatch = useDispatch();

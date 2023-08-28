@@ -1,7 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/hero/LocationHeroSection';
-import SignUpSection from '@/sections/SignUpSection';
+import { ContactFormSection, LocationHeroSection, SignUpSection } from '@/sections';
 import Head from 'next/head';
 
 const PosSystemPerth = () => {
@@ -187,7 +186,7 @@ const PosSystemPerth = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className="fw-bold text-capitalize mb-3">Your Cloud-Based POS System <br /><span className="text-theme">in Perth</span></h2>
+                      <h2 className="fw-bold text-capitalize mb-3">Your Cloud-Based POS <br /><span className="text-theme">System in Perth</span></h2>
                       <p>It's not easy to light your way to business success, even in this city of lights. Whether you’re in the food industry or in the retail business, one crucial step you cannot ignore is getting yourself a ‘POS System’.</p>
                       <p>Perth is where the tempo is fast, and businesses need to stay in tune with the latest technology. The same concept trickles down to your Point of sale system as well. If everything in your business is on par with today’s technological standards but not your POS, means you are lacking behind. </p>
                       <p>POSApt's cloud-based POS solution ensures your POS system is ready to accompany your business’s journey to the top of the chart. Experience the seamless operational performance, freeing your business from the shackles of outdated systems.</p>
@@ -204,8 +203,7 @@ const PosSystemPerth = () => {
                     <div className="row">
                       {featureDatas.map((item, index) => (
                         <div key={index} className="col-md-6">
-                          <h3 className="text-theme">
-                            <img src="assets/dist/image/icon1.png" className="img-fluid" alt={item.title} title={item.title} /> {item.title}</h3>
+                          <h3 className="text-theme">{item.title}</h3>
                           <p>{item.describe}</p>
                         </div>
                       ))}
@@ -216,7 +214,7 @@ const PosSystemPerth = () => {
             </div>
           </section>
 
-          <SignUpSection/>
+          <SignUpSection />
 
           {/* <!-- start onlineordering --> */}
           <section className="mt-5">
@@ -238,12 +236,6 @@ const PosSystemPerth = () => {
                           </p>
                         </div>
                       ))}
-
-                      <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
-                        <span>
-                          No Problem. We’ll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
-                        </span>
-                      </p>
                     </div>
 
                   </div>
@@ -253,7 +245,9 @@ const PosSystemPerth = () => {
               </div>
             </div>
           </section>
-
+          <ContactFormSection
+            businessTitle=''
+          />
         </>
       </Layout>
     </>

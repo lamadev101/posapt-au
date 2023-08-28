@@ -7,9 +7,8 @@ import Head from 'next/head';
 import { useSelector, useDispatch } from "react-redux";
 import { RootState } from "../Redux/reducers";
 import MailAndCall from "@/Components/MailAndCall";
-import ContactFormSection from "@/sections/ContactFormSection";
-import SignUpSection from "@/sections/SignUpSection";
 import HeroSection from "@/sections/hero/HeroSection";
+import { ContactFormSection, SignUpSection } from "@/sections";
 
 const PosSystemForBar = () => {
   const { price } = useSelector((state: RootState) => state.StateManager);

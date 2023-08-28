@@ -3,7 +3,7 @@
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
 import Head from 'next/head';
-import ContactFormSection from "@/sections/ContactFormSection";
+import { ContactFormSection } from "@/sections";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 
 const Restuarant = () => {

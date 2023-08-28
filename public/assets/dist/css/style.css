@@ -1400,9 +1400,9 @@ i.fas.fa-times-circle {
     color: #023b6d;
 }
 
-.serlist li {
+/* .serlist li {
     display: flex !important;
-}
+} */
 
 .serlist li {
     display: block;

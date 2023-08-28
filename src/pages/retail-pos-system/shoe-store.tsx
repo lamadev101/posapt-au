@@ -6,58 +6,60 @@ import Head from 'next/head'
 import Script from 'next/script'
 import React from 'react'
 
-const ClothingStore = () => {
+const ShoeStore = () => {
 
   const firstSectionData = {
-    firstTitle: "Cloud-Based Clothing",
-    lastTitle: "Store POS",
+    firstTitle: "A Customised Point of",
+    lastTitle: "Sale System for Shoe Stores",
     pageDesc: [
-      "Whether you have a clothing retail, a boutique or an apparel store, running a clothing business can be complicated. It gets even more complicated if you have many stores or a mix of online and physical sales.",
+      "Even with so many choices available when buying a pair of sneakers, sometimes it’s just impossible to find the right fit for your feet. It’s the same when it comes to choosing the right POS system, especially for shoe store owners. The reality though, is that not all POS systems are designed in the same way and not all are tailored for shoe stores.",
 
-      "What you really need is a reliable system that can easily handle all your business tasks, even during busy times. That's where our Clothing Store POS System from POSApt comes in. It's designed to make things simple, even when lots of people are shopping. It helps bring order to the ever-changing fashion world.",
+      "That’s where POSApt slides in. It is designed specifically with shoe store owners in mind. It is a robust POS software tailored to command over your operational workflows and exceptional customer experiences.",
 
-      "Embark on a new era of fashion retail. From a seamless operational tapestry to elevated customer encounters, we stand prepared to arm your fashion enterprise with unparalleled empowerment. Take the stage – catalyze your journey with our 30-day trial and embrace the future of fashion retail management today."
+      "The landscape of footwear retail is characterized by its challenges. A mundane experience for a customer is no longer enough to compete with the rising competition. You need to start giving your customers the best shopping experience of their life. Moreover, you can give them incentives so that they come back to your store when they need a new pair of Air Jordans.",
+
+      "Give POSApt a try and feel the difference for yourself! Sign up for a free trial today!"
     ],
-    imgUrl: "general4.webp",
+    imgUrl: "shoe-business.webp",
     content: [
       {
-        title: `Level Up Your Fashion Business`,
-        desc: `Imagine a world where keeping track of your clothes in the store is as easy as draping fabric smoothly. With our Clothing POS software, you can manage your clothes like an expert stylist. Easily find each piece of clothing and get notified when things are running low with easy inventory management. Every item you sell, you make money and our system makes sure you don't miss anything.`
+        title: "All-in-one Sales Management",
+        desc: "Imagine being able to control all aspects of your shoe store from one place. A shoe store POS system can help you do just that! It can keep track of your inventory, sales, and customer insights, so you can make sure everything is running smoothly."
       },
       {
-        title: `Managing Multiple Stores Made Easy`,
-        desc: `Grow your fashion business without dealing with complicated changes to your system. Whether you have stores in different cities or even different countries, our system connects all your stores. You can see what you have, what you've sold, and who your customers are at every store. And as you expand, our system grows with you, making things organized and smooth.`
+        title: "Shoe-Store Specific Features",
+        desc: "Like every shoe has its specialised sole, this system has unique features designed for footwear retailers. Features like product customisation for shoe sizes, colours and brand names are all unique and crucial to these stores."
       },
       {
-        title: `Strong and Reliable Hardware`,
-        desc: `In a busy clothing/apparel store, your checkout system needs to handle a lot. Our solution includes strong hardware – easy-to-use touchscreens, quick barcode scanners, and reliable receipt printers. Just like good fabric makes good clothes, our hardware keeps your store running smoothly, no matter how busy it gets.`
+        title: "Personalised Customer Experiences",
+        desc: "In current trends, the sneaker shopping experience is more than just for wearing. Each customer has their own reasons to buy a pair of Nike or Yeezy. So, it has become adamant that even sellers understand the preferences of their customers. With a shoe store POS system, you're equipped with previous purchasing data to provide tailored experiences."
       },
       {
-        title: `Easy and Fast Payments`,
-        desc: `Don't make your customers wait in line too long – make their shopping experience great with fast payments. Our system lets customers pay in lots of ways, like credit cards, gift cards, and cash. Checking out will be as easy as picking the perfect outfit, and your customers will love how quick and smooth it is.`
+        title: "Real-Time Data & Reports",
+        desc: "Whether to keep tabs on how your sneaker business is performing or to report it to a higher authority, a POS system can help you massively. Generate real-time data of your most selling products and download reports to make informed data-driven decisions."
       },
     ]
   }
   const lastSectionData = {
-    firstTitle: "Why Choose POSApt for ",
-    lastTitle: "Your Clothing Business?",
-    imgUrl: "general4.webp",
+    firstTitle: "Why Choose POSApt for",
+    lastTitle: "Your Store's Business Solution",
+    imgUrl: "general7.webp",
     content: [
       {
-        title: `Round-the-Clock Customer Support at $0`,
-        desc: `Problems can happen anytime, even in a fashion store. Our support team is always ready to help you succeed, 24/7. Whether you have questions about features, need technical help, or want advice, our experts are just a call away. We promise to make sure your journey to success is always on track. And unlike other POS providers, we don’t even charge you for this support service.`
+        title: "E-Gift Cards & Loyalty Program",
+        desc: "We know that it’s super tough to get your customers to shop again with you, especially in the sneaker business. That’s when you need to pull out your secret weapon powered by our shoe store POS; e-gift cards and loyalty program. You can use these features to keep your customers interested and coming back for more."
       },
       {
-        title: `Try Our POSApt for 30 Days at $0`,
-        desc: `Try out POSApt for absolutely free with our 30-day trial. We believe in the positive change our system can bring. Explore all the features designed to make your clothing shop better. During this risk-free time, you can explore what our system can do and decide if it fits your business needs. No commitments are required!`
+        title: "Can Accommodate 500+ SKUs",
+        desc: "Managing an inventory that has a ton of items or units isn’t a small task. If your shoe store comprises numerous Stock Keeping Units (SKUs) across multiple stores, POSApt can help you out. Even our basic POS solution can accommodate up to 1,000 SKUs for your shoe store."
       },
       {
-        title: `Upgrade Without Losing What You Have`,
+        title: "Multi-Platform Support",
         desc: `Upgrading to a new POS system doesn't mean you have to give up your old equipment. POSApt makes it easy to use our software with your current systems. You won't need to spend extra money on hardware that you already own. Our system also integrates with other 3rd party software solutions like Xero,  DoorDash and UberEats.`
       },
       {
-        title: `Elegance in Versatility, Chic in Adaptability`,
-        desc: `Our system works on multiple devices, just like fashion fits different lifestyles. Use it on a computer, laptop, tablet, or smartphone. This flexibility lets you access important info and do transactions from anywhere. It's designed to make your customers happy and work well in any location.`
+        title: "Free Customer Support",
+        desc: "And when you run into any issue or if you have any questions, just give us a call and we’ll get you connected with a professional as soon as possible. Don’t worry, we don’t charge a penny for our exceptional customer support in any regard."
       },
     ]
   }
@@ -129,10 +131,10 @@ const ClothingStore = () => {
     "@graph": [
       {
         "@type": "WebPage",
-        "@id": "https://posapt.au/retail-pos-system/clothing-store/#webpage",
-        "url": "https://posapt.au/retail-pos-system/clothing-store/",
-        "name": "Clothing & Apparel Store POS System & Software | POSApt",
-        "description": "An advanced POS solution for Australian retail clothing store businesses. Inventory, sales and customer management with one system.",
+        "@id": "https://posapt.au/retail-pos-system/shoe-store/#webpage",
+        "url": "https://posapt.au/retail-pos-system/shoe-store/",
+        "name": "Shoe Store POS | Footwear POS System & Software",
+        "description": "POSApt’s Shoe Store POS system is designed for Shoe and Footwear retail shops across Australia. Inventory, billing, payment, e-commerce and more.",
         "isPartOf": {
           "@id": "https://posapt.au/#website"
         }
@@ -140,7 +142,7 @@ const ClothingStore = () => {
 
       {
         "@type": "BreadcrumbList",
-        "@id": "https://posapt.au/retail-pos-system/clothing-store/#breadcrumb",
+        "@id": "https://posapt.au/retail-pos-system/shoe-store/#breadcrumb",
         "itemListElement": [
           {
             "@type": "ListItem",
@@ -157,15 +159,15 @@ const ClothingStore = () => {
           {
             "@type": "ListItem",
             "position": 3,
-            "item": "https://posapt.au/retail-pos-system/clothing-store/",
-            "name": "Clothing Store POS System"
+            "item": "https://posapt.au/retail-pos-system/shoe-store/",
+            "name": "Shoe Store POS System"
           }
         ]
       },
       {
         "@type": "Service",
-        "serviceType": "Gift & Toy Shop POS System",
-        "description": "Elevate the elegance of your clothing store with POSApt. From trend-conscious inventory management to the seamless coordination of multi-location setups, we're poised to redefine the landscape of fashion business management.",
+        "serviceType": "Shoe Store POS System",
+        "description": "A customised point of sale system for Shoe & Footwear business. Inventory, billing, payment, e-commerce and more",
         "provider": {
           "@type": "LocalBusiness",
           "name": "POSApt",
@@ -182,7 +184,7 @@ const ClothingStore = () => {
         },
         "hasOfferCatalog": {
           "@type": "OfferCatalog",
-          "name": "Clothing Store POS System",
+          "name": "Shoe Store POS System",
           "itemListElement": [
             {
               "@type": "Offer",
@@ -207,7 +209,7 @@ const ClothingStore = () => {
   return (
     <>
       <Head>
-        <title>Clothing & Apparel Store POS System & Software | POSApt</title>
+        <title>Shoe Store POS | Footwear POS System & Software</title>
         <Script type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
         />
@@ -216,11 +218,11 @@ const ClothingStore = () => {
         />
         <meta
           name="title"
-          content="Clothing & Apparel Store POS System & Software | POSApt"
+          content="Shoe Store POS | Footwear POS System & Software"
         />
         <meta
           name="description"
-          content="An advanced POS solution for Australian retail clothing store businesses. Inventory, sales and customer management with one system. Try it Now!"
+          content="POSApt’s Shoe Store POS system is designed for Shoe and Footwear retail shops across Australia. Inventory, billing, payment, e-commerce and more."
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -231,11 +233,11 @@ const ClothingStore = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Clothing & Apparel Store POS System & Software | POSApt"
+          content="Shoe Store POS | Footwear POS System & Software"
         />
         <meta
           property="og:description"
-          content="An advanced POS solution for Australian retail clothing store businesses. Inventory, sales and customer management with one system. Try it Now!"
+          content="POSApt’s Shoe Store POS system is designed for Shoe and Footwear retail shops across Australia. Inventory, billing, payment, e-commerce and more."
         />
         <meta property="og:url" content="https://posapt.au/assets/dist/image/Homepage/The-Best-POS-System-to-Revolutionize-your-Business.webp" />
         <meta property="og:site_name" content="POSApt Australia" />
@@ -258,11 +260,11 @@ const ClothingStore = () => {
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
-          content="Clothing & Apparel Store POS System & Software | POSApt"
+          content="Shoe Store POS | Footwear POS System & Software"
         />
         <meta
           name="twitter:description"
-          content="An advanced POS solution for Australian retail clothing store businesses. Inventory, sales and customer management with one system. Try it Now!"
+          content="POSApt’s Shoe Store POS system is designed for Shoe and Footwear retail shops across Australia. Inventory, billing, payment, e-commerce and more."
         />
         <meta
           name="twitter:image"
@@ -272,13 +274,13 @@ const ClothingStore = () => {
         <meta name="twitter:data1" content="POSApt" />
         <meta name="twitter:label2" content="Time to read" />
         <meta name="twitter:data2" content="Less than a minute" />
-        <link rel="canonical" href="https://posapt.au/retail-pos-system/clothing-store" />
+        <link rel="canonical" href="https://posapt.au/retail-pos-system/shoe-store" />
       </Head>
       <Layout>
         <PosSysHeroSection
           tagline="Swag Up Your Fashion Store with our"
-          title="Sell More with Clothing & Apparel Store POS System"
-          desc="Elevate the elegance of your clothing store with POSApt. From trend-conscious inventory management to the seamless coordination of multi-location setups, we're poised to redefine the landscape of fashion business management."
+          title="Shoe Store POS System for Australian Retailers"
+          desc="POSApt is the right fit for your footwear business. Give us a try and see how your sneaker store’s efficiency and flexibility grows."
           imgUrl="/assets/dist/image/posSys/retail/hero/clothing.webp"
         />
         <FirstSection
@@ -296,4 +298,4 @@ const ClothingStore = () => {
   )
 }
 
-export default ClothingStore
+export default ShoeStore

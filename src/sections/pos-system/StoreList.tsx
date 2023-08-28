@@ -23,10 +23,10 @@ const StoreList = () => {
       title: "Salon and Spa",
       link: "salon-and-spa"
     },
-    // {
-    //   title: "",
-    //   link: ""
-    // },
+    {
+      title: "Shoe",
+      link: "shoe-store"
+    },
     // {
     //   title: "",
     //   link: ""
@@ -53,7 +53,7 @@ const StoreList = () => {
                       <Link 
                         href={`/retail-pos-system/${item.link}`} 
                         key={index}
-                        className="retail_block col-lg-3 col-md-6 col-6"
+                        className="retail_block col-lg-4 col-md-6 col-6"
                       >
                         <div className="retail_block-inner">
                           <div className="retail_block-upper">

@@ -171,11 +171,11 @@ const Navbar: FC = () => {
                 />
               </div>
               <ul className="navbar-nav ms-md-auto mb-2 mb-md-0">
-              <li className="nav-item">
+                {/* <li className="nav-item">
                   <Link className="nav-link active" href={"/cloud-pos"}>
                     Cloud pos
                   </Link>
-                </li>
+                </li> */}
                 <li className="nav-item">
                   <Link className="nav-link active" href={"/online-ordering-system"}>
                     OOS
@@ -192,27 +192,16 @@ const Navbar: FC = () => {
                     Business
                   </Link>
                 </li>
-                {/* <li className="nav-item">
-                  <Link className="nav-link" href={"/about"}>
-                    About
-                  </Link>
-                </li> */}
                 <li className="nav-item">
-                <Link className="nav-link" href={"/partner-program"}>
-                  Partners
-                </Link>
-              </li>
+                  <Link className="nav-link" href={"/partner-program"}>
+                    Partners
+                  </Link>
+                </li>
                 <li className="nav-item">
                   <Link className="nav-link" href={"/pricing"}>
                     Pricing
                   </Link>
                 </li>
-
-                {/* <li className="nav-item">
-                  <Link className="nav-link" href="/help">
-                    Help
-                  </Link>
-                </li> */}
               </ul>
             </div>
           </div>

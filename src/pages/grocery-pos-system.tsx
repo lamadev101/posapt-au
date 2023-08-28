@@ -2,7 +2,7 @@
 
 import Layout from "@/Components/Layout";
 import ScrollToTop from "@/Helpers/ScrollToTop";
-import ContactFormSection from "@/sections/ContactFormSection";
+import { ContactFormSection } from "@/sections";
 import PosSysHeroSection from "@/sections/hero/PosSysHeroSection";
 import Head from "next/head";
 

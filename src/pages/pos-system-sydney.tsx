@@ -1,7 +1,6 @@
 import Layout from '@/Components/Layout';
 import ScrollToTop from '@/Helpers/ScrollToTop';
-import LocationHeroSection from '@/sections/hero/LocationHeroSection';
-import SignUpSection from '@/sections/SignUpSection';
+import { ContactFormSection, LocationHeroSection, SignUpSection } from '@/sections';
 import Head from 'next/head';
 
 const PosSystemSydney = () => {
@@ -172,7 +171,7 @@ const PosSystemSydney = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className="fw-bold text-capitalize mb-3">Your loud-Based POS System <br /><span className="text-theme">in Sydney</span></h2>
+                      <h2 className="fw-bold text-capitalize mb-3">Your cloud-Based POS <br /><span className="text-theme">System in Sydney</span></h2>
 
                       <p className=" pt-4">
                         Welcome to the future of point-of-sale systems! In a vibrant city like Sydney, running a business with a generic POS system is tough, let alone without one at all. Whether you’re stocking up your inventory with essentials or accepting payments via credit cards, almost all tasks can be assisted by POS software.
@@ -203,8 +202,7 @@ const PosSystemSydney = () => {
                     <div className="row">
                       {featureDatas.map((item, index) => (
                         <div key={index} className="col-md-6">
-                          <h3 className="text-theme">
-                            <img src="assets/dist/image/icon1.png" className="img-fluid" alt={item.title} title={item.title} /> {item.title}</h3>
+                          <h3 className="text-theme">{item.title}</h3>
                           <p>{item.describe}</p>
                         </div>
                       ))}
@@ -230,7 +228,7 @@ const PosSystemSydney = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className=" fw-bold text-capitalize mb-3"> Why Choose POSApt as Your <br /><span className="text-theme">Business Solution?</span></h2>
+                      <h2 className=" fw-bold text-capitalize mb-3"> Why Choose POSApt as <br /><span className="text-theme">Your Business Solution?</span></h2>
 
                       {featureDatas2.map((item, index) => (
                         <div key={index} className="ordercard mt-2">
@@ -240,12 +238,6 @@ const PosSystemSydney = () => {
                           </p>
                         </div>
                       ))}
-                      {/* <!-- <a className="btn btn-white btn-red fw-bold py-3 px-2" href="#">Request a Demo</a> --> */}
-                      <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
-                        <span>
-                          No Problem. We’ll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
-                        </span>
-                      </p>
                     </div>
 
                   </div>
@@ -255,6 +247,9 @@ const PosSystemSydney = () => {
               </div>
             </div>
           </section>
+          <ContactFormSection
+            businessTitle=''
+          />
         </>
       </Layout>
     </>
