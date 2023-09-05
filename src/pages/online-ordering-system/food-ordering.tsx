@@ -280,7 +280,7 @@ const FoodOrdering: FC = () => {
 
                                 <div className="row g-4">
                                     {sectionData2.map((item, index) => (
-                                        <div className="col-md-4">
+                                        <div key={index} className="col-md-4">
                                             <div className="card h-100 service_box border-0 ">
                                                 <div className="card-body ">
                                                     <div className="card_icon mx-auto">
@@ -297,8 +297,6 @@ const FoodOrdering: FC = () => {
                             </div>
                         </div>
                     </section>
-
-                    
 
                     <section className="">
                         <div className="container">

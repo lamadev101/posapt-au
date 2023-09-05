@@ -266,14 +266,13 @@ const CoffeeShop: FC = () => {
 
                                 <div className="row g-4">
                                     {sectionData2.map((item, index) => (
-                                        <div className="col-md-4">
+                                        <div key={index} className="col-md-4">
                                             <div className="card h-100 service_box border-0 ">
                                                 <div className="card-body ">
                                                     <div className="card_icon mx-auto">
                                                         <i className="fas fa-check"></i>
                                                     </div>
                                                     <h3 className="mb-2">{item.title}</h3>
-
                                                     <p className="text-center">{item.describe}</p>
                                                 </div>
                                             </div>
@@ -283,9 +282,7 @@ const CoffeeShop: FC = () => {
                                 </div>
                             </div>
                         </div>
-                    </section>
-
-                  
+                    </section>                  
 
                     <section className="">
                         <div className="container">
@@ -298,7 +295,7 @@ const CoffeeShop: FC = () => {
                                         </div>
                                         {sectionData3.map((item, index) => (
 
-                                            <div className="newitems">
+                                            <div key={index} className="newitems">
                                                 <span className="text-white fw-bold">{index + 1}</span>
                                                 <h3 className="">{item.title}</h3>
                                                 <p>{item.describe}</p>
@@ -335,9 +332,7 @@ const CoffeeShop: FC = () => {
                                 </div>
 
                                 <div className="subpara mt-3">
-
                                     <p className="text-center"><span style={{ fontWeight: 400 }}>Looking to transform your coffee shop operations? Sign up for a free trial with us to reap the benefits of better order management, higher customer satisfaction, and more efficient operations.</span></p>
-
                                     <div className="text-center">
                                         <a className="btn btn-white btn-red fw-bold"
                                             onClick={() => {
@@ -363,10 +358,9 @@ const CoffeeShop: FC = () => {
                                 <MailAndCall />
                                 <div className="col-md-7 offset-xl-1">
                                     <div className="accordion" id="faq">
-
                                         {
                                             faqDatas.map((item, index) => (
-                                                <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                                                <div key={index} className="accordion-item border-0 rounded-3 shadow-sm mb-3">
                                                     <h3 className="accordion-header" id="q1-heading">
                                                         <button className="accordion-button shadow-none rounded-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target={'#q' + index} aria-expanded="false" aria-controls={'#q' + index}>
                                                             {item.qus}

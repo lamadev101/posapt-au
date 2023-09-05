@@ -250,8 +250,7 @@ export default function Home() {
         <link rel="canonical" href="https://posapt.au/" />
       </Head>
       <Layout>
-        {/* new restro */}
-        {/* about us */}
+        {/* Mobile view menu */}
         <div className="btn-group d-md-none fixed-bottom bg-white p-2 ">
           <div className="navbar-toolbar d-flex align-items-center order-lg-3 justify-content-center m-auto">
             <a
