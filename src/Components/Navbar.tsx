@@ -157,9 +157,9 @@ const Navbar: FC = () => {
             </button>
             <div className="offcanvas offcanvas-start p-4 p-lg-0" id="navbar-default">
               <div className="d-flex justify-content-between align-items-center mb-2 d-block d-lg-none">
-                <a href="./index.html">
+                <Link href="/">
                   <img src="assets/dist/image/poslogo.png" alt="" width="100px" />
-                </a>
+                </Link>
                 <button
                   type="button"
                   className="btn-close"
@@ -182,77 +182,77 @@ const Navbar: FC = () => {
                     <div className="row p-2 p-lg-3">
                       <div className="col-lg-4 col-12 mb-4 mb-lg-0">
                         <h6 className="text-primary ps-3">
-                          <a href="retailpos.html" className="text-theme">
+                          <Link href="/retail-pos-system" className="text-theme">
                             Retail
-                          </a>
+                          </Link>
                         </h6>
-                        <a className="dropdown-item" href="fashionstore.html">
+                        <Link className="dropdown-item" href="/retail-pos-system/clothing-store">
                           Fashion
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/retail-pos-system/gift-and-toy-shop">
                           Gift Shop
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/retail-pos-system/bike-and-bicycle-shop">
                           bike
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/retail-pos-system/shoe-store">
                           shoe
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/flower-pos-system">
                           flower
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/grocery-pos-system">
                           grocery
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/retail-pos-system/jewellery-store">
                           jewellry
-                        </a>
+                        </Link>
                       </div>
                       <div className="col-lg-4 col-12 mb-4 mb-lg-0">
                         <h6 className="text-primary ps-3">
-                          <a href="hospitalitypos.html" className="text-theme">
+                          <Link href="/hospitality-pos-system" className="text-theme">
                             Hospitality
-                          </a>
+                          </Link>
                         </h6>
-                        <a className="dropdown-item" href="restaurantpage.html">
+                        <Link className="dropdown-item" href="/restaurant-pos-system">
                           restaurant
-                        </a>
-                        <a className="dropdown-item" href="bakerydesign.html">
+                        </Link>
+                        <Link className="dropdown-item" href="/backery-pos-system">
                           Bakery
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/online-ordering-system/cafe-and-coffee">
                           cafe
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/coffee-shop-pos-system">
                           coffee shop
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="">
                           bar
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        {/* <Link className="dropdown-item" href="">
                           pizza shop
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="">
                           QSR
-                        </a>
+                        </Link> */}
                       </div>
                       <div className="col-lg-4 col-12 mb-4 mb-lg-0">
                         <h6 className="text-primary ps-3">By Service</h6>
-                        <a className="dropdown-item" href="">
+                        <Link className="dropdown-item" href="/custom-pos-system">
                           Custom POS
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/online-ordering-system//tablet-ordering">
                           {" "}
                           Tablet POS
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/online-ordering-system/qr-ordering-system">
                           {" "}
                           QR Ordering
-                        </a>
-                        <a className="dropdown-item" href="">
+                        </Link>
+                        <Link className="dropdown-item" href="/online-ordering-system/table-ordering">
                           {" "}
                           Table Booking
-                        </a>
+                        </Link>
                       </div>
                     </div>
                   </div>
@@ -271,49 +271,37 @@ const Navbar: FC = () => {
                   <div className=" dropdown-menu pb-0 animated fadeIn m-lg-0">
                     <ul>
                       <li>
-                        <a className="dropdown-item" href="ecommercepos.html">
+                        <Link className="dropdown-item" href="/ecommerce">
                           E-commerce
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         {" "}
-                        <a className="dropdown-item" href="cloudpos.html">
+                        <Link className="dropdown-item" href="/cloud-pos">
                           Point of Sale
-                        </a>
+                        </Link>
                       </li>
                       <li>
                         {" "}
-                        <a className="dropdown-item" href="oos.html">
+                        <Link className="dropdown-item" href="/online-ordering-system">
                           Online Ordering
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                   </div>
                 </li>
-                {/* <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="cloudpos.html">Cloud POS</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="oos.html">OOS</a>
-                  </li> */}
                 <li className="nav-item">
-                  <a className="nav-link" href="becomepartner.html">
+                  <Link className="nav-link" href="/partner-program">
                     Partners
-                  </a>
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="pricing.html">
+                  <Link className="nav-link" href="/pricing">
                     Pricing
-                  </a>
+                  </Link>
                 </li>
-                {/* <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li> */}
               </ul>
-              {/* <form class="d-flex">
-                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Search</button>
-              </form> */}
+
             </div>
 
           </div>

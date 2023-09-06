@@ -76,16 +76,6 @@ const Footer: FC = () => {
                   info@posapt.au
                 </a>
               </p>
-            </div>
-            <div className="col-lg-3 col-md-6 footer-info footer-links">
-              <p className="fw-bold text-uppercase fs-6 text-white">
-                Our Commitment To You
-              </p>
-              <p>
-                We believe a robust and reliable POS shouldn’t cost you half your
-                monthly revenue. We’re here to offer a tailormade POS system that’s
-                affordable and encourages your success.
-              </p>
               <div className="social-links mt-3">
                 {" "}
                 <a

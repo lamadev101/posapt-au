@@ -280,569 +280,659 @@ export default function Home() {
           </div>
         </div>
 
-        <HeroSection
-          tagline="Selling Made Simpler."
-          title="The Perfect Point-of-Sale to Sell"
-          desc="An advanced POS system to enable hospitality and retail businesses not just to sell their products and services but also to make offline selling experiences simpler, and better."
-          imgUrl="/assets/dist/image/Best_POS_System_Software.webp"
-        />
-        
-        <section
-          className=" text-center pb-5 pt-5"
-          style={{
-            background:
-              "radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%)",
-          }}
-        >
-          <div className="container mt-4">
-            <div className="row">
-              <div className="heading_s1 w-80 text-center">
-                {/* <span class="sub_heading font_style1">How does it work?</span> */}
-                <h2 className=" fw-bold text-capitalize text-theme ">
-                  POS System Software to Streamline Your Business
-                </h2>
-                <p className="text-center">
-                  POSApt is a game-changer for businesses looking to streamline
-                  their operations and improve customer experience. With its
-                  intuitive design, extensive features, and real-time reporting,
-                  businesses can make data-driven decisions, increase revenue,
-                  and ultimately achieve success.
-                </p>
-              </div>
-            </div>
-            <div className="position-relative rounded-3 overflow-hidden mb-lg-3">
-              <div
-                className="position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center zindex-5 light-gallery"
-                id="lightgallery"
-              >
-                <a
-                  target="_blank"
-                  href="https://www.youtube.com/watch?v=H2YXiMSWf7M&feature=youtu.be"
-                  className="btn btn-video btn-icon btn-xl stretched-link bg-white image-tile"
-                  data-abc="true"
-                >
-                  <i className="fas fa-play" />
-                </a>
-              </div>
-              <span className="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-35" />
-              <img
-                title="How POSApt POS System Works"
-                src="/assets/dist/image/Homepage/How-POSApt-POS-System-Works.webp"
-                alt="How POSApt POS System Works"
-              />
-            </div>
-          </div>
-        </section>
-
-        {/* find store */}
-        <section className="bg-light pt-50 pb-50">
-          <div className="container">
-            <div className="row text-center">
-              <div className="heading_s1">
-                <span className="sub_heading font_style1">
-                  Perfect for Any Retail & Hospitality Business
-                </span>
-                <h2 className=" fw-bold text-capitalize">POS Systems We Have</h2>
-              </div>
-            </div>
-            <div className="mytemplates">
-              <div className="row align-items-center justify-content-center">
-                <div className="col-lg-2 col-6 col-sm-4">
-                  <Link href={"/restaurant-pos-system"}>
-                    <div className="border-gray p-15  bg-white text-center">
-                      <img
-                        title="restaurant POS system software image"
-                        src="assets/dist/image/Homepage/restaurant-POS-system-software-image.webp"
-                        alt="restaurant POS system software image"
-                      />
-                      <div className="alt-font text-extra-dark-gray fw-bold d-block">
-                        Restaurants
-                      </div>
-                    </div>
-                  </Link>
+        <>
+          {/* about us */}
+          <section className=" pt-1 pt-md-5 pb-50 bg-home">
+            <div className="container  text-center">
+              <div className="row align-items-center">
+                <div className="col-md-7 ">
+                  <div className="heading_s1">
+                    <h1 className="text-capitalize fs-61 text-white">
+                      All in One <br /> POS System <br />
+                      Simplifies Your Business
+                    </h1>
+                  </div>
                 </div>
-                <div className="col-lg-2 col-6 col-sm-4">
-                  <Link href={"/bakery-pos-system"}>
-                    <div className="border-gray p-15  bg-white text-center">
-                      <img
-                        title="bakery pos system image"
-                        src="assets/dist/image/Homepage/bakery-pos-system-image.webp"
-                        alt="bakery-pos-system-image"
-                      />
-                      <div className="alt-font text-extra-dark-gray fw-bold d-block">
-                        Bakeries
-                      </div>
-                    </div>
-                  </Link>
+                <div className="col-md-5 ">
+                  <div className="">
+                    <img
+                      src="assets/dist/image/newhomeimg (1).png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
                 </div>
-                <div className="col-lg-2 col-6 col-sm-4">
-                  <Link href={"/flower-pos-system"}>
-                    <div className="border-gray p-15  bg-white text-center">
-                      <img
-                        title="flower pos system image"
-                        src="assets/dist/image/Homepage/flower-pos-system-image.webp"
-                        alt="flower-pos-system-image"
-                      />
-                      <div className="alt-font text-extra-dark-gray fw-bold d-block">
-                        Flower shops
-                      </div>
+                <div className="col-md-12">
+                  <div className="subpara ">
+                    <p className="text-center fs-47 text-white">
+                      <span style={{ fontWeight: 400 }}>
+                        Manage both in-shop and online sales with a single POS system.
+                      </span>
+                    </p>
+                    <div className="text-center newhome_btn">
+                      <a className="btn btn-white btn-red fs-6 mb-2" href="#">
+                        Sign Up for Free
+                      </a>
+                      <a className="btn btn-white btn-red fs-6 mb-2" href="#">
+                        Watch Video
+                      </a>
                     </div>
-                  </Link>
-                </div>
-                <div className="col-lg-2 col-6 col-sm-4">
-                  <Link href={"/grocery-pos-system"}>
-                    <div className="border-gray p-15  bg-white text-center">
-                      <img
-                        title="grocery pos system image"
-                        src="assets/dist/image/Homepage/grocery-pos-system-image.webp"
-                        alt="grocery-pos-system-image"
-                      />
-                      <div className="alt-font text-extra-dark-gray fw-bold d-block">
-                        Grocery stores
-                      </div>
-                    </div>
-                  </Link>
-                </div>
-                <div className="col-lg-2 col-6 col-sm-4">
-                  <Link href={"/beverages-pos-system"}>
-                    <div className="border-gray p-15  bg-white text-center">
-                      <img
-                        title="beverages pos system image"
-                        src="assets/dist/image/Homepage/beverages-pos-system-image.webp"
-                        alt="beverages-pos-system-image"
-                      />
-                      <div className="alt-font text-extra-dark-gray fw-bold d-block">
-                        Beverages
-                      </div>
-                    </div>
-                  </Link>
+                  </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-        {/* Features */}
-        <Features />
-        {/* end feature section */}
-
-        <SignUpSection/>
-
-        {/* About Us */}
-        <section className="pt-50 pb-50">
-          <div className="workprocess text-center">
+          </section>
+          <section className="pt-50">
             <div className="container">
               <div className="row">
-                <div className="heading_s1 w-80">
-                  {/* <span class="sub_heading font_style1">How does it work?</span> */}
-                  <h3 className=" fw-bold text-capitalize">
-                    POSApt: The Best POS System in Australia
-                  </h3>
-                  <p>
-                    POSApt is capable of selling everything that is available in
-                    your store via an online website. All you need is a phone or
-                    a tablet to take full control of your online store and
-                    you’ll be doubling your monthly sales. Whether you own a
-                    restaurant, bakery, grocery, flower or liquor store, POSApt
-                    will help you get online instantly. You will be able to
-                    customize your online store as per your need and get
-                    niche-specific tools to run your store smoothly.
+                <div className="col-md-7">
+                  <div className="">
+                    <div className="heading_s1">
+                      <h2 className=" fw-bold text-capitalize text-dark">
+                        POSApt Streamlines Your Business as We Operate All
+                      </h2>
+                    </div>
+                    <ul className="newposlist text-dark fw-bold pt-4 fs-5">
+                      <li>
+                        <a href="/cloud-pos" className="text-theme">
+                          <svg
+                            className="me-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                            fill="#00205b"
+                            height="24px"
+                            width="24px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 27.855 27.855"
+                            xmlSpace="preserve"
+                          >
+                            <g>
+                              <path d="M27.604,6.751L14.176,20.18c-0.338,0.336-0.885,0.336-1.223,0l-0.27-0.27l0,0l-0.293-0.293l-1.268-1.268l-0.018-0.027   L5.297,12.47c-0.336-0.336-0.336-0.885,0-1.221l1.83-1.828c0.338-0.339,0.883-0.339,1.221,0l5.223,5.262L24.551,3.7   c0.338-0.337,0.885-0.337,1.221,0l1.832,1.832C27.939,5.867,27.939,6.415,27.604,6.751z" />
+                              <path d="M21.795,22.613c0,0.973-0.793,1.766-1.768,1.766H3.535c-0.975,0-1.768-0.793-1.768-1.766V5.241   c0-0.973,0.793-1.766,1.768-1.766h16.492c0.975,0,1.768,0.793,1.768,1.766l0,0l1.256-1.162c0.203-1.43-1.242-2.369-3.024-2.369   H3.535C1.582,1.71,0,3.29,0,5.241v17.372c0,1.951,1.582,3.533,3.535,3.533h16.492c1.953,0,3.535-1.582,3.535-3.533V12.257   l-1.768,1.924L21.795,22.613L21.795,22.613z" />
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                            </g>
+                          </svg>
+                          Cloud POS System
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/online-ordering-system" className="text-theme">
+                          <svg
+                            className="me-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                            fill="#00205b"
+                            height="24px"
+                            width="24px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 27.855 27.855"
+                            xmlSpace="preserve"
+                          >
+                            <g>
+                              <path d="M27.604,6.751L14.176,20.18c-0.338,0.336-0.885,0.336-1.223,0l-0.27-0.27l0,0l-0.293-0.293l-1.268-1.268l-0.018-0.027   L5.297,12.47c-0.336-0.336-0.336-0.885,0-1.221l1.83-1.828c0.338-0.339,0.883-0.339,1.221,0l5.223,5.262L24.551,3.7   c0.338-0.337,0.885-0.337,1.221,0l1.832,1.832C27.939,5.867,27.939,6.415,27.604,6.751z" />
+                              <path d="M21.795,22.613c0,0.973-0.793,1.766-1.768,1.766H3.535c-0.975,0-1.768-0.793-1.768-1.766V5.241   c0-0.973,0.793-1.766,1.768-1.766h16.492c0.975,0,1.768,0.793,1.768,1.766l0,0l1.256-1.162c0.203-1.43-1.242-2.369-3.024-2.369   H3.535C1.582,1.71,0,3.29,0,5.241v17.372c0,1.951,1.582,3.533,3.535,3.533h16.492c1.953,0,3.535-1.582,3.535-3.533V12.257   l-1.768,1.924L21.795,22.613L21.795,22.613z" />
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                            </g>
+                          </svg>
+                          Online Ordering System
+                        </a>
+                      </li>
+                      <li>
+                        <a href="/ecommerce" className="text-theme">
+                          <svg
+                            className="me-2"
+                            xmlns="http://www.w3.org/2000/svg"
+                            xmlnsXlink="http://www.w3.org/1999/xlink"
+                            fill="#00205b"
+                            height="24px"
+                            width="24px"
+                            version="1.1"
+                            id="Capa_1"
+                            viewBox="0 0 27.855 27.855"
+                            xmlSpace="preserve"
+                          >
+                            <g>
+                              <path d="M27.604,6.751L14.176,20.18c-0.338,0.336-0.885,0.336-1.223,0l-0.27-0.27l0,0l-0.293-0.293l-1.268-1.268l-0.018-0.027   L5.297,12.47c-0.336-0.336-0.336-0.885,0-1.221l1.83-1.828c0.338-0.339,0.883-0.339,1.221,0l5.223,5.262L24.551,3.7   c0.338-0.337,0.885-0.337,1.221,0l1.832,1.832C27.939,5.867,27.939,6.415,27.604,6.751z" />
+                              <path d="M21.795,22.613c0,0.973-0.793,1.766-1.768,1.766H3.535c-0.975,0-1.768-0.793-1.768-1.766V5.241   c0-0.973,0.793-1.766,1.768-1.766h16.492c0.975,0,1.768,0.793,1.768,1.766l0,0l1.256-1.162c0.203-1.43-1.242-2.369-3.024-2.369   H3.535C1.582,1.71,0,3.29,0,5.241v17.372c0,1.951,1.582,3.533,3.535,3.533h16.492c1.953,0,3.535-1.582,3.535-3.533V12.257   l-1.768,1.924L21.795,22.613L21.795,22.613z" />
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                              <g></g>
+                            </g>
+                          </svg>
+                          POSApt E-commerce System
+                        </a>
+                      </li>
+                    </ul>
+                    <p className="fs-5 mt-2 mt-md-3">
+                      POSApt: Your all-in-one solution. Effortlessly manage in-shop and
+                      online sales with our user-friendly POS system integrated with
+                      E-commerce. Streamline inventory, orders, and product info across
+                      all channels, boosting efficiency. Elevate your business with
+                      POSApt.
+                    </p>
+                  </div>
+                </div>
+                <div className="col-md-5 text-end">
+                  <div className="homeimg_right">
+                    <img
+                      src="assets/dist/image/newhomeimg (2).png"
+                      alt=""
+                      className="img-fluid w-24"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* new restro */}
+          <section className="bg-light pt-50  pb-50 mt-5 ">
+            <div className="container">
+              <div className="row text-center">
+                <div className="heading_s1">
+                  <h2 className=" fw-bold text-capitalize text-dark">
+                    Find the Best Solution for your Business
+                  </h2>
+                  <p className="fs-2 text-center">
+                    We Serve Local Businesses in Australia
+                  </p>
+                  <p className="w-80">
+                    Our unwavering focus remains on enhancing daily business operations
+                    and alleviating the burdens of business owners. Join us today and
+                    experience the tailored functions we've developed exclusively for
+                    your benefit.
                   </p>
                 </div>
               </div>
-              <div className="row">
-                <div className="col-md-4 mb-4 mb-md-0">
-                  <div className="workprocess workprocess-main text-center position-relative">
-                    <div className="workprocess-icon">
-                      <img
-                        width={114}
-                        height={114}
-                        src="assets/dist/image/Homepage/Unlimited-Orders-at-ZERO-Cost-Image.webp"
-                        className="img-fluid"
-                        alt="Unlimited Orders at ZERO Cost Image"
-                        title="Unlimited Orders at ZERO Cost Image"
-                        loading="lazy"
-                        data-no-retina=""
-                      />
-                    </div>
-                    <div className="workprocess-content">
-                      <h4 className="mb-3 workprocess-title">
-                        Unlimited Orders at <br /> ZERO Cost
-                      </h4>
-                      <p>
-                        No commissions. No hidden fees. Get unlimited food
-                        orders from your online customers and grow your
-                        restaurant to its full potential.
-                      </p>
+              <div className="recentstores">
+                <div className="row align-items-center justify-content-center">
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs1.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Cafe
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-md-4 mb-4 mb-md-0">
-                  <div className="workprocess workprocess-main text-center position-relative">
-                    <div className="workprocess-icon">
-                      <img
-                        width={114}
-                        height={114}
-                        src="assets/dist/image/Homepage/Supports-Franchised-Businesses-image.webp"
-                        className="img-fluid"
-                        alt="Supports Franchised Businesses image"
-                        title="Supports Franchised Businesses image"
-                        loading="lazy"
-                        data-no-retina=""
-                      />
-                    </div>
-                    <div className="workprocess-content">
-                      <h4 className="mb-3 workprocess-title">
-                        Supports Franchised Businesses
-                      </h4>
-                      <p>
-                        POSApt Online Ordering System has the power to support
-                        franchised businesses with multiple store locations and
-                        a fragmented customer base.
-                      </p>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs2.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Florist
+                        </a>
+                      </div>
                     </div>
                   </div>
-                </div>
-                <div className="col-md-4 mb-4 mb-md-0">
-                  <div className="workprocess workprocess-main text-center position-relative">
-                    <div className="workprocess-icon">
-                      <img
-                        width={114}
-                        height={114}
-                        src="assets/dist/image/Homepage/lock.webp"
-                        className="img-fluid"
-                        title="Make Payments Easier &amp; Secure"
-                        alt="Make Payments Easier &amp; Secure"
-                        loading="lazy"
-                        data-no-retina=""
-                      />
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs3.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Restaurant
+                        </a>
+                      </div>
                     </div>
-                    <div className="workprocess-content">
-                      <h4 className="mb-3 workprocess-title">
-                        {" "}
-                        Make Payments Easier &amp; Secure
-                      </h4>
-                      <p>
-                        Alongside EFTPOS integration, our omnichannel POS system also allows
-                        your customers to pay via PayPal or Google Pay, allowing
-                        multiple secure payment options.
-                      </p>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs4.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Fashion
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs5.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Liquor{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs6.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Bakery
+                        </a>
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        <OurHardwareSystem />
-
-        {/* Key Features */}
-        <section className="pb-10 pt-50">
-          <div className="keyfeatures text-center">
+          </section>
+          <section className="pt-50 pb-50 customer_section">
             <div className="container">
-              <div className="row">
-                <div className="heading_s1 w-80">
-                  <span className="sub_heading font_style1">
-                    Why Choose Us?
-                  </span>
-                  <h3 className=" fw-bold text-capitalize">
-                    We're here to help you GROW!
-                  </h3>
-                </div>
-              </div>
-              <div className="row">
-                <div className="col-md-4">
-                  <div className="card border-0  rounded-xs">
-                    <div className="card-body service_item">
-                      <div className="ser_inner ">
-                        <div className="ser_img">
-                          <img
-                            src="assets/dist/image/Homepage/Complete-POS-and-online-ordering-solution.webp"
-                            className="img-fluid h-100"
-                            alt="Complete POS and online ordering solution"
-                            title="Complete POS and online ordering solution"
-                            data-pagespeed-url-hash={1416024010}
-                          />
-                        </div>
-                        <h4 className="mt-4 mb-3">
-                          Complete POS Solution{" "}
-                        </h4>
-                      </div>
-                      <p>
-                        We'll take your business from 'no
-                        online presence' to a thriving online business with our
-                        cloud-based Point Of Sale and integrated Online Ordering
-                        System.
-                      </p>
-                    </div>
+              <div className="row align-items-center">
+                <div className="col-md-6 ">
+                  <div className="customer_img">
+                    <img
+                      src="assets/dist/image/img1.png"
+                      className="img-fluid rounded-3 w-100"
+                      alt=""
+                    />
                   </div>
                 </div>
-                <div className="col-md-4">
-                  <div className="card border-0  rounded-xs">
-                    <div className="card-body service_item">
-                      <div className="ser_inner ">
-                        <div className="ser_img">
-                          <img
-                            src="assets/dist/image/Homepage/POS-System-free-trial.webp"
-                            className="img-fluid h-100"
-                            alt="POS System free trial"
-                            title="POS System free trial"
-                            data-pagespeed-url-hash={1416024010}
-                          />
-                        </div>
-                        <h4 className="mt-4 mb-3">30-Day Free Trial </h4>
-                      </div>
-                      <p>
-                        We know you'll love our products for sure. So, we're
-                        happy to give everyone free access to our products for
-                        the first 30 days with no commitments at all.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card border-0  rounded-xs">
-                    <div className="card-body service_item">
-                      <div className="ser_inner ">
-                        <div className="ser_img">
-                          <img
-                            src="/assets/dist/image/Homepage/24-hours-online-support-for-POS-System-Software.webp"
-                            className="img-fluid h-100"
-                            alt="24 hours online support for POS System Software"
-                            title="24 hours online support for POS System Software"
-                            data-pagespeed-url-hash={1416024010}
-                          />
-                        </div>
-                        <h4 className="mt-4 mb-3">24*7 Online Support </h4>
-                      </div>
-                      <p>
-                        We're always available for our clients. Reach us any
-                        time of the day and we'll get you connected with an
-                        Expert to get your issue resolved within no time.
-                      </p>
+                <div className="col-md-6">
+                  <div className="heading_s1">
+                    <h2 className=" fw-bold text-capitalize text-dark">
+                      Get Attention from more Customers
+                    </h2>
+                    <p className="fs-5">
+                      Expand your business opportunities with our user friendly
+                      E-Commerce website and various Online Ordering Systems. Today's
+                      modern shoppers and diners are always seeking where to spend with
+                      internet. You can't miss out these opportunities to sustain your
+                      business longer. Engage more customers, maximise sales and grow
+                      your business.
+                    </p>
+                    <div className="subpara mt-3">
+                      <ul>
+                        <li className="fw-bold">
+                          <a>Faster Transactions </a>
+                        </li>
+                        <li className="fw-bold">
+                          <a>Engage More Customers </a>
+                        </li>
+                        <li className="fw-bold">
+                          <a>Franchised Business Support </a>
+                        </li>
+                      </ul>
+                      {/* <a class="btn btn-white btn-red fw-bold" href="#">Request a Demo</a> */}
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-        </section>
-
-        {/* faq */}
-        <section
-          className=" py-5 mb-lg-2"
-          style={{
-            background:
-              "radial-gradient(116.18% 118% at 50% 100%, rgba(99, 102, 241, 0.1) 0%, rgba(218, 70, 239, 0.05) 41.83%, rgba(241, 244, 253, 0.07) 82.52%)",
-          }}
-        >
-          <div className="container">
-            <div className="row py-2 py-md-4 py-lg-5">
-              <MailAndCall />
-              <div className="col-md-7 offset-xl-1">
-                <div className="accordion" id="faq">
-                  <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                    <h3 className="accordion-header" id="q1-heading">
-                      <button
-                        className="accordion-button shadow-none rounded-3 collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#q1"
-                        aria-expanded="false"
-                        aria-controls="q1"
+          </section>
+          <section className="ctabanner pt-5 pb-5">
+            <div className="container">
+              <div className="row align-items-center">
+                <div className="col-md-8">
+                  <div className="row text-start">
+                    <div className="heading_s1">
+                      <h2 className=" fw-bold text-capitalize text-white">
+                        Our User Friendly Integrated{" "}
+                        <span className="d-block">E-Commerce System</span>
+                      </h2>
+                      <p className="fs-47 text-start text-white">
+                        Bussiness owners find all management solutions within POSApt.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="localbusiness">
+                    <img
+                      src="assets/dist/image/business.png"
+                      className="img-fluid"
+                      alt=""
+                    />
+                  </div>
+                </div>
+              </div>
+              <hr className="bg-white" />
+              <div className="business_details">
+                <div className="row">
+                  <div className="col-md-4">
+                    <div className="business-box pe-4">
+                      <h3 className="text-white fs-2">Engage More Customers</h3>
+                      <p className="mt-2 mt-md-4 text-white fs-5">
+                        No matter where customers are your business can sell and serve
+                        anywhere anytime.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="business-box pe-4">
+                      <h3 className="text-white fs-2">Conduct Smarter Desicions</h3>
+                      <p className="mt-2 mt-md-4 text-white fs-5">
+                        Gain deeper insights into your E-com store through POSApt's
+                        comprehensive real-time reports.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-4">
+                    <div className="business-box pe-4">
+                      <h3 className="text-white fs-2">Improve Business Efficiency</h3>
+                      <p className="mt-2 mt-md-4 text-white fs-5">
+                        Integrate with the POS system to simplify workflows and automate
+                        tasks to streamline your business.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="col-md-12 subpara">
+                    <div className="text-center newhome_btn">
+                      <a
+                        className="btn btn-white btn-red fs-6 mb-2 w-auto"
+                        href="ecommercepos.html"
                       >
-                        What is POS System Software?
-                      </button>
-                    </h3>
-                    <div
-                      id="q1"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="q1-heading"
-                      data-bs-parent="#faq"
-                    >
-                      <div className="accordion-body fs-sm pt-0">
-                        <p>
-                          Point of sale, or POS, refers to the place where a
-                          retail transaction such as buying or selling of goods
-                          takes place. While point-of-sale systems used to be
-                          your traditional cash register, they can now be found
-                          in a variety of forms, thanks to digital technologies.
-                        </p>
+                        Learn POSApt E-Commerce System More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          {/* <div class="container-fluid">
+      <img src="https://images.ctfassets.net/2d5q1td6cyxq/5YjIscSBApfmtZxBer3R2A/9a41fcd0716db506e91237eca6a00dea/PD03417_-_M_USEN_Ecommerce_software_frames.png?w=4000&h=1821&fm=avif&q=85&fit=scale" class="img-fluid" alt="">
+  </div> */}
+          {/* new restro */}
+          <section className="bg-light pt-50  pb-50 mt-5 ">
+            <div className="container">
+              <div className="row text-center">
+                <div className="heading_s1">
+                  <h2 className=" fw-bold text-capitalize text-dark">
+                    Online Ordering System
+                  </h2>
+                  <p className="fs-5 text-center  mb-2">
+                    Allow your customers to order what you’re selling from wherever they
+                    are and whenever they wish to. <br />
+                    Take your store online with POSApt.
+                  </p>
+                  <div className="subpara ">
+                    <div className="text-center newhome_btn">
+                      <a className="btn bg-theme fs-6 mb-2 w-auto" href="oos.html">
+                        Learn Our Online Ordering System More
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div className="recentstores">
+                <div className="row align-items-center justify-content-center">
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs7.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          QR Ordering{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs8.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Tablet Ordering{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs9.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          B to B Ordering
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs10.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Food Ordering{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs11.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Cafe Ordering{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="col-lg-4  col-sm-4">
+                    <a href=""></a>
+                    <div className=" p-15  text-center">
+                      <a href="">
+                        <img src="assets/dist/image/hs12.png" alt="" />
+                      </a>
+                      <div className="text-center newhome_btn store_btn">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Table-side Ordering{" "}
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <section className=" pb-50 whypos bg-light">
+            <div className="container">
+              <div className="row text-center">
+                <div className="heading_s1">
+                  <h2 className=" fw-bold text-capitalize text-dark">
+                    Why Choose POSApt's <br /> Point of Sale System?
+                  </h2>
+                </div>
+              </div>
+              <div className="row g-4">
+                <div className="col-md-4">
+                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
+                    <div className="card-body">
+                      <div className="feature-info-icon d-flex mb-3 align-items-center">
+                        <i className="far fa-check-square" />
+                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
+                          Real-time Sales Report
+                        </h3>
+                      </div>
+                      <div className="feature-info-content">
                         <p className="mb-0">
-                          A POS system software typically records an item’s
-                          price, tracks sales, accepts payments and generates a
-                          receipt. POSApt can do these aforementioned tasks
-                          flawlessly and even help out with important business
-                          operations.
+                          Any transaction that goes through POSApt is recorded and can
+                          be viewed in real-time. Get an overview of your key metrics
+                          right on your dashboard when you log into your account. Take
+                          prompt actions based on real data to lead your business
+                          towards success.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                    <h3 className="accordion-header" id="q2-heading">
-                      <button
-                        className="accordion-button shadow-none rounded-3 collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#q2"
-                        aria-expanded="false"
-                        aria-controls="q2"
-                      >
-                        What are the Key features of a Point of Sale System?
-                      </button>
-                    </h3>
-                    <div
-                      id="q2"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="q2-heading"
-                      data-bs-parent="#faq"
-                    >
-                      <div className="accordion-body fs-sm pt-0">
-                        <p>
-                          Key features of a Point of sale System software
-                          include:
-                        </p>
-                        <ul
-                          style={{
-                            listStyleType: "disc",
-                            paddingLeft: "20px",
-                          }}
-                        >
-                          <li>
-                            Sales processing: Accepting cash, credit cards, and
-                            debit cards is a simple procedure.
-                          </li>
-                          <li>
-                            Inventory management: Manage or track items in
-                            stock, alert when stocks run low, and produce
-                            purchase orders.
-                          </li>
-                          <li>
-                            Reporting: Tracks and records real-time data,
-                            prepares sales reports and analyzes data to find
-                            trends.
-                          </li>
-                          <li>
-                            Customer management: Track and manage customer
-                            information, purchasing history and preferences.
-                          </li>
-                          <li>
-                            Employee management: Tracks and manages employee
-                            scheduling, time, commission and leaves.
-                          </li>
-                        </ul>
+                </div>
+                <div className="col-md-4">
+                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
+                    <div className="card-body">
+                      <div className="feature-info-icon d-flex mb-3 align-items-center">
+                        <i className="far fa-check-square" />
+                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
+                          Efficient Order Tracking
+                        </h3>
                       </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                    <h3 className="accordion-header" id="q3-heading">
-                      <button
-                        className="accordion-button shadow-none rounded-3 collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#q3"
-                        aria-expanded="false"
-                        aria-controls="q3"
-                      >
-                        What are the components of a typical POS System?
-                      </button>
-                    </h3>
-                    <div
-                      id="q3"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="q3-heading"
-                      data-bs-parent="#faq"
-                    >
-                      <div className="accordion-body fs-sm pt-0">
-                        <p>The components of a typical POS System include:</p>
-                        <ul
-                          style={{
-                            listStyleType: "disc",
-                            paddingLeft: "20px",
-                          }}
-                        >
-                          <li>
-                            Hardware: Includes a computer/tablet, cash register,
-                            barcode scanner, and receipt printer.
-                          </li>
-                          <li>
-                            Software: A point-of-sale software runs on the
-                            hardware and manages the sales, inventory, reporting
-                            and many more features.
-                          </li>
-                          <li>
-                            Payment processing: Includes the ability to accept
-                            different payment methods such as cash, credit
-                            cards/debit cards or contactless payment.
-                          </li>
-                          <li>
-                            Inventory management: Includes tools for tracking
-                            inventory, generating purchase orders, and managing
-                            new inventory.
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                    <h3 className="accordion-header" id="q4-heading">
-                      <button
-                        className="accordion-button shadow-none rounded-3 collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#q4"
-                        aria-expanded="false"
-                        aria-controls="q4"
-                      >
-                        Who uses POS software in Australia?
-                      </button>
-                    </h3>
-                    <div
-                      id="q4"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="q4-heading"
-                      data-bs-parent="#faq"
-                    >
-                      <div className="accordion-body fs-sm pt-0">
-                        <p>
-                          Different businesses across Australia
-                          like retail stores, restaurants, bars, grocery stores,
-                          hotels and pubs use POS software. And, if you’ve ever
-                          talked to owners of these businesses, they can attest
-                          to the fact that this system has proved to be a boon
-                          to their businesses. More often than not, a POS system
-                          brings a positive impact on a business’s operations,
-                          return on investments and returning customers.
+                      <div className="feature-info-content">
+                        <p className="mb-0">
+                          Whether you’re a customer or the store owner, you’ll both have
+                          instances when you want to know the status of the order. That
+                          is where POSApt shines. The system allows you to precisely
+                          know exactly what the status of the order is.
                         </p>
                       </div>
                     </div>
                   </div>
-                  <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                    <h3 className="accordion-header" id="q5-heading">
-                      <button
-                        className="accordion-button shadow-none rounded-3 collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#q5"
-                        aria-expanded="false"
-                        aria-controls="q5"
-                      >
-                        Where are POS systems used?
-                      </button>
-                    </h3>
-                    <div
-                      id="q5"
-                      className="accordion-collapse collapse"
-                      aria-labelledby="q5-heading"
-                      data-bs-parent="#faq"
-                    >
-                      <div className="accordion-body fs-sm pt-0">
-                        <p>
-                          Point of Sale systems are used in various industries
-                          in Australia, including retail stores, restaurants,
-                          cafes, bars, hotels, grocery stores and salons. It is
-                          used wherever goods or services are sold, and
-                          transactions need to be processed.
+                </div>
+                <div className="col-md-4">
+                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
+                    <div className="card-body">
+                      <div className="feature-info-icon d-flex mb-3 align-items-center">
+                        <i className="far fa-check-square" />
+                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
+                          Secure Payment
+                        </h3>
+                      </div>
+                      <div className="feature-info-content">
+                        <p className="mb-0">
+                          It’s inevitable that businesses or service providers should be
+                          ready to accept different ways of payment. Our system allows
+                          you to accept multiple payment methods without having to put
+                          the payment details of your customers.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
+                    <div className="card-body">
+                      <div className="feature-info-icon d-flex mb-3 align-items-center">
+                        <i className="far fa-check-square" />
+                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
+                          Software Integration
+                        </h3>
+                      </div>
+                      <div className="feature-info-content">
+                        <p className="mb-0">
+                          Software tools such as Xero play an integral part in most
+                          businesses today. When switching to our system, you don’t have
+                          to let go of the tools you already rely upon. Seamlessly
+                          integrate third party tools and keep using them directly
+                          through POSApt.{" "}
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
+                    <div className="card-body">
+                      <div className="feature-info-icon d-flex mb-3 align-items-center">
+                        <i className="far fa-check-square" />
+                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
+                          Gift and Loyalty Points
+                        </h3>
+                      </div>
+                      <div className="feature-info-content">
+                        <p className="mb-0">
+                          Customer retention is one of, if not, the most difficult
+                          objective in any service or product-based industry. To help
+                          you with it, we offer multiple CRM features including e-gift
+                          cards, promotional discount vouchers and loyalty point
+                          systems.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-4">
+                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
+                    <div className="card-body">
+                      <div className="feature-info-icon d-flex mb-3 align-items-center">
+                        <i className="far fa-check-square" />
+                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
+                          Affordable for All
+                        </h3>
+                      </div>
+                      <div className="feature-info-content">
+                        <p className="mb-0">
+                          Unlike other POS providers, you can subscribe to our POS
+                          system with a minimal monthly fee. Moreover, we have a
+                          transparent pricing plan with no hidden fees. We also offer
+                          customer support and software updates for no extra charge to
+                          you.
                         </p>
                       </div>
                     </div>
@@ -850,8 +940,307 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </div>
-        </section>
+          </section>
+          {/* faq */}
+          <section className=" py-5  faqsec  bg-light ">
+            <div className="container">
+              <div className="row py-2 py-md-4 py-lg-5">
+                <div className="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
+                  <div className="card cardbg py-4 border-0 shadow h-100">
+                    <div className="card-body">
+                      <h3 className="pb-3 mb-1 mb-lg-2 fs-47 ">
+                        We are happy <br /> to talk with you. Book a Free Consultation!
+                      </h3>
+                      <div className="subpara mt-3">
+                        <ul>
+                          <li className="d-flex">Speed Up Sales</li>
+                          <li className="d-flex">Manage Multiple Stores</li>
+                          <li className="d-flex">Real-Time Sales Reporting</li>
+                          <li className="d-flex">
+                            Keep Track &amp; Prevent Stock Spoilage
+                          </li>
+                          <li className="d-flex">
+                            Analyse &amp; Improve Business Profits
+                          </li>
+                        </ul>
+                        {/* <a class="btn btn-white btn-red fw-bold" href="#">Request a Demo</a> */}
+                      </div>
+                      <div className="text-center newhome_btn newbtn1">
+                        <a href=""></a>
+                        <a className="btn btn-white btn-red fs-6" href="#">
+                          Book a Consultation
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div className="col-md-7 offset-xl-1">
+                  <div className="heading_s1 mb-3">
+                    <h2 className=" fw-bold text-capitalize text-dark text-center">
+                      Frequently Asked Questions?
+                    </h2>
+                    {/* <p class="fs-2 text-center">Customers can order from anywhrere anytime</p> */}
+                  </div>
+                  <div className="accordion bg-white p-2" id="faq">
+                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                      <h2 className="accordion-header" id="q1-heading">
+                        <button
+                          className="accordion-button shadow-none rounded-3 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#q1"
+                          aria-expanded="false"
+                          aria-controls="q1"
+                        >
+                          What is POS System Software?
+                        </button>
+                      </h2>
+                      <div
+                        id="q1"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="q1-heading"
+                        data-bs-parent="#faq"
+                      >
+                        <div className="accordion-body fs-sm pt-0">
+                          <p className="mb-0">
+                            Point of sale, or POS, refers to the place where a retail
+                            transaction such as buying or selling of goods takes place.
+                            While point-of-sale systems used to be your traditional cash
+                            register, they can now be found in a variety of forms,
+                            thanks to digital technologies.
+                            <br /> A POS system software typically records an item’s
+                            price, tracks sales, accepts payments and generates a
+                            receipt. POSApt can do these aforementioned tasks flawlessly
+                            and even help out with important business operations.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                      <h2 className="accordion-header" id="q2-heading">
+                        <button
+                          className="accordion-button shadow-none rounded-3 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#q2"
+                          aria-expanded="false"
+                          aria-controls="q2"
+                        >
+                          What are the Key Features of a Point of Sale Software?
+                        </button>
+                      </h2>
+                      <div
+                        id="q2"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="q2-heading"
+                        data-bs-parent="#faq"
+                      >
+                        <div className="accordion-body fs-sm pt-0">
+                          <p>
+                            Key features of a Point of sale System software include:
+                          </p>
+                          <ul>
+                            <li>
+                              {" "}
+                              <strong>Sales processing:</strong> Accepting cash, credit
+                              cards, and debit cards is a simple procedure.
+                            </li>
+                            <li>
+                              <strong>Inventory management:</strong> Manage or track
+                              items in stock, alert when stocks run low, and produce
+                              purchase orders.
+                            </li>
+                            <li>
+                              <strong>Reporting:</strong> Tracks and records real-time
+                              data, prepares sales reports and analyzes data to find
+                              trends.
+                            </li>
+                            <li>
+                              <strong>Customer management:</strong> Track and manage
+                              customer information, purchasing history and preferences.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                      <h2 className="accordion-header" id="q3-heading">
+                        <button
+                          className="accordion-button shadow-none rounded-3 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#q3"
+                          aria-expanded="false"
+                          aria-controls="q3"
+                        >
+                          What are the Components of a Typical POS System?
+                        </button>
+                      </h2>
+                      <div
+                        id="q3"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="q3-heading"
+                        data-bs-parent="#faq"
+                      >
+                        <div className="accordion-body fs-sm pt-0">
+                          <p>The components of a typical POS System include:</p>
+                          <ul>
+                            <li>
+                              <strong> Hardware:</strong> A computer/tablet, cash
+                              register, barcode scanner, and receipt printer.
+                            </li>
+                            <li>
+                              <strong>Software:</strong> A point-of-sale software runs
+                              on the hardware and manages the sales, inventory,
+                              reporting and many more features.
+                            </li>
+                            <li>
+                              <strong>Payment processing:</strong> Ability to accept
+                              different payment methods such as cash, credit cards/debit
+                              cards or contactless payment.
+                            </li>
+                            <li>
+                              <strong>Inventory management:</strong> Tools for tracking
+                              inventory, generating purchase orders, and managing new
+                              inventory.
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                      <h2 className="accordion-header" id="q6-heading">
+                        <button
+                          className="accordion-button shadow-none rounded-3 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#q6"
+                          aria-expanded="false"
+                          aria-controls="q6"
+                        >
+                          Who Uses POS Software in Australia?
+                        </button>
+                      </h2>
+                      <div
+                        id="q6"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="q6-heading"
+                        data-bs-parent="#faq"
+                      >
+                        <div className="accordion-body fs-sm pt-0">
+                          <p className="mb-0">
+                            Different businesses across Australia like retail stores,
+                            restaurants, bars, grocery stores, hotels and pubs use POS
+                            software. And, if you’ve ever talked to owners of these
+                            businesses, they can attest to the fact that this system has
+                            proved to be a boon to their businesses. More often than
+                            not, a POS system brings a positive impact on a business’s
+                            operations, return on investments and returning customers.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                      <h2 className="accordion-header" id="q4-heading">
+                        <button
+                          className="accordion-button shadow-none rounded-3 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#q4"
+                          aria-expanded="false"
+                          aria-controls="q4"
+                        >
+                          How to Set up POSApt's All-in-One POS System?
+                        </button>
+                      </h2>
+                      <div
+                        id="q4"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="q4-heading"
+                        data-bs-parent="#faq"
+                      >
+                        <div className="accordion-body fs-sm pt-0">
+                          <p>
+                            When you sign up for a paid plan with POSApt, we send a
+                            professional to get everything set up on your premises. You
+                            do not have to worry about what you need to do, our
+                            professional will set up all the hardware, and software.
+                            Moreover, our team will give you a hands-on tour of the
+                            system when we make it live. This way, you can confidently
+                            start making the most out of POSApt’s POS solution from the
+                            get-go.{" "}
+                          </p>
+                          <p className="mb-0">
+                            Even when you’re on a free trial, you can easily set up our
+                            POSApt with the help of our{" "}
+                            <a href="" className="text-primary">
+                              Tutorial Videos
+                            </a>
+                            .
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
+                      <h2 className="accordion-header" id="q5-heading">
+                        <button
+                          className="accordion-button shadow-none rounded-3 collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#q5"
+                          aria-expanded="false"
+                          aria-controls="q5"
+                        >
+                          How Much Does the POSApt's Point of Sale Software Cost?
+                        </button>
+                      </h2>
+                      <div
+                        id="q5"
+                        className="accordion-collapse collapse"
+                        aria-labelledby="q5-heading"
+                        data-bs-parent="#faq"
+                      >
+                        <div className="accordion-body fs-sm pt-0">
+                          <p className="mb-0">
+                            You can get POSApt’s POS Software for just $66 or $99 for
+                            hospitality or retail businesses respectively. Depending on
+                            your needs for additional features such as online ordering
+                            systems or dedicated mobile apps, the cost can change. Check
+                            out our complete
+                            <a href="pricing.html" className="text-primary">
+                              pricing plan
+                            </a>{" "}
+                            to learn more.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="card card-hover bg-theme-green mt-2 py-2 rounded-3 border-0">
+                    <div className="card-body  d-flex d-mobile-block align-items-center justify-content-center text-center justify-content-md-between">
+                      <div>
+                        <p className="fs-4 mb-0 text-white">Connect with us</p>
+                      </div>
+                      <div className="social-links ">
+                        {" "}
+                        <a href="#" className="facebook">
+                          <i className="fab fa-facebook" />
+                        </a>{" "}
+                        <a href="#" className="instagram">
+                          <i className="fab fa-instagram" />
+                        </a>
+                        <a href="#" className="linkedin">
+                          <i className="fab fa-linkedin" />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </>
+
         <noscript>
           <img height="1" width="1" style={{ display: "none", visibility: "hidden" }}
             src="https://www.facebook.com/tr?id=10022972934381273&ev=PageView&noscript=1"
