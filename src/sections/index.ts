@@ -6,6 +6,7 @@ import CustomerSection from "./common/CustomerSection";
 import ContactFormSection from "./common/ContactFormSection";
 import SignUpSection from "./common/SignUpSection";
 import LocationHeroSection from "./common/LocationHeroSection";
+import FeatureList from "./common/FeatureList";
 
 import RetailSignUpSection from "./retail-pos/RetailSignUpSection";
 
@@ -19,6 +20,7 @@ export {
   ContactFormSection,
   SignUpSection,
   LocationHeroSection,
+  FeatureList,
 
   RetailSignUpSection,
 

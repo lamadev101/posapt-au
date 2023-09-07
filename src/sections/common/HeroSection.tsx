@@ -24,7 +24,7 @@ const HeroSection: React.FC<HeroSectionProps> = ({ title, desc, imgUrl, twoBtn }
           <div className="col-md-5 ">
             <div className="">
               <img
-                src={imgUrl}
+                src={`/assets/dist/image/${imgUrl}`}
                 className="img-fluid"
                 alt={title}
                 title={title}

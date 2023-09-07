@@ -57,12 +57,20 @@ gtag('config', 'G-QM35YBD0EJ');`;
           <link rel="apple-touch-icon" sizes="96x96" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="128x128" href="/favicon.ico" />
           <link rel="apple-touch-icon" sizes="192x192" href="/favicon.ico" />
+
+          {/* <!-- Custom styles for this template --> */}
+          <link href="assets/dist/swiper/swiper-bundle.min.css" rel="stylesheet" />
+
+          {/* <!-- Custom styles for this template --> */}
+          {/* <link href="carousel.css" rel="stylesheet" /> */}
           {/* <script
             src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
             integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
             defer
           ></script> */}
-          <script src="/assets/dist/js/bootstrap.bundle.min.js" defer></script>
+          {/* <script src="/assets/dist/js/bootstrap.bundle.min.js" defer></script> */}
+          {/* <script src="assets/dist/swiper/swiper-bundle.min.js" defer></script>
+          <script src="assets/dist/js/main.js" defer></script> */}
           <script
             dangerouslySetInnerHTML={{
               __html: `
@@ -89,6 +97,9 @@ gtag('config', 'G-QM35YBD0EJ');`;
             style={{ display: "none", visibility: "hidden" }}
           ></iframe>
         </noscript>
+        <script src="/assets/dist/js/bootstrap.bundle.min.js" defer></script>
+        <script src="assets/dist/swiper/swiper-bundle.min.js" defer></script>
+        <script src="assets/dist/js/main.js" defer></script>
       </body>
     </Html>
   );

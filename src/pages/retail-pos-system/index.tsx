@@ -177,7 +177,7 @@ const RetailPosSystem = () => {
         <link rel="canonical" href="https://posapt.au/retail-pos-system" />
       </Head>
       <Layout>
-        <main>
+        <>
           {/* about us */}
           <section className=" pt-1 pt-md-5 pb-50 bg-home">
             <div className="container  text-center">
@@ -192,7 +192,7 @@ const RetailPosSystem = () => {
                   </div>
                 </div>
                 <div className="col-md-5 ">
-                  <div className="">
+                  <div className="mt-4 mb-4 mt-md-0 mb-md-0">
                     <img
                       src="assets/dist/image/retailweb.png"
                       className="img-fluid"
@@ -281,7 +281,7 @@ const RetailPosSystem = () => {
           {/* store */}
           <section className="pt-50">
             <div className="container">
-              <div className="p-5 bg-light rounded-3">
+              <div className="p-2 p-md-5 bg-light rounded-3">
                 <div className="row text-center">
                   <div className="heading_s1">
                     <h2 className=" fw-bold text-capitalize text-dark">
@@ -618,7 +618,7 @@ const RetailPosSystem = () => {
                   </h2>
                 </div>
               </div>
-              <div className="row g-4">
+              <div className="row g-4 flex-nowrap flex-md-wrap  mobile_flex">
                 <div className="col-md-4">
                   <div className="card h-100 shadow border-0 rounded p-2">
                     <div className="card-body">
@@ -1145,7 +1145,7 @@ const RetailPosSystem = () => {
               </div>
             </div>
           </section>
-        </main>
+        </>
       </Layout>
     </>
   );

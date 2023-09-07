@@ -14,27 +14,27 @@ const Footer: FC = () => {
               <ul>
                 <li>
                   {" "}
-                  <a href="about.html">About us</a>
+                  <Link href="/about">About us</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="pricing.html">Pricing</a>
+                  <Link href="/pricing">Pricing</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="termsofservice.html">Terms of service</a>
+                  <Link href="/terms-of-service">Terms of service</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="pricing.html">Privacy policy</a>
+                  <Link href="/privacy-policy">Privacy policy</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="help.html">Help</a>
+                  <Link href="/help">Help</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="blogs.html">Blogs</a>
+                  <Link href="/blogs">Blogs</Link>
                 </li>
               </ul>
             </div>
@@ -43,23 +43,23 @@ const Footer: FC = () => {
               <ul>
                 <li>
                   {" "}
-                  <a href="oos.html">Online Ordering System</a>
+                  <Link href="/online-ordering-system">Online Ordering System</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="ecommercepos.html">E-Commerce System</a>
+                  <Link href="/ecommerce">E-Commerce System</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="retailpos.html">Retail POS System</a>
+                  <Link href="/retail-pos-system">Retail POS System</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="hospitalitypos.html">Hospitality POS System</a>
+                  <Link href="/hospitality-pos-system">Hospitality POS System</Link>
                 </li>
                 <li>
                   {" "}
-                  <a href="">Enterprise POS System</a>
+                  <Link href="">Enterprise POS System</Link>
                 </li>
               </ul>
             </div>
@@ -120,22 +120,22 @@ const Footer: FC = () => {
           <div className="nav-active-theme text-center ">
             <ul className="d-flex flex-wrap gap-4 text-white mb-0 align-items-center justify-content-center">
               <li>
-                <a href="">Perth</a>
+                <Link href="">Perth</Link>
               </li>
               <li>
-                <a href="/pos-system-sydney">Sydney</a>
+                <Link href="/pos-system-sydney">Sydney</Link>
               </li>
               <li>
-                <a href="">Melbourne</a>
+                <Link href="/pos-system-melbourne">Melbourne</Link>
               </li>
               <li>
-                <a href="">Adelaide</a>
+                <Link href="/pos-system-adelaide">Adelaide</Link>
               </li>
               <li>
-                <a href="">Brisbane</a>
+                <Link href="/pos-system-brisbane">Brisbane</Link>
               </li>
               <li>
-                <a href="">Canberra</a>
+                <Link href="/pos-system-canberra">Canberra</Link>
               </li>
             </ul>
           </div>

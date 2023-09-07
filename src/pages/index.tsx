@@ -1,15 +1,11 @@
 /** @format */
 
 import Layout from "@/Components/Layout";
+import { FeatureList, HeroSection } from "@/sections";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
-import OurHardwareSystem from "@/Components/OurHardwareSystem";
-import Features from "@/Components/Features";
-import MailAndCall from "@/Components/MailAndCall";
-import HeroSection from "@/sections/hero/HeroSection";
-import { SignUpSection } from "@/sections";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -160,6 +156,102 @@ export default function Home() {
     ]
   }
 
+  // List of items
+  const solutionList = [
+    {
+      title: "Cafe",
+      link: "",
+      imgSrc: "",
+    },
+    {
+      title: "Florist",
+      link: "/flower-pos-system",
+      imgSrc: "",
+    },
+    {
+      title: "Restaurant",
+      link: "/restaurant-pos-system",
+      imgSrc: "",
+    },
+    {
+      title: "Grocery",
+      link: "/grocery-pos-system",
+      imgSrc: "",
+    },
+    {
+      title: "Liquor",
+      link: "/beverages-pos-system",
+      imgSrc: "",
+    },
+    {
+      title: "Bakery",
+      link: "/bakery-pos-system",
+      imgSrc: "",
+    },
+
+  ]
+  const orderingList = [
+    {
+      title: "QR",
+      link: "qr-ordering",
+      imgSrc: "",
+    },
+    {
+      title: "Tablet",
+      link: "tablet-ordering",
+      imgSrc: "",
+    },
+    {
+      title: "B to B",
+      link: "b2b-ordering",
+      imgSrc: "",
+    },
+    {
+      title: "Food",
+      link: "food-ordering",
+      imgSrc: "",
+    },
+    {
+      title: "Cafe",
+      link: "cafe-and-coffee-shop",
+      imgSrc: "cafe-and-coffee-shop",
+    },
+    {
+      title: "Table-side",
+      link: "table-ordering",
+      imgSrc: "",
+    },
+  ]
+  const featureListData = {
+    title: `Why Choose POSApt's <br /> Point of Sale System?`,
+    featureList: [
+      {
+        title: "Real-time Sales Report",
+        desc: "Any transaction that goes through POSApt is recorded and can be viewed in real-time. Get an overview of your key metrics right on your dashboard when you log into your account. Take prompt actions based on real data to lead your business towards success.",
+      },
+      {
+        title: "Efficient Order Tracking",
+        desc: "Whether you’re a customer or the store owner, you’ll both have instances when you want to know the status of the order. That is where POSApt shines. The system allows you to precisely know exactly what the status of the order is.",
+      },
+      {
+        title: "Secure Payment",
+        desc: "It’s inevitable that businesses or service providers should be ready to accept different ways of payment. Our system allows you to accept multiple payment methods without having to put the payment details of your customers.",
+      },
+      {
+        title: "Software Integration",
+        desc: "Software tools such as Xero play an integral part in most businesses today. When switching to our system, you don’t have to let go of the tools you already rely upon. Seamlessly integrate third party tools and keep using them directly through POSApt",
+      },
+      {
+        title: "Gift and Loyalty Points",
+        desc: "Customer retention is one of, if not, the most difficult objective in any service or product-based industry. To help you with it, we offer multiple CRM features including e-gift cards, promotional discount vouchers and loyalty point systems.",
+      },
+      {
+        title: "Affordable for All",
+        desc: "Unlike other POS providers, you can subscribe to our POS system with a minimal monthly fee. Moreover, we have a transparent pricing plan with no hidden fees. We also offer customer support and software updates for no extra charge to you.",
+      },
+    ]
+  }
+
   return (
     <>
       <Head>
@@ -280,48 +372,14 @@ export default function Home() {
           </div>
         </div>
 
-        <>
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50 bg-home">
-            <div className="container  text-center">
-              <div className="row align-items-center">
-                <div className="col-md-7 ">
-                  <div className="heading_s1">
-                    <h1 className="text-capitalize fs-61 text-white">
-                      All in One <br /> POS System <br />
-                      Simplifies Your Business
-                    </h1>
-                  </div>
-                </div>
-                <div className="col-md-5 ">
-                  <div className="">
-                    <img
-                      src="assets/dist/image/newhomeimg (1).png"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="subpara ">
-                    <p className="text-center fs-47 text-white">
-                      <span style={{ fontWeight: 400 }}>
-                        Manage both in-shop and online sales with a single POS system.
-                      </span>
-                    </p>
-                    <div className="text-center newhome_btn">
-                      <a className="btn btn-white btn-red fs-6 mb-2" href="#">
-                        Sign Up for Free
-                      </a>
-                      <a className="btn btn-white btn-red fs-6 mb-2" href="#">
-                        Watch Video
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+        <main>
+          <HeroSection
+            title="All in One POS System Simplifies Your Business"
+            desc="Manage both in-shop and online sales with a single POS system."
+            imgUrl="newhomeimg (1).png"
+            twoBtn
+          />
+
           <section className="pt-50">
             <div className="container">
               <div className="row">
@@ -455,7 +513,7 @@ export default function Home() {
                   </div>
                 </div>
                 <div className="col-md-5 text-end">
-                  <div className="homeimg_right">
+                  <div className="homeimg_right mt-4 mt-md-0">
                     <img
                       src="assets/dist/image/newhomeimg (2).png"
                       alt=""
@@ -466,6 +524,8 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+
           {/* new restro */}
           <section className="bg-light pt-50  pb-50 mt-5 ">
             <div className="container">
@@ -486,89 +546,116 @@ export default function Home() {
                 </div>
               </div>
               <div className="recentstores">
-                <div className="row align-items-center justify-content-center">
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs1.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Cafe
-                        </a>
+                <div className="row align-items-center justify-content-center d-none d-md-flex">
+                  {
+                    solutionList.map((item, index) => (
+                      <div key={index} className="col-lg-4  col-sm-4">
+                        <div className=" p-15  text-center">
+                          <Link href={item.link}>
+                            <img src={`assets/dist/image/hs${index + 1}.png`} alt="" />
+                          </Link>
+                          <div className="text-center newhome_btn store_btn">
+                            <Link className="btn btn-white btn-red fs-6" href={item.link}>
+                              {item.title}
+                            </Link>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs2.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Florist
-                        </a>
+                    ))
+                  }
+                </div>
+
+                {/* mobile view */}
+                <div className="">
+                  <div className="d-md-none ">
+                    <div className="swiper mainswiper mySwiper">
+                      <div className="swiper-wrapper   ">
+                        <div className="swiper-slide">
+                          <a href=""></a>
+                          <div className=" p-15  text-center">
+                            <a href="">
+                              <img src="assets/dist/image/hs1.png" alt="" />
+                            </a>
+                            <div className="text-center newhome_btn store_btn">
+                              <a href=""></a>
+                              <a className="btn btn-white btn-red fs-6" href="#">
+                                Cafe
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <a href=""></a>
+                          <div className=" p-15  text-center">
+                            <a href="">
+                              <img src="assets/dist/image/hs2.png" alt="" />
+                            </a>
+                            <div className="text-center newhome_btn store_btn">
+                              <a href=""></a>
+                              <a className="btn btn-white btn-red fs-6" href="#">
+                                Florist
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <a href=""></a>
+                          <div className=" p-15  text-center">
+                            <a href="">
+                              <img src="assets/dist/image/hs3.png" alt="" />
+                            </a>
+                            <div className="text-center newhome_btn store_btn">
+                              <a href=""></a>
+                              <a className="btn btn-white btn-red fs-6" href="#">
+                                Restaurant
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <a href=""></a>
+                          <div className=" p-15  text-center">
+                            <a href="">
+                              <img src="assets/dist/image/hs4.png" alt="" />
+                            </a>
+                            <div className="text-center newhome_btn store_btn">
+                              <a href=""></a>
+                              <a className="btn btn-white btn-red fs-6" href="#">
+                                Fashion
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <a href=""></a>
+                          <div className=" p-15  text-center">
+                            <a href="">
+                              <img src="assets/dist/image/hs5.png" alt="" />
+                            </a>
+                            <div className="text-center newhome_btn store_btn">
+                              <a href=""></a>
+                              <a className="btn btn-white btn-red fs-6" href="#">
+                                Liquor{" "}
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="swiper-slide">
+                          <a href=""></a>
+                          <div className=" p-15  text-center">
+                            <a href="">
+                              <img src="assets/dist/image/hs6.png" alt="" />
+                            </a>
+                            <div className="text-center newhome_btn store_btn">
+                              <a href=""></a>
+                              <a className="btn btn-white btn-red fs-6" href="#">
+                                Bakery
+                              </a>
+                            </div>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs3.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Restaurant
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs4.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Fashion
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs5.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Liquor{" "}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs6.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Bakery
-                        </a>
-                      </div>
+                      <div className="swiper-pagination" />
                     </div>
                   </div>
                 </div>
@@ -624,12 +711,13 @@ export default function Home() {
               <div className="row align-items-center">
                 <div className="col-md-8">
                   <div className="row text-start">
-                    <div className="heading_s1">
+                    <div className="heading_s1">     
+
                       <h2 className=" fw-bold text-capitalize text-white">
                         Our User Friendly Integrated{" "}
                         <span className="d-block">E-Commerce System</span>
                       </h2>
-                      <p className="fs-47 text-start text-white">
+                      <p className="fs-20 text-start text-white">
                         Bussiness owners find all management solutions within POSApt.
                       </p>
                     </div>
@@ -681,7 +769,7 @@ export default function Home() {
                         className="btn btn-white btn-red fs-6 mb-2 w-auto"
                         href="ecommercepos.html"
                       >
-                        Learn POSApt E-Commerce System More
+                        Learn E-Commerce System More
                       </a>
                     </div>
                   </div>
@@ -689,11 +777,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {/* <div class="container-fluid">
-      <img src="https://images.ctfassets.net/2d5q1td6cyxq/5YjIscSBApfmtZxBer3R2A/9a41fcd0716db506e91237eca6a00dea/PD03417_-_M_USEN_Ecommerce_software_frames.png?w=4000&h=1821&fm=avif&q=85&fit=scale" class="img-fluid" alt="">
-  </div> */}
           {/* new restro */}
-          <section className="bg-light pt-50  pb-50 mt-5 ">
+          <section className="bg-light pt-50 pt-3  pb-50 mt-3 mt-md-5 ">
             <div className="container">
               <div className="row text-center">
                 <div className="heading_s1">
@@ -706,241 +791,66 @@ export default function Home() {
                     Take your store online with POSApt.
                   </p>
                   <div className="subpara ">
-                    <div className="text-center newhome_btn">
+                    <div className="text-center newhome_btn mt-3 mt-md-0">
                       <a className="btn bg-theme fs-6 mb-2 w-auto" href="oos.html">
-                        Learn Our Online Ordering System More
+                        Learn Online Ordering System More
                       </a>
                     </div>
                   </div>
                 </div>
               </div>
               <div className="recentstores">
-                <div className="row align-items-center justify-content-center">
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs7.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          QR Ordering{" "}
-                        </a>
+                <div className="row align-items-center justify-content-center d-none d-md-flex">
+
+                  {
+                    orderingList.map((item, index) => (
+                      <div key={index} className="col-lg-4  col-sm-4">
+                        <div className=" p-15  text-center">
+                          <Link href={`/online-ordering-system/${item.link}`}>
+                            <img src={`assets/dist/image/hs${index + 7}.png`} alt={item.title} />
+                          </Link>
+                          <div className="text-center newhome_btn store_btn">
+                            <Link className="btn btn-white btn-red fs-6" href={`/online-ordering-system/${item.link}`}>
+                              {item.title} Ordering{" "}
+                            </Link>
+                          </div>
+                        </div>
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs8.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Tablet Ordering{" "}
-                        </a>
+                    ))
+                  }
+                </div>
+                {/* mobile view */}
+                <div className="">
+                  <div className="d-md-none ">
+                    <div className="swiper mainswiper mySwiper">
+                      <div className="swiper-wrapper">
+                        {orderingList.map((item, index) => (
+                          <div className="swiper-slide">
+                            <div className=" p-15  text-center">
+                              <Link href={`/online-ordering-system/${item.link}`}>
+                                <img src={`assets/dist/image/hs${index + 7}.png`} alt={item.title} />
+                              </Link>
+                              <div className="text-center newhome_btn store_btn">
+                                <Link className="btn btn-white btn-red fs-6" href={`/online-ordering-system/${item.link}`}>
+                                  {item.title} Ordering
+                                </Link>
+                              </div>
+                            </div>
+                          </div>
+                        ))}
                       </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs9.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          B to B Ordering
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs10.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Food Ordering{" "}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs11.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Cafe Ordering{" "}
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="col-lg-4  col-sm-4">
-                    <a href=""></a>
-                    <div className=" p-15  text-center">
-                      <a href="">
-                        <img src="assets/dist/image/hs12.png" alt="" />
-                      </a>
-                      <div className="text-center newhome_btn store_btn">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Table-side Ordering{" "}
-                        </a>
-                      </div>
+                      <div className="swiper-pagination" />
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          <section className=" pb-50 whypos bg-light">
-            <div className="container">
-              <div className="row text-center">
-                <div className="heading_s1">
-                  <h2 className=" fw-bold text-capitalize text-dark">
-                    Why Choose POSApt's <br /> Point of Sale System?
-                  </h2>
-                </div>
-              </div>
-              <div className="row g-4">
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3 align-items-center">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
-                          Real-time Sales Report
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Any transaction that goes through POSApt is recorded and can
-                          be viewed in real-time. Get an overview of your key metrics
-                          right on your dashboard when you log into your account. Take
-                          prompt actions based on real data to lead your business
-                          towards success.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3 align-items-center">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
-                          Efficient Order Tracking
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Whether you’re a customer or the store owner, you’ll both have
-                          instances when you want to know the status of the order. That
-                          is where POSApt shines. The system allows you to precisely
-                          know exactly what the status of the order is.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3 align-items-center">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
-                          Secure Payment
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          It’s inevitable that businesses or service providers should be
-                          ready to accept different ways of payment. Our system allows
-                          you to accept multiple payment methods without having to put
-                          the payment details of your customers.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3 align-items-center">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
-                          Software Integration
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Software tools such as Xero play an integral part in most
-                          businesses today. When switching to our system, you don’t have
-                          to let go of the tools you already rely upon. Seamlessly
-                          integrate third party tools and keep using them directly
-                          through POSApt.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3 align-items-center">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
-                          Gift and Loyalty Points
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Customer retention is one of, if not, the most difficult
-                          objective in any service or product-based industry. To help
-                          you with it, we offer multiple CRM features including e-gift
-                          cards, promotional discount vouchers and loyalty point
-                          systems.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded pt-4 pb-2 ">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3 align-items-center">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20">
-                          Affordable for All
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Unlike other POS providers, you can subscribe to our POS
-                          system with a minimal monthly fee. Moreover, we have a
-                          transparent pricing plan with no hidden fees. We also offer
-                          customer support and software updates for no extra charge to
-                          you.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
+          <FeatureList
+            {...featureListData}
+          />
+
           {/* faq */}
           <section className=" py-5  faqsec  bg-light ">
             <div className="container">
@@ -1239,7 +1149,8 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </>
+        </main>
+
 
         <noscript>
           <img height="1" width="1" style={{ display: "none", visibility: "hidden" }}
