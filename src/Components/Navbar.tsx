@@ -241,7 +241,7 @@ const Navbar: FC = () => {
                         <Link className="dropdown-item" href="/custom-pos-system">
                           Custom POS
                         </Link>
-                        <Link className="dropdown-item" href="/online-ordering-system//tablet-ordering">
+                        <Link className="dropdown-item" href="/online-ordering-system/tablet-ordering">
                           {" "}
                           Tablet POS
                         </Link>

@@ -253,14 +253,14 @@ export default function Home() {
         {/* Mobile view menu */}
         <div className="btn-group d-md-none fixed-bottom bg-white p-2 ">
           <div className="navbar-toolbar d-flex align-items-center order-lg-3 justify-content-center m-auto">
-            <a
+            <Link
               href="https://app.posapt.au"
               target={"_blank"}
               className="btn btn-raised shadow my-button w-xs  me-2 homecart homelogin"
             >
               <i className="fas fa-user me-2" />
               Login
-            </a>
+            </Link>
             <a
               className="btn btn-raised bg-danger shadow my-button w-xs  me-2 homecart homelogin"
               onClick={() => {
@@ -334,7 +334,7 @@ export default function Home() {
                     </div>
                     <ul className="newposlist text-dark fw-bold pt-4 fs-5">
                       <li>
-                        <a href="/cloud-pos" className="text-theme">
+                        <Link href="/cloud-pos" className="text-theme">
                           <svg
                             className="me-2"
                             xmlns="http://www.w3.org/2000/svg"
@@ -368,10 +368,10 @@ export default function Home() {
                             </g>
                           </svg>
                           Cloud POS System
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/online-ordering-system" className="text-theme">
+                        <Link href="/online-ordering-system" className="text-theme">
                           <svg
                             className="me-2"
                             xmlns="http://www.w3.org/2000/svg"
@@ -405,10 +405,10 @@ export default function Home() {
                             </g>
                           </svg>
                           Online Ordering System
-                        </a>
+                        </Link>
                       </li>
                       <li>
-                        <a href="/ecommerce" className="text-theme">
+                        <Link href="/ecommerce" className="text-theme">
                           <svg
                             className="me-2"
                             xmlns="http://www.w3.org/2000/svg"
@@ -442,7 +442,7 @@ export default function Home() {
                             </g>
                           </svg>
                           POSApt E-commerce System
-                        </a>
+                        </Link>
                       </li>
                     </ul>
                     <p className="fs-5 mt-2 mt-md-3">
