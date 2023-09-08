@@ -260,9 +260,8 @@ const Flower = () => {
                   <div className="subpara mt-3 productcard">
                     <div className="row">
                       {featureDatas.map((item, index) => (
-                        <div className="col-md-6">
-                          <h3 className="text-theme">
-                            <img src="assets/dist/image/icon1.png" className="img-fluid" alt={item.title} title={item.title} /> {item.title}</h3>
+                        <div key={index} className="col-md-6">
+                          <h3 className="text-theme">{item.title}</h3>
                           <p>{item.describe}</p>
                         </div>
                       ))}
@@ -292,7 +291,7 @@ const Flower = () => {
 
 
                       {featureDatas2.map((item, index) => (
-                        <div className="ordercard mt-2">
+                        <div key={index} className="ordercard mt-2">
                           <h3 className="fw-bold text-capitalize text-theme">{item.title}</h3>
                           <p className="pt-1">
                             {item.describe}
@@ -314,6 +313,7 @@ const Flower = () => {
 
           <ContactFormSection
             businessTitle="flower shop"
+            price="99"
           />
 
           {/* <!-- faq --> */}

@@ -33,6 +33,10 @@ const TableOfContent = ({tags}:any) => {
             <p>Generate more revenue by selling online with an Online Ordering System.</p>
           </li>
           <li>
+            <div><i className="fa fa-check-circle" aria-hidden="true"></i>E-Commerce System</div>
+            <p>POSApt e-commerce platform to create stunning online stores for retail businesses.</p>
+          </li>
+          <li>
             <div><i className="fa fa-check-circle" aria-hidden="true"></i>Free Consultation</div>
             <p>Send us an enquiry anytime, we are here to help!.</p>
           </li>

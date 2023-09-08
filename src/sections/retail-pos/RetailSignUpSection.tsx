@@ -20,7 +20,7 @@ const RetailSignUpSection = () => {
               </h2>
             </div>
             <p className="text-white">
-              POSApt’s Online Ordering System turns your website visitors into returning clients. It's easy-to-use, powerful and customer-centric to get you the best results from your online business.
+              POSApt’s Ecommerce turns your website visitors into returning clients. It's easy-to-use, powerful and customer-centric to get you the best results from your online business.
             </p>
             <div className="subpara">
               <a

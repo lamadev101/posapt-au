@@ -1,5 +1,6 @@
 import { useDispatch } from "react-redux";
 
+
 const SignUpSection = () => {
   const dispatch = useDispatch();
 

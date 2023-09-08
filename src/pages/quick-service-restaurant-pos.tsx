@@ -39,17 +39,13 @@ const QuickServiceRestaurantPos = () => {
     ]
   }
   const lastSectionData = {
-    firstTitle: "Why Use a QSR",
-    lastTitle: "Pos System",
+    firstTitle: "Why Use POSApt's",
+    lastTitle: "QSR POS System?",
     imgUrl: "quick-service-restaurant.webp",
     content: [
       {
         title: `Smooth Transaction Management`,
         desc: `Experiencing the steady rhythm of transactions on the billing machine is truly satisfying. QSRs cater to a significant influx of customers and their diverse orders. As a result,  a resilient and user-friendly QSR POS system like POSApt is indispensable. Effortless transaction management facilitates accurate orders and seamless payments.`
-      },
-      {
-        title: `Swift Order Processing`,
-        desc: `What good is a fast food joint that doesn’t even process an order fast enough, right? A quick solution, such as rapid order processing facilitated by a POS system, makes your QSR the talk of the town. It also mitigates the frustration of prolonged queues for order placement. Consequently, your customers grow happier alongside your sales.`
       },
       {
         title: `Acceptance of Various Payment Methods`,
@@ -273,7 +269,7 @@ const QuickServiceRestaurantPos = () => {
           tagline="Simply Quicker"
           title="Point of Sale System for Quick Service Restaurants (QSRs) Across Australia"
           desc="Selling made quicker. Serve your cuisines faster than ever before with an advanced QSR based POS solution. From fast ordering to fast serving, our pos system handles it all. Try it for free!"
-          imgUrl="/assets/dist/image/store/restaurant_pos.webp"
+          imgUrl="/assets/dist/image/posSys/retail/hero/QSRestaurant.webp"
         />
         <FirstSection
           {...firstSectionData}

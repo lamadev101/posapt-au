@@ -311,12 +311,6 @@ Sales Reporting: The system collects data on sales, including the number of tran
                       {featureDatas.map((item, index) => (
                         <div className="col-md-6">
                           <h3 className="text-theme">
-                            <img
-                              src="assets/dist/image/icon1.png"
-                              className="img-fluid"
-                              alt={item.title}
-                              title={item.title}
-                            />{" "}
                             {item.title}
                           </h3>
                           <p>{item.describe}</p>

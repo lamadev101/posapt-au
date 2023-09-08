@@ -49,10 +49,6 @@ const BikeBicycleShop = () => {
         desc: "At POSApt, we recognize that challenges can arise at any hour. Our commitment to your success doesn't clock out, which is why our dedicated support team is available round-the-clock. Whether you have questions, encounter technical issues, or seek guidance, our experts are just a call away. Your journey toward operational excellence is our top priority. Our support crew is here to ensure you keep pedalling ahead without any roadblocks",
       },
       {
-        title: "30-Day Free Trial",
-        desc: "Experience innovation with confidence through our 30-day free trial. We believe in the transformative power of our POS solution, and we invite you to witness it firsthand. Dive into the array of features tailored to enhance your shop's efficiency and management. This risk-free trial period allows you to explore the system's capabilities, making an informed decision about how it aligns with your business needs.",
-      },
-      {
         title: "Legacy Hardware Support",
         desc: "Getting a new POS system shouldn't mean you have to discard all of your existing hardware items. With POSApt, you can seamlessly integrate our solution with your legacy hardware systems. No need to worry about additional expenses or disruptions caused by hardware replacements. Our POS system's compatibility ensures a smooth transition, allowing you to continue using your trusted equipment.",
       },
@@ -281,7 +277,7 @@ const BikeBicycleShop = () => {
           tagline="Ride the future"
           title="Solving Australian POS Needs for Bike & Bicycle Shops"
           desc="Gear up to transform how you manage your bike or bicycle shop. From pedalling through inventory control to cruising with multi-location support, we’re bringing you a feature-rich POS system for your shop."
-          imgUrl="/assets/dist/image/posSys/retail/hero/bike-shop.webp"
+          imgUrl="/assets/dist/image/posSys/retail/hero/bike.webp"
         />
         <FirstSection
           {...firstSectionData}
@@ -292,6 +288,7 @@ const BikeBicycleShop = () => {
         />
         <ContactFormSection
           businessTitle=""
+          price="99"
         />
       </Layout>
     </>

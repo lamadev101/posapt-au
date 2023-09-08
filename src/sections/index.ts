@@ -7,9 +7,13 @@ import ContactFormSection from "./common/ContactFormSection";
 import SignUpSection from "./common/SignUpSection";
 import LocationHeroSection from "./common/LocationHeroSection";
 import FeatureList from "./common/FeatureList";
+import BusinessFeatureList from "./common/BusinessFeatureList";
 
 import RetailSignUpSection from "./retail-pos/RetailSignUpSection";
 
+import BestOosList from "./oos/BestOosList";
+
+import CloudFeatureList from "./cloud-pos/CloudFeatureList";
 
 export {
   HeroSection,
@@ -21,7 +25,11 @@ export {
   SignUpSection,
   LocationHeroSection,
   FeatureList,
+  BusinessFeatureList,
 
   RetailSignUpSection,
 
+  BestOosList,
+
+  CloudFeatureList,
 }

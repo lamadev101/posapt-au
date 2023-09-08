@@ -14,10 +14,11 @@ const FeatureList: React.FC<featuresListProps> = ({ title, featureList }) => {
     <section className=" pb-50 whypos bg-light">
       <div className="container">
         <div className="row text-center">
-          <div className="heading_s1">
-            <h2 className=" fw-bold text-capitalize text-dark">
-              {title}
-            </h2>
+          <div className="heading_s1 mt-4">
+            <h2 
+              className=" fw-bold text-capitalize text-dark"
+              dangerouslySetInnerHTML={{__html: title}}
+            />
           </div>
         </div>
         <div className="row g-4 flex-nowrap flex-md-wrap  mobile_flex">

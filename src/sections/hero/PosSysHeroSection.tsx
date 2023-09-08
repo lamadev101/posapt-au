@@ -37,7 +37,7 @@ const PosSysHeroSection: React.FC<PosSysHeroSectionProps> = ({ tagline, title, d
               </div>
             </div>
           </div>
-          <div className="col-12 col-md-5">
+         <div className="col-12 col-md-5">
             <div className="order_top_img mt-5 mt-md-0">
               <img 
                 src={imgUrl} 

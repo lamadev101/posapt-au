@@ -1,3 +1,6 @@
+import Link from "next/link";
+
+
 interface faqList {
   question: string;
   answer: string;
@@ -7,18 +10,18 @@ interface faqDataProps {
 }
 
 
-const FAQ: React.FC<faqDataProps> = ({faqData}) => {
+const FAQ: React.FC<faqDataProps> = ({ faqData }) => {
 
   return (
     <section className=" py-5  faqsec mt-5 bg-light ">
       <div className="container">
         <div className="row py-2 py-md-4 py-lg-5">
-            {/* left section */}
+          {/* left section */}
           <div className="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
             <div className="card cardbg py-4 border-0 shadow h-100">
               <div className="card-body">
-                <h2 className="pb-3 mb-1 mb-lg-2 fs-37">
-                  We are Happy to Talk with You. Book For Free Consultation Now!
+                <h2 className="pb-3 mb-1 mb-lg-2 fs-47">
+                  Talk with You. Book For Free Consultation Now!
                 </h2>
                 <div className="subpara mt-3">
                   <ul>
@@ -38,16 +41,14 @@ const FAQ: React.FC<faqDataProps> = ({faqData}) => {
                       <a>Keep Track &amp; Prevent Stock Spoilage</a>
                     </li>
                     <li className="fw-bold">
-                      <a>Analyze &amp; Improve Business Profits</a>
+                      <a>Analyse &amp; Improve Business Profits</a>
                     </li>
                   </ul>
-                  {/* <a class="btn btn-white btn-red fw-bold" href="#">Request a Demo</a> */}
                 </div>
                 <div className="text-center newhome_btn newbtn1">
-                  <a href=""></a>
-                  <a className="btn btn-white btn-red fs-6" href="#">
+                  <Link className="btn btn-white btn-red fs-6" href="/enquiry">
                     Book Consultation
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -83,7 +84,7 @@ const FAQ: React.FC<faqDataProps> = ({faqData}) => {
                     data-bs-parent="#faq"
                   >
                     <div className="accordion-body fs-sm pt-0">
-                      <p>{item.answer}</p>
+                      <div dangerouslySetInnerHTML={{ __html: item.answer }} />
                     </div>
                   </div>
                 </div>
@@ -95,14 +96,24 @@ const FAQ: React.FC<faqDataProps> = ({faqData}) => {
                   <p className="fs-4 mb-0 text-white">Connect with us</p>
                 </div>
                 <div className="social-links ">
-                  {" "}
-                  <a href="#" className="facebook">
+                  <a
+                    href="https://www.facebook.com/posapt"
+                    target="_blank"
+                    className="facebook"
+                  >
                     <i className="fab fa-facebook" />
-                  </a>{" "}
-                  <a href="#" className="instagram">
+                  </a>
+                  <a
+                    target="_blank"
+                    href="https://www.instagram.com/posapt22"
+                    className="instagram"
+                  >
                     <i className="fab fa-instagram" />
                   </a>
-                  <a href="#" className="linkedin">
+                  <a target="_blank"
+                    href="https://www.linkedin.com/company/posapt-au"
+                    className="linkedin"
+                  >
                     <i className="fab fa-linkedin" />
                   </a>
                 </div>

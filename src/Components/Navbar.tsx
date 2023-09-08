@@ -195,9 +195,6 @@ const Navbar: FC = () => {
                         <Link className="dropdown-item" href="/retail-pos-system/bike-and-bicycle-shop">
                           bike
                         </Link>
-                        <Link className="dropdown-item" href="/retail-pos-system/shoe-store">
-                          shoe
-                        </Link>
                         <Link className="dropdown-item" href="/flower-pos-system">
                           flower
                         </Link>
@@ -205,7 +202,7 @@ const Navbar: FC = () => {
                           grocery
                         </Link>
                         <Link className="dropdown-item" href="/retail-pos-system/jewellery-store">
-                          jewellry
+                          jewellery
                         </Link>
                       </div>
                       <div className="col-lg-4 col-12 mb-4 mb-lg-0">
@@ -217,24 +214,24 @@ const Navbar: FC = () => {
                         <Link className="dropdown-item" href="/restaurant-pos-system">
                           restaurant
                         </Link>
-                        <Link className="dropdown-item" href="/backery-pos-system">
+                        <Link className="dropdown-item" href="/bakery-pos-system">
                           Bakery
                         </Link>
-                        <Link className="dropdown-item" href="/online-ordering-system/cafe-and-coffee">
+                        <Link className="dropdown-item" href="/pos-system-for-cafe">
                           cafe
                         </Link>
                         <Link className="dropdown-item" href="/coffee-shop-pos-system">
                           coffee shop
                         </Link>
-                        <Link className="dropdown-item" href="">
+                        <Link className="dropdown-item" href="/pos-system-for-bar">
                           bar
                         </Link>
-                        {/* <Link className="dropdown-item" href="">
+                        <Link className="dropdown-item" href="/pizza-pos">
                           pizza shop
                         </Link>
-                        <Link className="dropdown-item" href="">
+                        <Link className="dropdown-item" href="/quick-service-restaurant-pos">
                           QSR
-                        </Link> */}
+                        </Link>
                       </div>
                       <div className="col-lg-4 col-12 mb-4 mb-lg-0">
                         <h6 className="text-primary ps-3">By Service</h6>

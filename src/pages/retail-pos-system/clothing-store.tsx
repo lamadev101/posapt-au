@@ -41,7 +41,7 @@ const ClothingStore = () => {
   const lastSectionData = {
     firstTitle: "Why Choose POSApt for ",
     lastTitle: "Your Clothing Business?",
-    imgUrl: "general4.webp",
+    imgUrl: "general5.webp",
     content: [
       {
         title: `Round-the-Clock Customer Support at $0`,
@@ -54,10 +54,6 @@ const ClothingStore = () => {
       {
         title: `Upgrade Without Losing What You Have`,
         desc: `Upgrading to a new POS system doesn't mean you have to give up your old equipment. POSApt makes it easy to use our software with your current systems. You won't need to spend extra money on hardware that you already own. Our system also integrates with other 3rd party software solutions like Xero,  DoorDash and UberEats.`
-      },
-      {
-        title: `Elegance in Versatility, Chic in Adaptability`,
-        desc: `Our system works on multiple devices, just like fashion fits different lifestyles. Use it on a computer, laptop, tablet, or smartphone. This flexibility lets you access important info and do transactions from anywhere. It's designed to make your customers happy and work well in any location.`
       },
     ]
   }

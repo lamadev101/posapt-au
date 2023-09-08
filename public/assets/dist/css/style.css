@@ -1305,9 +1305,10 @@ i.fas.fa-times-circle {
     color: rgb(2, 59, 109);
 }
 
-.serlist li {
-    display: flex !important;
+.serlist {
+    padding: 0;
 }
+
 
 .serlist li {
     display: block;
@@ -2850,7 +2851,7 @@ section.pricing-inner {
 }
 
 .navbar-default .dropdown .dropdown-menu .dropdown-item:hover {
-    background-color: rgb(255, 255, 255);
+    background-color: transparent;
     color: var(--second-color);
     transition: all 500ms ease 0s;
 }
@@ -2978,4 +2979,27 @@ section.pricing-inner {
     .footer-links p {
         margin-bottom: 10px;
     }
+}
+
+
+/* custome add css */
+.font_style1.sub_heading {
+    font-size: 24px;
+}
+
+.sub_heading {
+    color: rgb(255, 50, 77);
+    margin-bottom: 10px;
+    display: block;
+}
+.font_style1 {
+    font-family: "Kaushan Script";
+}
+.carousel-indicators{
+    position: absolute !important;
+    bottom: -20px;
+}
+.carousel-indicators button{
+    background-color: #00a79e !important;
+    
 }

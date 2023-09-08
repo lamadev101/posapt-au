@@ -21,7 +21,7 @@ const PizzaPos = () => {
     content: [
       {
         title: `Customisable Menu`,
-        desc: 'Crafting a beautiful menu that aligns with the food trends and what your eatery offers has never been easier. You can effortlessly create, customise, and manage your menu offerings with just a few clicks. Also, add delectable pictures that make your customers want to give all the items on your menu a taste. Our system also allows customers to customise their orders with toppings and side ingredients. Moreover, they can mention their allergies (if any) so your chefs can prepare their perfect pizza.'
+        desc: 'Crafting a beautiful menu that aligns with the food trends and what your eatery offers has never been easier. You can effortlessly create, customise, and manage your menu offerings with just a few clicks. Also, add delectable pictures that make your customers want to give all the items on your menu a taste. Our system also allows customers to customise their orders with toppings and side ingredients.'
       },
       {
         title: `Real-Time Kitchen Communication`,
@@ -53,10 +53,6 @@ const PizzaPos = () => {
       {
         title: `24/7 Customer Support at No Cost`,
         desc: `No matter how big or small your pizza shop is, issues can arise at any time. But if not fixed quickly, even small issues can have devastating effects on the business. That is why we offer 24/7 support. Whether you need assistance with features, technical support, or advice, you can reach us with just a call or an email. We are committed to ensuring your journey to success remains on track, that’s why we offer support service free of charge.`
-      },
-      {
-        title: `Explore POSApt for 30 Days at $0`,
-        desc: `Explore all the features of our system designed to enhance your pizza shop for absolutely free for the first 30 days. No commitments are required. During this risk-free period, discover the capabilities of our system and determine if it aligns with your business needs.`
       },
     ]
   }

@@ -1,57 +1,186 @@
 import Layout from "@/Components/Layout"
-import { CustomerSection, FAQ, HeroSection, PosBanner, WhyChoose } from "@/sections"
+import { FAQ, FeatureList, HeroSection } from "@/sections"
+import Head from "next/head"
 
 const ecommerce = () => {
 
-  const customerSectionData1 = {
-    title: "E-Commerce Simplified. Engage With More Customers",
-    paraDesc: [
-      "POSApt E - Commerce system is an ideal solution for small businesses with an inventory of over 500 products.It is suitable for any retail business such as fashion, liquor, flower or grocery stores.You can start selling as quickly as you receive our system as we’ll set everything up for you.",
+  // Schema content
 
-      "Tailor your store to your unique requirements and leverage our niche- specific tools for seamless operations.We also include custom website design services that cater to your preferences.Our system empowers your business with a diverse range of products, fostering customer reviews and interactions."
-    ],
-    imgUrl: "",
-  }
-  const whyChooseData = {
-    title: "Why Choose POSApt's E-Commerce System?",
-    content: [
+  const organization = {
+    "@context": "https://schema.org",
+    "@graph": [
       {
-        title: "Better Inventory Management",
-        desc: "Our simple, precise and real-time inventory system keeps your business running smoothly. With accurate and up-to-date information about your inventory, make informed decisions to increase profitability and provide a better customer experience.",
+        "@type": "Organization",
+        "name": "POSApt",
+        "url": "https://posapt.au",
+        "logo": "https://posapt.au/assets/dist/image/poslogo.png",
+        "description": "POSApt launched in 2021 with a goal of providing an all-in-one POS solution. Our point-of-sale systems, software, online ordering system and ecommerce websites are tailored for hospitality and retail businesses. Since day one, we have been committed to providing easy-to-use and reliable cloud-based software applications to businesses across Australia. ",
+        "foundingDate": "2021",
+        "founders": [
+          {
+            "@type": "Person",
+            "name": "Sam Timalsina"
+          },
+          {
+            "@type": "Person",
+            "name": "Ram Prasad Gajurel"
+          }
+
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Building 4, Suite 30/195 Wellington Rd.",
+          "addressLocality": "Clayton",
+          "postalCode": "3168",
+          "addressRegion": "VIC",
+          "addressCountry": "AU"
+        },
+        "areaServed": "Australia",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+03 8802 4468",
+            "contactType": "technical support",
+            "areaServed": "AU",
+            "availableLanguage": "en"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/posapt",
+          "https://twitter.com/posapt_au",
+          "https://www.instagram.com/posapt22/",
+          "https://www.youtube.com/channel/UCEbnQMG4QHXB5rk2TzROApA",
+          "https://www.linkedin.com/company/posapt-au",
+          "https://posapt.au"
+        ]
       },
       {
-        title: "Direct Integration to POS",
-        desc: "Our E-Commerce System integrates seamlessly with our POS solution giving you access to all incoming orders from a single robust system. Eliminate the need to switch between multiple applications for order and sales tracking.",
-      },
-      {
-        title: "Safe & Secure Payment Methods",
-        desc: "Offer multiple payment options including Cash, Credit Cards, and Debit Cards to your online customers. This allows your customers to choose the most convenient payment method for them, increasing your sales and their happiness.",
-      },
-      {
-        title: "Custom Website Included",
-        desc: "We will design and build a custom website for you that is visually appealing, and fully functional. It will also allow your customers to purchase goods and services, all at no additional cost to you.",
-      },
-      {
-        title: "E-Gift Cards & Loyalty Program",
-        desc: "Keep your customers interested, happy and tied to you with the help of POSApt-enabled E-gift cards, vouchers and loyalty points. Improve customer retention and increase engagements with your online store.",
-      },
-      {
-        title: "Inbuilt Marketing Tools",
-        desc: "In this competitive market where every retail store has their own ecommerce page on Google, how you promote yours makes all the difference. That’s why we’ve included features like email marketing and promotional discounts right on our system itself.",
-      },
+        "@type": "WebSite",
+        "@id": "https://posapt.au/#website",
+        "url": "https://posapt.au/",
+        "name": "POSApt",
+        "description": "POSApt offers POS systems, Online Ordering Systems, and E-commerce websites for small to medium-sized businesses to streamline their business operations.",
+        "publisher": {
+          "@id": "https://posapt.au/#organization"
+        },
+        "inLanguage": "en-AU"
+      }
     ]
   }
-  const customerSectionData2 = {
-    title: "More Sales. Less Overhead. 24*7 Support.",
-    paraDesc: [
-      "24/7 online support is available for any clients. Reach us any time of the day and we'll get you connected with an Expert to get your issue resolved as soon as possible."
-    ],
-    list: [
-      "Faster Issue Resolving",
-      "Fewer Sales Hiccups",
-      "Soaring Profits"
+  const webPage = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": "https://posapt.au/ecommerce/#webpage",
+        "url": "https://posapt.au/ecommerce/",
+        "name": "POSApt E-Commerce For Small Businesses in Australia",
+        "description": "Build a strong online presence with POSApt’s e-commerce platform. Build a stunning online store without coding. ",
+        "isPartOf": {
+          "@id": "https://posapt.au/#website"
+        }
+      },
+
+      {
+        "@type": "BreadcrumbList",
+        "@id": "https://posapt.au/ecommerce/#breadcrumb",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": "https://posapt.au/",
+            "name": "Home"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": "https://posapt.au/ecommerce/",
+            "name": "POSApt Ecommerce"
+          }
+        ]
+      },
+      {
+        "@type": "Service",
+        "serviceType": "POSApt Ecommerce",
+        "description": "A POSApt Ecommerce solution for small retail businesses across Australia.",
+        "provider": {
+          "@type": "LocalBusiness",
+          "name": "POSApt",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Clayton, Melbourne",
+            "addressRegion": "VIC",
+            "streetAddress": "Suite 30/195 Wellington Rd"
+          }
+        },
+        "areaServed": {
+          "@type": "Country",
+          "name": "Australia"
+        },
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "POSApt Ecommerce",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "30-day free trial"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "POSApt Ecommerce - 199 AUD per month inc. GST"
+              }
+            }
+          ]
+        }
+      }
     ]
   }
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "How to Use POSApt E-commerce?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "POSApt E-commerce is intuitive and super easy to use. Once you've signed up, you can easily navigate through our platform. You can add products, set prices, and manage your inventory effortlessly. We offer a range of customisation options to tailor your store's appearance and functionality. You can also find feature-specific tutorials when you first navigate through the system. We also offer free hands-on training at the start of your subscription so you know all the ins and outs of our e-commerce platform."
+      }
+    }, {
+      "@type": "Question",
+      "name": "What is the best E-commerce platform for small businesses?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "POSApt E-commerce is the ideal choice for small and medium-sized retail businesses in Australia. What most other e-commerce platforms lack is the seamless integration between their online store and their physical store. To combat this, we have developed our own POS system which seamlessly integrates with our e-commerce platform. The platform also offers a suite of tools designed to enhance your online presence, streamline operations, and boost sales."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How to Set Up a POSApt E-commerce Store?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can simply sign up for one of our paid plans and one of our team members will guide you through the whole process. Once the store is ready, you can add your products, organise them into categories, set up your pricing, and configure shipping options. Should you need any assistance, our support personnel are available to help you every step of the way."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How Much Does an E-commerce Website Cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Our e-commerce solution costs $199 per month for retail businesses in Australia. However, depending on your specific requirements, the size of the business, and the scale of the product required, the cost can change. View our complete pricing plan or Contact us to get a personalised quote based on your business needs."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How Can I Contact You If I Need Any Support?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "We have a team of support personnel available to assist you or answer your queries 7 days a week. There are several ways to reach us. You can visit our Contact Page on our website or reach us directly through email or phone. We're here to ensure that your experience with our E-Commerce is smooth and successful."
+      }
+    }]
+  }
+  // body content
   const faqData = [
     {
       question: "How to Use POSApt E-commerce?",
@@ -74,50 +203,125 @@ const ecommerce = () => {
       answer: "We have a team of support personnel available to assist you or answer your queries 7 days a week. There are several ways to reach us. You can visit our Contact Page on our website or reach us directly through email or phone. We're here to ensure that your experience with our E-Commerce is smooth and successful.",
     }
   ]
-
+  const featureListData = {
+    title: "Why Choose POSApt’s <br /> E-Commerce System?",
+    featureList: [
+      {
+        title: "Better Inventory Management",
+        desc: "Our simple, precise and real-time inventory system keeps your business running smoothly. With accurate and up-to-date information about your inventory, make informed decisions to increase profitability and provide a better customer experience.",
+      },
+      {
+        title: "Direct Integration to POS",
+        desc: "Our E-Commerce System integrates seamlessly with our POS solution giving you access to all incoming orders from a single robust system. Eliminate the need to switch between multiple applications for order and sales tracking.",
+      },
+      {
+        title: "Safe & Secure Payment Methods",
+        desc: "Offer multiple payment options including Cash, Credit Cards, and Debit Cards to your online customers. This allows your customers to choose the most convenient payment method for them, increasing your sales and their happiness.",
+      },
+      {
+        title: "Custom Website Included",
+        desc: "We will design and build a custom website for you that is visually appealing, and fully functional. It will also allow your customers to purchase goods and services, all at no additional cost. Sell online what your business is known for.",
+      },
+      {
+        title: "E-Gift Card & Loyalty Program",
+        desc: "Keep your customers interested, happy and tied to you with the help of our E-gift cards, vouchers and loyalty points. Improve customer retention and increase engagement with your online store.",
+      },
+      {
+        title: "Inbuilt Marketing Tools",
+        desc: "In this competitive market where every retail store has its own e-commerce page on Google, how you promote yours makes all the difference. That’s why we’ve included features like email marketing and discounts right on our system itself.",
+      },
+    ]
+  }
   return (
     <>
+      <Head>
+        <title>
+          E-Commerce For Small Businesses in Australia | POSApt
+        </title>
+
+        <script type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(organization) }}
+        /> 
+          <script type="application/ld+json"
+            dangerouslySetInnerHTML={{ __html: JSON.stringify(webPage) }}
+          />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+        />
+        <meta
+          name="title"
+          content="E-Commerce For Small Businesses in Australia | POSApt"
+        />
+        <meta
+          name="google-site-verification"
+          content="WhEwKP36VmQq_V_1z2CmWRDOv3bU1DWns7ethy_i2SY"
+        />
+        <meta
+          name="description"
+          content="POSApt e-commerce to empower your business. Start a new store or grow the existing one with a powerful e-commerce website. Book a Demo!"
+        />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta
+          name="robots"
+          content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large"
+        />
+        <meta property="og:locale" content="en_AU" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="E-Commerce For Small Businesses in Australia | POSApt"
+        />
+        <meta
+          property="og:description"
+          content="POSApt e-commerce to empower your business. Start a new store or grow the existing one with a powerful e-commerce website. Book a Demo!"
+        />
+        <meta property="og:url" content="https://posapt.au/" />
+        <meta property="og:site_name" content="POSApt Australia" />
+        <meta property="og:updated_time" content="2023-04-12T21:01:56+10:00" />
+        <meta
+          property="og:image"
+          content="https://posapt.au/assets/dist/image/Homepage/The-Best-POS-System-to-Revolutionize-your-Business.webp"
+        />
+        <meta
+          property="og:image:secure_url"
+          content="https://posapt.au/assets/dist/image/Homepage/The-Best-POS-System-to-Revolutionize-your-Business.webp"
+        />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="628" />
+        <meta
+          property="og:image:alt"
+          content="Best POS System Software For Small & Medium Businesses- POSapt"
+        />
+        <meta property="og:image:type" content="image/webp" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta
+          name="twitter:title"
+          content="E-Commerce For Small Businesses in Australia | POSApt"
+        />
+        <meta
+          name="twitter:description"
+          content="POSApt e-commerce to empower your business. Start a new store or grow the existing one with a powerful e-commerce website. Book a Demo!"
+        />
+        <meta
+          name="twitter:image"
+          content="https://posapt.au/assets/dist/image/Homepage/The-Best-POS-System-to-Revolutionize-your-Business.webp"
+        />
+        <meta name="twitter:label1" content="Written by" />
+        <meta name="twitter:data1" content="POSApt" />
+        <meta name="twitter:label2" content="Time to read" />
+        <meta name="twitter:data2" content="Less than a minute" />
+        <link rel="canonical" href="https://posapt.au/ecommerce" />
+      </Head>
       <Layout>
         <>
-          {/* about us */}
-          <section className=" pt-1 pt-md-5 pb-50 bg-home">
-            <div className="container  text-center">
-              <div className="row d-flex align-items-center justify-content-center">
-                <div className="col-md-7  ">
-                  <div className="heading_s1">
-                    <h1 className="text-capitalize fs-61 text-white">
-                      Your Business's <br /> E-Commerce Website <br /> is Just a Click
-                      Away
-                    </h1>
-                  </div>
-                </div>
-                <div className="col-md-5 ">
-                  <div className="">
-                    <img
-                      src="assets/dist/image/ecommerceban.png"
-                      className="img-fluid"
-                      alt=""
-                    />
-                  </div>
-                </div>
-                <div className="col-md-12">
-                  <div className="subpara ">
-                    <p className="text-center fs-47 text-white">
-                      <span style={{ fontWeight: 400 }}>
-                        Turn clicks into sales and visitors into returning customers
-                        with POSApt.
-                      </span>
-                    </p>
-                    <div className="text-center newhome_btn">
-                      <a className="btn btn-white btn-red fs-6" href="#">
-                        Sign Up for Free Demo !
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+          <HeroSection
+            title="Your Business's <br /> E-Commerce Website <br /> is Just a Click Away"
+            desc="Turn clicks into sales and visitors into returning customers with POSApt"
+            imgUrl="ecommerceban.webp"
+            imgTitle="POSApt Ecommerce"
+          />
+
           <section className="pt-50">
             <div className="container">
               <div className="row">
@@ -163,41 +367,6 @@ const ecommerce = () => {
                           </g>
                         </svg>
                         Free Consultation
-                      </li>
-                      <li>
-                        <svg
-                          className="me-2"
-                          xmlns="http://www.w3.org/2000/svg"
-                          xmlnsXlink="http://www.w3.org/1999/xlink"
-                          fill="#00205b"
-                          height="24px"
-                          width="24px"
-                          version="1.1"
-                          id="Capa_1"
-                          viewBox="0 0 27.855 27.855"
-                          xmlSpace="preserve"
-                        >
-                          <g>
-                            <path d="M27.604,6.751L14.176,20.18c-0.338,0.336-0.885,0.336-1.223,0l-0.27-0.27l0,0l-0.293-0.293l-1.268-1.268l-0.018-0.027   L5.297,12.47c-0.336-0.336-0.336-0.885,0-1.221l1.83-1.828c0.338-0.339,0.883-0.339,1.221,0l5.223,5.262L24.551,3.7   c0.338-0.337,0.885-0.337,1.221,0l1.832,1.832C27.939,5.867,27.939,6.415,27.604,6.751z" />
-                            <path d="M21.795,22.613c0,0.973-0.793,1.766-1.768,1.766H3.535c-0.975,0-1.768-0.793-1.768-1.766V5.241   c0-0.973,0.793-1.766,1.768-1.766h16.492c0.975,0,1.768,0.793,1.768,1.766l0,0l1.256-1.162c0.203-1.43-1.242-2.369-3.024-2.369   H3.535C1.582,1.71,0,3.29,0,5.241v17.372c0,1.951,1.582,3.533,3.535,3.533h16.492c1.953,0,3.535-1.582,3.535-3.533V12.257   l-1.768,1.924L21.795,22.613L21.795,22.613z" />
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                            <g></g>
-                          </g>
-                        </svg>
-                        Custom Website and Maintenance
                       </li>
                       <li>
                         <svg
@@ -339,6 +508,41 @@ const ecommerce = () => {
                         </svg>
                         Custom Mobile App Option
                       </li>
+                      <li>
+                        <svg
+                          className="me-2"
+                          xmlns="http://www.w3.org/2000/svg"
+                          xmlnsXlink="http://www.w3.org/1999/xlink"
+                          fill="#00205b"
+                          height="24px"
+                          width="24px"
+                          version="1.1"
+                          id="Capa_1"
+                          viewBox="0 0 27.855 27.855"
+                          xmlSpace="preserve"
+                        >
+                          <g>
+                            <path d="M27.604,6.751L14.176,20.18c-0.338,0.336-0.885,0.336-1.223,0l-0.27-0.27l0,0l-0.293-0.293l-1.268-1.268l-0.018-0.027   L5.297,12.47c-0.336-0.336-0.336-0.885,0-1.221l1.83-1.828c0.338-0.339,0.883-0.339,1.221,0l5.223,5.262L24.551,3.7   c0.338-0.337,0.885-0.337,1.221,0l1.832,1.832C27.939,5.867,27.939,6.415,27.604,6.751z" />
+                            <path d="M21.795,22.613c0,0.973-0.793,1.766-1.768,1.766H3.535c-0.975,0-1.768-0.793-1.768-1.766V5.241   c0-0.973,0.793-1.766,1.768-1.766h16.492c0.975,0,1.768,0.793,1.768,1.766l0,0l1.256-1.162c0.203-1.43-1.242-2.369-3.024-2.369   H3.535C1.582,1.71,0,3.29,0,5.241v17.372c0,1.951,1.582,3.533,3.535,3.533h16.492c1.953,0,3.535-1.582,3.535-3.533V12.257   l-1.768,1.924L21.795,22.613L21.795,22.613z" />
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                            <g></g>
+                          </g>
+                        </svg>
+                        Custom Website &amp; Maintenance
+                      </li>
                     </ul>
                     <p className="fs-5 mt-2 mt-md-5">
                       POSApt E-Commerce effortlessly merges with our POS, offering
@@ -352,10 +556,11 @@ const ecommerce = () => {
                   </div>
                 </div>
                 <div className="col-md-6 text-end">
-                  <div className="homeimg_right">
+                  <div className="homeimg_right mt-3 mt-md-0">
                     <img
-                      src="assets/dist/image/3.png"
-                      alt=""
+                      src="assets/dist/image/local-business.webp"
+                      alt="Local Business"
+                      title="Local Business"
                       className="img-fluid w-100"
                     />
                   </div>
@@ -363,21 +568,23 @@ const ecommerce = () => {
               </div>
             </div>
           </section>
+
           <section className="pt-50 pb-50 customer_section">
             <div className="container">
               <div className="row align-items-center">
-                <div className="col-md-6 ">
+                <div className="col-md-6 order-2 order-md-1 ">
                   <div className="customer_img">
                     <img
-                      src="assets/dist/image/ecomimg.png"
+                      src="assets/dist/image/ecom-business.webp"
                       className="img-fluid rounded-3"
-                      alt=""
+                      alt="Ecommerce Business"
+                      title="Ecommerce Business"
                     />
                   </div>
                 </div>
-                <div className="col-md-6">
+                <div className="col-md-6 order-1 order-md-2">
                   <div className="heading_s1">
-                    <h2 className=" fw-bold text-capitalize text-dark">
+                    <h2 className=" fw-bold text-capitalize text-dark mb-2">
                       E-commerce Simplified. Engage with More <br /> Customers
                     </h2>
                     <p className="fs-5">
@@ -387,7 +594,7 @@ const ecommerce = () => {
                       business gains a seamless selling platform. Upon receiving our
                       system, instant selling is possible as we handle the setup.{" "}
                     </p>
-                    <p>
+                    <p className=" mt-4">
                       Tailoring your online store to your preferences becomes
                       effortless, bolstered by specialized tools for niche operations.
                       Complementing this, our package encompasses personalized website
@@ -398,6 +605,8 @@ const ecommerce = () => {
               </div>
             </div>
           </section>
+
+
           <section className="ctabanner pt-5 pb-5">
             <div className="container">
               <div className="row align-items-center">
@@ -405,7 +614,7 @@ const ecommerce = () => {
                   <div className="row text-start">
                     <div className="heading_s1">
                       <h2 className=" fw-bold text-capitalize text-white">
-                        An E-commerce Platform for{" "}
+                        An E-commerce Platform for
                         <span className="d-block">Small Businesses in Australia</span>
                       </h2>
                       <p className="fs-20 text-start text-white">
@@ -417,9 +626,10 @@ const ecommerce = () => {
                 <div className="col-md-4">
                   <div className="localbusiness">
                     <img
-                      src="assets/dist/image/business.png"
+                      src="assets/dist/image/posapt-ecommerce-system.webp"
                       className="img-fluid"
-                      alt=""
+                      alt="POSApt Ecommerce for Small Business"
+                      title="POSApt Ecommerce for Small Business"
                     />
                   </div>
                 </div>
@@ -441,8 +651,7 @@ const ecommerce = () => {
                       <h3 className="text-white fs-2">Make Smarter Desicions</h3>
                       <p className="mt-2 mt-md-4 text-white fs-5">
                         Get real-time insights on your business with a robust data
-                        reporting system. Understand what sells the most and what
-                        doesn’t.
+                        reporting system. Understand what sells the most and what doesn’t.
                       </p>
                     </div>
                   </div>
@@ -463,7 +672,7 @@ const ecommerce = () => {
                   Sell Anything. Anytime.
                 </h2>
               </div>
-              <div className="row g-4">
+              <div className="row g-4 flex-nowrap flex-md-wrap  mobile_flex ">
                 <div className="col-md-4">
                   <div className="card card-oos border-0 bg-light shadow rounded-3 ">
                     <div className="card-body ">
@@ -472,8 +681,9 @@ const ecommerce = () => {
                         {/* img */}
                         <div className="oos_img1">
                           <img
-                            src="assets/dist/image/ecom1.png"
-                            alt=" "
+                            src="assets/dist/image/retail-ecom.webp"
+                            alt="Retail Ecommerce"
+                            title="Retail Ecommerce"
                             className="mb-3 w-100 img-fluid "
                           />
                         </div>
@@ -483,8 +693,8 @@ const ecommerce = () => {
                           E-Commerce System
                         </h4>
                         <p className="fs-5">
-                          Establish credibility and provide similar experiences
-                          customers expect in person.
+                          Establish credibility and provide similar experiences customers
+                          expect in person.
                         </p>
                       </div>
                     </div>
@@ -498,8 +708,9 @@ const ecommerce = () => {
                         {/* img */}
                         <div className="oos_img1">
                           <img
-                            src="assets/dist/image/ecom2.png"
-                            alt=" "
+                            src="assets/dist/image/grocery-ecom.webp"
+                            alt="Grocery Ecommerce "
+                            title="Grocery Ecommerce"
                             className="mb-3 w-100 img-fluid "
                           />
                         </div>
@@ -524,8 +735,9 @@ const ecommerce = () => {
                         {/* img */}
                         <div className="oos_img1">
                           <img
-                            src="assets/dist/image/ecom3.png"
-                            alt=" "
+                            src="assets/dist/image/fashion-ecom.webp"
+                            alt="Fashion Ecommerce"
+                            title="Fashion Ecommerce"
                             className="mb-3 w-100 img-fluid "
                           />
                         </div>
@@ -544,140 +756,12 @@ const ecommerce = () => {
               </div>
             </div>
           </section>
-          <section className=" pb-50 pt-50">
-            <div className="container">
-              <div className="row text-center">
-                <div className="heading_s1">
-                  <h2 className=" fw-bold text-capitalize text-dark">
-                    Why Choose POSApt’s <br /> E-Commerce System?
-                  </h2>
-                </div>
-              </div>
-              <div className="row g-4">
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded p-4">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20 ">
-                          Better Inventory Management
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Our simple, precise and real-time inventory system keeps your
-                          business running smoothly. With accurate and up-to-date
-                          information about your inventory, make informed decisions to
-                          increase profitability and provide a better customer
-                          experience.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded p-4">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0 fs-20 ">
-                          Direct Integration to POS
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Our E-Commerce System integrates seamlessly with our POS
-                          solution giving you access to all incoming orders from a
-                          single robust system. Eliminate the need to switch between
-                          multiple applications for order and sales tracking.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded p-4">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0  fs-20">
-                          Safe &amp; Secure Payment Methods
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Offer multiple payment options including Cash, Credit Cards,
-                          and Debit Cards to your online customers. This allows your
-                          customers to choose the most convenient payment method for
-                          them, increasing your sales and their happiness.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded p-4">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0  fs-20">
-                          Custom Website Included
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          We will design and build a custom website for you that is
-                          visually appealing, and fully functional. It will also allow
-                          your customers to purchase goods and services, all at no
-                          additional cost. Sell online what your business is known for.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded p-4">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0  fs-20">
-                          E-Gift Card &amp; Loyalty Program
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          Keep your customers interested, happy and tied to you with the
-                          help of our E-gift cards, vouchers and loyalty points. Improve
-                          customer retention and increase engagement with your online
-                          store.{" "}
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-4">
-                  <div className="card h-100 shadow border-0 rounded p-4">
-                    <div className="card-body">
-                      <div className="feature-info-icon d-flex mb-3">
-                        <i className="far fa-check-square" />
-                        <h3 className="fw-bold text-theme ms-2 mb-0  fs-20">
-                          Inbuilt Marketing Tools
-                        </h3>
-                      </div>
-                      <div className="feature-info-content">
-                        <p className="mb-0">
-                          In this competitive market where every retail store has its
-                          own e-commerce page on Google, how you promote yours makes all
-                          the difference. That’s why we’ve included features like email
-                          marketing and discounts right on our system itself.
-                        </p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
+
+          <FeatureList
+            {...featureListData}
+          />
+
           <section className="pt-50 customer_section">
             <div className="container">
               <div className="row align-items-center">
@@ -686,16 +770,16 @@ const ecommerce = () => {
                     <h2 className=" fw-bold text-capitalize text-dark">
                       More Sales. Less Overhead. <br /> 24*7 Support.
                     </h2>
-                    <p className="fs-5">
+                    <p className="fs-5 mt-2">
                       Our 24/7 online support is available for any client. Reach us any
                       time of the day and we'll get you connected with an Expert to get
                       your issue resolved as soon as possible.
                     </p>
                     <div className="subpara mt-3">
                       <ul>
-                        <li className="fw-bold">Faster Issue Resolving</li>
-                        <li className="fw-bold">Fewer Sales Hiccups</li>
-                        <li className="fw-bold">Soaring Profits</li>
+                        <li className="fw-bold fs-20">Faster Issue Resolving</li>
+                        <li className="fw-bold fs-20">Fewer Sales Hiccups</li>
+                        <li className="fw-bold fs-20">Soaring Profits</li>
                       </ul>
                       {/* <a class="btn btn-white btn-red fw-bold" href="#">Request a Demo</a> */}
                     </div>
@@ -704,246 +788,20 @@ const ecommerce = () => {
                 <div className="col-md-5">
                   <div className="customer_img">
                     <img
-                      src="assets/dist/image/4.png"
+                      src="assets/dist/image/customer-support.webp"
                       className="img-fluid rounded-3 w-100"
-                      alt=""
+                      alt="Customer Support"
+                      title="Customer Support"
                     />
                   </div>
                 </div>
               </div>
             </div>
           </section>
-          {/* new restro */}
-          {/* faq */}
-          <section className=" py-5  faqsec mt-5 bg-light ">
-            <div className="container">
-              <div className="row py-2 py-md-4 py-lg-5">
-                <div className="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
-                  <div className="card cardbg py-4 border-0 shadow h-100">
-                    <div className="card-body">
-                      <h3 className="pb-3 mb-1 mb-lg-2 fs-47 ">
-                        Talk with us. Book a Free Consultation!{" "}
-                      </h3>
-                      <div className="subpara mt-3">
-                        <ul>
-                          <li className="d-flex">Speed Up Sales</li>
-                          <li className="d-flex">Manage Multiple Stores</li>
-                          <li className="d-flex">Real-Time Sales Reporting</li>
-                          <li className="d-flex">
-                            Keep Track &amp; Prevent Stock Spoilage
-                          </li>
-                          <li className="d-flex">
-                            Analyse &amp; Improve Business Profits
-                          </li>
-                        </ul>
-                        {/* <a class="btn btn-white btn-red fw-bold" href="#">Request a Demo</a> */}
-                      </div>
-                      <div className="text-center newhome_btn newbtn1">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Book a Consultation
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-7 offset-xl-1">
-                  <div className="heading_s1 mb-3">
-                    <h2 className=" fw-bold text-capitalize text-dark text-center">
-                      Frequently Asked Questions?
-                    </h2>
-                    {/* <p class="fs-2 text-center">Customers can order from anywhrere anytime</p> */}
-                  </div>
-                  <div className="accordion bg-white p-2" id="faq">
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q1-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q1"
-                          aria-expanded="false"
-                          aria-controls="q1"
-                        >
-                          How to Use POSApt E-commerce?
-                        </button>
-                      </h2>
-                      <div
-                        id="q1"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q1-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            POSApt E-commerce is intuitive and super easy to use. Once
-                            you've signed up, you can easily navigate through our
-                            platform. You can add products, set prices, and manage your
-                            inventory effortlessly. We offer a range of customisation
-                            options to tailor your store's appearance and functionality.
-                            You can also find feature-specific tutorials when you first
-                            navigate through the system. We also offer free hands-on
-                            training at the start of your subscription so you know all
-                            the ins and outs of our e-commerce platform.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q2-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q2"
-                          aria-expanded="false"
-                          aria-controls="q2"
-                        >
-                          What is the best E-commerce platform for small businesses?
-                        </button>
-                      </h2>
-                      <div
-                        id="q2"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q2-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            POSApt E-commerce is the ideal choice for small and
-                            medium-sized retail businesses in Australia. What most other
-                            e-commerce platforms lack is the seamless integration
-                            between their online store and their physical store. To
-                            combat this, we have developed our own POS system which
-                            seamlessly integrates with our e-commerce platform. The
-                            platform also offers a suite of tools designed to enhance
-                            your online presence, streamline operations, and boost
-                            sales.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q3-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q3"
-                          aria-expanded="false"
-                          aria-controls="q3"
-                        >
-                          How to Set Up a POSApt E-commerce Store?
-                        </button>
-                      </h2>
-                      <div
-                        id="q3"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q3-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            You can simply sign up for one of our paid plans and one of
-                            our team members will guide you through the whole process.
-                            Once the store is ready, you can add your products, organise
-                            them into categories, set up your pricing, and configure
-                            shipping options. Should you need any assistance, our
-                            support personnel are available to help you every step of
-                            the way.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q4-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q4"
-                          aria-expanded="false"
-                          aria-controls="q4"
-                        >
-                          How Much Does an E-commerce Website Cost?
-                        </button>
-                      </h2>
-                      <div
-                        id="q4"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q4-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            Our e-commerce solution costs $199 per month for retail
-                            businesses in Australia. However, depending on your specific
-                            requirements, the size of the business, and the scale of the
-                            product required, the cost can change. View our complete
-                            <a href="pricing.html" className="text-primary">
-                              pricing plan
-                            </a>{" "}
-                            or Contact us to get a personalised quote based on your
-                            business needs.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q5-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q5"
-                          aria-expanded="false"
-                          aria-controls="q5"
-                        >
-                          How Can I Contact You If I Need Any Support?
-                        </button>
-                      </h2>
-                      <div
-                        id="q5"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q5-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            We have a team of support personnel available to assist you
-                            or answer your queries 7 days a week. There are several ways
-                            to reach us. You can visit our Contact Page on our website
-                            or reach us directly through email or phone. We're here to
-                            ensure that your experience with our E-Commerce is smooth
-                            and successful.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="card card-hover bg-theme-green mt-2 py-2 rounded-3 border-0">
-                      <div className="card-body  d-flex d-mobile-block align-items-center justify-content-center text-center justify-content-md-between">
-                        <div>
-                          <p className="fs-4 mb-0 text-white">Connect with us</p>
-                        </div>
-                        <div className="social-links ">
-                          {" "}
-                          <a href="#" className="facebook">
-                            <i className="fab fa-facebook" />
-                          </a>{" "}
-                          <a href="#" className="instagram">
-                            <i className="fab fa-instagram" />
-                          </a>
-                          <a href="#" className="linkedin">
-                            <i className="fab fa-linkedin" />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
+
+          <FAQ
+            faqData={faqData}
+          />
         </>
       </Layout>
     </>

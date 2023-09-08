@@ -1,17 +1,21 @@
 /** @format */
-
+// import {MdOutlineCheckBox} from "react-icons/Md"
 import Layout from "@/Components/Layout";
-import { FeatureList, HeroSection } from "@/sections";
-import { Inter } from "next/font/google";
+import { FAQ, FeatureList, HeroSection } from "@/sections";
 import Head from "next/head";
 import Link from "next/link";
 import { useDispatch } from "react-redux";
-
-const inter = Inter({ subsets: ["latin"] });
+import { useState } from "react";
+import { Carousel } from "react-bootstrap";
 
 export default function Home() {
   const dispatch = useDispatch();
+  const [index, setIndex] = useState(0);
+  const handleSelect = (selectedIndex: any, e: any) => {
+    setIndex(selectedIndex);
+  };
 
+  // SEO Schema
   const gtmTags = `!function(f,b,e,v,n,t,s)
       {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
       n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -29,18 +33,18 @@ export default function Home() {
     "itemListElement": [{
       "@type": "ListItem",
       "position": 1,
-      "name": "Our Products",
-      "item": "https://posapt.au/products"
+      "name": "Cloud POS",
+      "item": "https://posapt.au/cloud-pos"
     }, {
       "@type": "ListItem",
       "position": 2,
-      "name": "Hospitality POS System",
-      "item": "https://posapt.au/hospitality-pos-system"
+      "name": "Online Ordering System",
+      "item": "https://posapt.au/online-ordering-system"
     }, {
       "@type": "ListItem",
       "position": 3,
-      "name": "Retails POS System",
-      "item": "https://posapt.au/retail-pos-system"
+      "name": "E-commerce",
+      "item": "https://posapt.au/ecommerce"
     }, {
       "@type": "ListItem",
       "position": 4,
@@ -49,13 +53,8 @@ export default function Home() {
     }, {
       "@type": "ListItem",
       "position": 5,
-      "name": "Online Ordering System",
-      "item": "https://posapt.au/online-ordering-system"
-    }, {
-      "@type": "ListItem",
-      "position": 6,
-      "name": "Enquire Now",
-      "item": "https://posapt.au/enquiry"
+      "name": "Pricing",
+      "item": "https://posapt.au/pricing"
     }]
   };
 
@@ -67,35 +66,51 @@ export default function Home() {
       "name": "What is POS System Software?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Point of sale, or POS, refers to the place where a retail transaction such as buying or selling of goods takes place. While point-of-sale systems used to be your traditional cash register, they can now be found in a variety of forms, thanks to digital technologies. A POS system software typically records an item’s price, tracks sales, accepts payments and generates a receipt. POSApt can do these aforementioned tasks flawlessly and even help out with important business operations."
+        "text": "Point of sale, or POS, refers to the place where a retail transaction such as buying or selling of goods takes place. While point-of-sale systems used to be your traditional cash register, they can now be found in a variety of forms, thanks to digital technologies.  A POS system software typically records an item’s price, tracks sales, accepts payments and generates a receipt. POSApt can do these aforementioned tasks flawlessly and even help out with important business operations."
       }
     }, {
       "@type": "Question",
       "name": "What are the Key features of a POS System?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Key features of a Point of sale System software include: 1. Sales processing: Accepting cash, credit cards, and debit cards is a simple procedure. 2. Inventory management:  Manage or track items in stock, alert when stocks run low, and produce purchase orders. 3. Reporting: Tracks and records real-time data,  prepares sales reports and analyzes data to find trends. 4. Customer management: Track and manage customer information, purchasing history and preferences. 5. Employee management: Tracks and manages employee scheduling, time, commission and leaves."
+        "text": `Key features of a Point of sale System software include:
+  1. Sales processing: Accepting cash, credit cards, and debit cards is a simple procedure.
+  2. Inventory management:  Manage or track items in stock, alert when stocks run low, and produce purchase orders.
+  3. Reporting: Tracks and records real-time data,  prepares sales reports and analyzes data to find trends.
+  4. Customer management: Track and manage customer information, purchasing history and preferences.
+  5. Employee management: Tracks and manages employee scheduling, time, commission and leaves.`
       }
     }, {
       "@type": "Question",
       "name": "What are the components of a typical POS System?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "The components of a typical POS System include: 1. Hardware: Includes a computer/tablet, cash register, barcode scanner, and receipt printer.2. Software: A point-of-sale software runs on the hardware and manages the sales, inventory, reporting and many more features.3. Payment processing: Includes the ability to accept different payment methods such as cash, credit cards/debit cards or contactless payment.4. Inventory management: Includes tools for tracking inventory, generating purchase orders, and managing new inventory."
+        "text": `The components of a typical POS System include:
+  1. Hardware: Includes a computer/tablet, cash register, barcode scanner, and receipt printer.
+  2. Software: A point-of-sale software runs on the hardware and manages the sales, inventory, reporting and many more features.
+  3. Payment processing: Includes the ability to accept different payment methods such as cash, credit cards/debit cards or contactless payment.
+  4. Inventory management: Includes tools for tracking inventory, generating purchase orders, and managing new inventory.`
       }
     }, {
       "@type": "Question",
       "name": "Who uses POS software in Australia?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Different businesses in Melbourne and across Australia like retail stores, restaurants, bars, grocery stores, hotels and pubs use POS software. And, if you’ve ever talked to owners of these businesses, they can attest to the fact that this system has proved to be a boon to their businesses. More often than not, a POS system brings a positive impact on a business’s operations, return on investments and returning customers."
+        "text": "Different businesses across Australia like retail stores, restaurants, bars, grocery stores, hotels and pubs use POS software. And, if you’ve ever talked to owners of these businesses, they can attest to the fact that this system has proved to be a boon to their businesses. More often than not, a POS system brings a positive impact on a business’s operations, return on investments and returning customers."
       }
     }, {
       "@type": "Question",
-      "name": "Where are POS systems used?",
+      "name": "How to Set up POSApt's All-in-One POS System?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Point of Sale systems are used in various industries in Australia, including retail stores, restaurants, cafes, bars, hotels, grocery stores and salons. It is used wherever goods or services are sold, and transactions need to be processed."
+        "text": "When you sign up for a paid plan with POSApt, we send a professional to get everything set up on your premises. You do not have to worry about what you need to do, our professional will set up all the hardware, and software. Moreover, our team will give you a hands-on tour of the system when we make it live. This way, you can confidently start making the most out of POSApt’s POS solution from the get-go. Even when you’re on a free trial, you can easily set up our POSApt with the help of our Tutorial Videos."
+      }
+    }, {
+      "@type": "Question",
+      "name": "How Much Does the POSApt's POS System Cost?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can get POSApt’s POS System for just $66 or $99 for hospitality or retail businesses respectively. Depending on your needs for additional features such as online ordering systems or dedicated mobile apps, the cost can change. Check out our complete pricing plan to learn more. "
       }
     }]
   }
@@ -106,7 +121,7 @@ export default function Home() {
     "name": "POSApt",
     "image": "https://posapt.au/assets/dist/image/poslogo.png",
     "url": "https://posapt.au/",
-    "telephone": "+61388024468",
+    "telephone": "+03 8802 4468",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "195 Wellington Rd, Clayton VIC",
@@ -127,7 +142,8 @@ export default function Home() {
         "Tuesday",
         "Wednesday",
         "Thursday",
-        "Friday"
+        "Friday",
+        "Saturday"
       ],
       "opens": "09:00",
       "closes": "17:00"
@@ -136,57 +152,97 @@ export default function Home() {
 
   const organization = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "POSApt",
-    "url": "https://posapt.au/",
-    "logo": "https://posapt.au/assets/dist/image/poslogo.png",
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+61388024468",
-      "contactType": "technical support",
-      "areaServed": "AU",
-      "availableLanguage": "en"
-    },
-    "sameAs": [
-      "https://www.facebook.com/posapt",
-      "https://twitter.com/posapt_au",
-      "https://www.instagram.com/posapt22/",
-      "https://www.youtube.com/channel/UCEbnQMG4QHXB5rk2TzROApA",
-      "https://www.linkedin.com/company/posapt-au"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "POSApt",
+        "url": "https://posapt.au",
+        "logo": "https://posapt.au/assets/dist/image/poslogo.png",
+        "description": "POSApt launched in 2021 with a goal of providing an all-in-one POS solution. Our point-of-sale systems, software, online ordering system and ecommerce websites are tailored for hospitality and retail businesses. Since day one, we have been committed to providing easy-to-use and reliable cloud-based software applications to businesses across Australia. ",
+        "foundingDate": "2021",
+        "founders": [
+          {
+            "@type": "Person",
+            "name": "Sam Timalsina"
+          },
+          {
+            "@type": "Person",
+            "name": "Ram Prasad Gajurel"
+          }
+
+        ],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Building 4, Suite 30/195 Wellington Rd.",
+          "addressLocality": "Clayton",
+          "postalCode": "3168",
+          "addressRegion": "VIC",
+          "addressCountry": "AU"
+        },
+        "areaServed": "Australia",
+        "contactPoint": [
+          {
+            "@type": "ContactPoint",
+            "telephone": "+03 8802 4468",
+            "contactType": "technical support",
+            "areaServed": "AU",
+            "availableLanguage": "en"
+          }
+        ],
+        "sameAs": [
+          "https://www.facebook.com/posapt",
+          "https://twitter.com/posapt_au",
+          "https://www.instagram.com/posapt22/",
+          "https://www.youtube.com/channel/UCEbnQMG4QHXB5rk2TzROApA",
+          "https://www.linkedin.com/company/posapt-au",
+          "https://posapt.au"
+        ]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://posapt.au/#website",
+        "url": "https://posapt.au/",
+        "name": "POSApt",
+        "description": "POSApt offers POS systems, Online Ordering Systems, and E-commerce websites for small to medium-sized businesses to streamline their business operations.",
+        "publisher": {
+          "@id": "https://posapt.au/#organization"
+        },
+        "inLanguage": "en-AU"
+      }
     ]
   }
 
-  // List of items
+  // body contents
   const solutionList = [
     {
       title: "Cafe",
-      link: "",
-      imgSrc: "",
+      link: "/pos-system-for-cafe",
+      imgSrc: "cafe",
     },
     {
       title: "Florist",
       link: "/flower-pos-system",
-      imgSrc: "",
+      imgSrc: "florist",
     },
     {
       title: "Restaurant",
       link: "/restaurant-pos-system",
-      imgSrc: "",
+      imgSrc: "restaurant",
     },
     {
-      title: "Grocery",
-      link: "/grocery-pos-system",
-      imgSrc: "",
+      title: "Fashion",
+      link: "/retail-pos-system/clothing-store",
+      imgSrc: "fashion",
     },
     {
       title: "Liquor",
       link: "/beverages-pos-system",
-      imgSrc: "",
+      imgSrc: "liquor",
     },
     {
       title: "Bakery",
       link: "/bakery-pos-system",
-      imgSrc: "",
+      imgSrc: "bakery",
     },
 
   ]
@@ -194,32 +250,32 @@ export default function Home() {
     {
       title: "QR",
       link: "qr-ordering",
-      imgSrc: "",
+      imgSrc: "qr-ordering",
     },
     {
       title: "Tablet",
       link: "tablet-ordering",
-      imgSrc: "",
+      imgSrc: "tablet-ordering",
     },
     {
       title: "B to B",
       link: "b2b-ordering",
-      imgSrc: "",
+      imgSrc: "b2b-ordering",
     },
     {
       title: "Food",
       link: "food-ordering",
-      imgSrc: "",
+      imgSrc: "food-ordering",
     },
     {
       title: "Cafe",
       link: "cafe-and-coffee-shop",
-      imgSrc: "cafe-and-coffee-shop",
+      imgSrc: "cafe-ordering",
     },
     {
       title: "Table-side",
       link: "table-ordering",
-      imgSrc: "",
+      imgSrc: "table-side-ordering",
     },
   ]
   const featureListData = {
@@ -251,12 +307,111 @@ export default function Home() {
       },
     ]
   }
+  const faqData = [
+    {
+      question: "What is POS System Software?",
+      answer: `Point of sale, or POS, refers to the place where a retail
+      transaction such as buying or selling of goods takes place.
+      While point-of-sale systems used to be your traditional cash
+      register, they can now be found in a variety of forms,
+      thanks to digital technologies.
+      <br /> A POS system software typically records an item’s
+      price, tracks sales, accepts payments and generates a
+      receipt. POSApt can do these aforementioned tasks flawlessly
+      and even help out with important business operations.`,
+    },
+    {
+      question: "What are the Key Features of a Point of Sale Software?",
+      answer: `<p>
+      Key features of a Point of sale System software include:
+    </p>
+    <ul>
+      <li>
+        <strong>Sales processing:</strong> Accepting cash, credit
+        cards, and debit cards is a simple procedure.
+      </li>
+      <li>
+        <strong>Inventory management:</strong> Manage or track
+        items in stock, alert when stocks run low, and produce
+        purchase orders.
+      </li>
+      <li>
+        <strong>Reporting:</strong> Tracks and records real-time
+        data, prepares sales reports and analyzes data to find
+        trends.
+      </li>
+      <li>
+        <strong>Customer management:</strong> Track and manage
+        customer information, purchasing history and preferences.
+      </li>
+    </ul>`,
+    },
+    {
+      question: "What are the Components of a Typical POS System?",
+      answer: `<p>The components of a typical POS System include:</p>
+      <ul>
+        <li>
+          <strong> Hardware:</strong> A computer/tablet, cash
+          register, barcode scanner, and receipt printer.
+        </li>
+        <li>
+          <strong>Software:</strong> A point-of-sale software runs
+          on the hardware and manages the sales, inventory,
+          reporting and many more features.
+        </li>
+        <li>
+          <strong>Payment processing:</strong> Ability to accept
+          different payment methods such as cash, credit cards/debit
+          cards or contactless payment.
+        </li>
+        <li>
+          <strong>Inventory management:</strong> Tools for tracking
+          inventory, generating purchase orders, and managing new
+          inventory.
+        </li>
+      </ul>`,
+    },
+    {
+      question: "Who Uses POS Software in Australia?",
+      answer: `Different businesses across Australia like retail stores,
+      restaurants, bars, grocery stores, hotels and pubs use POS
+      software. And, if you’ve ever talked to owners of these
+      businesses, they can attest to the fact that this system has
+      proved to be a boon to their businesses. More often than
+      not, a POS system brings a positive impact on a business’s
+      operations, return on investments and returning customers.`,
+    },
+    {
+      question: "How to Set up POSApt's All-in-One POS System?",
+      answer: `When you sign up for a paid plan with POSApt, we send a
+      professional to get everything set up on your premises. You
+      do not have to worry about what you need to do, our
+      professional will set up all the hardware, and software.
+      Moreover, our team will give you a hands-on tour of the
+      system when we make it live. This way, you can confidently
+      start making the most out of POSApt’s POS solution from the
+      get-go.`,
+    },
+    {
+      question: "How Much Does the POSApt's Point of Sale Software Cost?",
+      answer: `You can get POSApt’s POS Software for just $66 or $99 for
+      hospitality or retail businesses respectively. Depending on
+      your needs for additional features such as online ordering
+      systems or dedicated mobile apps, the cost can change. Check
+      out our complete
+      <a href="/pricing" className="text-primary">
+      <b><i>Pricing plan</i></b>
+      </a>
+      to learn more.`,
+    },
+  ]
+
 
   return (
     <>
       <Head>
         <title>
-          POS Systems Australia | Point of Sale Software - POSApt
+          POS Systems Australia | Point of Sale Software | POSApt
         </title>
         <script dangerouslySetInnerHTML={{ __html: gtmTags }} />
         <script
@@ -279,7 +434,7 @@ export default function Home() {
         /> */}
         <meta
           name="title"
-          content="POS Systems Australia | Point of Sale Software - POSApt"
+          content="POS Systems Australia | Point of Sale Software | POSApt"
         />
         <meta
           name="google-site-verification"
@@ -287,7 +442,7 @@ export default function Home() {
         />
         <meta
           name="description"
-          content="Have a Small Business? Make it a revenue-generating machine with the best POS system in Australia by POSApt. Give Us a Call or Book a Free Demo!"
+          content="POSApt’s POS System manages operations for small businesses in Australia. The all-in-one system to help you scale and thrive. Book a Free Demo Today! "
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta
@@ -372,11 +527,12 @@ export default function Home() {
           </div>
         </div>
 
-        <main>
+        <>
           <HeroSection
-            title="All in One POS System Simplifies Your Business"
+            title="All in One <br/> POS System <br/> Simplifies Your Business"
             desc="Manage both in-shop and online sales with a single POS system."
-            imgUrl="newhomeimg (1).png"
+            imgUrl="all-in-one-pos-system.webp"
+            imgTitle="All in One POS System"
             twoBtn
           />
 
@@ -515,8 +671,9 @@ export default function Home() {
                 <div className="col-md-5 text-end">
                   <div className="homeimg_right mt-4 mt-md-0">
                     <img
-                      src="assets/dist/image/newhomeimg (2).png"
-                      alt=""
+                      src="assets/dist/image/posapt-business-solution.webp"
+                      alt="POSApt Business Solution"
+                      title="POSApt Business Solution"
                       className="img-fluid w-24"
                     />
                   </div>
@@ -552,7 +709,7 @@ export default function Home() {
                       <div key={index} className="col-lg-4  col-sm-4">
                         <div className=" p-15  text-center">
                           <Link href={item.link}>
-                            <img src={`assets/dist/image/hs${index + 1}.png`} alt="" />
+                            <img src={`assets/dist/image/${item.imgSrc}.webp`} alt={item.title} title={item.title} />
                           </Link>
                           <div className="text-center newhome_btn store_btn">
                             <Link className="btn btn-white btn-red fs-6" href={item.link}>
@@ -566,111 +723,42 @@ export default function Home() {
                 </div>
 
                 {/* mobile view */}
-                <div className="">
+                <div>
                   <div className="d-md-none ">
-                    <div className="swiper mainswiper mySwiper">
-                      <div className="swiper-wrapper   ">
-                        <div className="swiper-slide">
-                          <a href=""></a>
+                    <Carousel activeIndex={index} onSelect={handleSelect}>
+                      {solutionList.map((item, index) => (
+                        <Carousel.Item key={index} interval={1200}>
                           <div className=" p-15  text-center">
-                            <a href="">
-                              <img src="assets/dist/image/hs1.png" alt="" />
-                            </a>
+                            <Link href={item.link}>
+                              <img src={`assets/dist/image/${item.imgSrc}.webp`} alt={item.title} title={item.title} />
+                            </Link>
                             <div className="text-center newhome_btn store_btn">
-                              <a href=""></a>
-                              <a className="btn btn-white btn-red fs-6" href="#">
-                                Cafe
-                              </a>
+                              <Link className="btn btn-white btn-red fs-6" href={item.link}>
+                                {item.title}
+                              </Link>
                             </div>
                           </div>
-                        </div>
-                        <div className="swiper-slide">
-                          <a href=""></a>
-                          <div className=" p-15  text-center">
-                            <a href="">
-                              <img src="assets/dist/image/hs2.png" alt="" />
-                            </a>
-                            <div className="text-center newhome_btn store_btn">
-                              <a href=""></a>
-                              <a className="btn btn-white btn-red fs-6" href="#">
-                                Florist
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-slide">
-                          <a href=""></a>
-                          <div className=" p-15  text-center">
-                            <a href="">
-                              <img src="assets/dist/image/hs3.png" alt="" />
-                            </a>
-                            <div className="text-center newhome_btn store_btn">
-                              <a href=""></a>
-                              <a className="btn btn-white btn-red fs-6" href="#">
-                                Restaurant
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-slide">
-                          <a href=""></a>
-                          <div className=" p-15  text-center">
-                            <a href="">
-                              <img src="assets/dist/image/hs4.png" alt="" />
-                            </a>
-                            <div className="text-center newhome_btn store_btn">
-                              <a href=""></a>
-                              <a className="btn btn-white btn-red fs-6" href="#">
-                                Fashion
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-slide">
-                          <a href=""></a>
-                          <div className=" p-15  text-center">
-                            <a href="">
-                              <img src="assets/dist/image/hs5.png" alt="" />
-                            </a>
-                            <div className="text-center newhome_btn store_btn">
-                              <a href=""></a>
-                              <a className="btn btn-white btn-red fs-6" href="#">
-                                Liquor{" "}
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                        <div className="swiper-slide">
-                          <a href=""></a>
-                          <div className=" p-15  text-center">
-                            <a href="">
-                              <img src="assets/dist/image/hs6.png" alt="" />
-                            </a>
-                            <div className="text-center newhome_btn store_btn">
-                              <a href=""></a>
-                              <a className="btn btn-white btn-red fs-6" href="#">
-                                Bakery
-                              </a>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div className="swiper-pagination" />
-                    </div>
+                        </Carousel.Item>
+                      ))}
+                    </Carousel>
                   </div>
                 </div>
+
               </div>
             </div>
           </section>
+
+
           <section className="pt-50 pb-50 customer_section">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-6 ">
                   <div className="customer_img">
                     <img
-                      src="assets/dist/image/img1.png"
+                      src="assets/dist/image/happy-customer.webp"
                       className="img-fluid rounded-3 w-100"
-                      alt=""
+                      alt="Happy Customer"
+                      title="Happy Customer"
                     />
                   </div>
                 </div>
@@ -706,13 +794,14 @@ export default function Home() {
               </div>
             </div>
           </section>
+
+
           <section className="ctabanner pt-5 pb-5">
             <div className="container">
               <div className="row align-items-center">
                 <div className="col-md-8">
                   <div className="row text-start">
-                    <div className="heading_s1">     
-
+                    <div className="heading_s1">
                       <h2 className=" fw-bold text-capitalize text-white">
                         Our User Friendly Integrated{" "}
                         <span className="d-block">E-Commerce System</span>
@@ -726,9 +815,10 @@ export default function Home() {
                 <div className="col-md-4">
                   <div className="localbusiness">
                     <img
-                      src="assets/dist/image/business.png"
+                      src="assets/dist/image/posapt-ecommerce-system.webp"
                       className="img-fluid"
-                      alt=""
+                      alt="POSApt Ecommerce System"
+                      title="POSApt Ecommerce System"
                     />
                   </div>
                 </div>
@@ -765,18 +855,19 @@ export default function Home() {
                   </div>
                   <div className="col-md-12 subpara">
                     <div className="text-center newhome_btn">
-                      <a
+                      <Link
                         className="btn btn-white btn-red fs-6 mb-2 w-auto"
-                        href="ecommercepos.html"
+                        href="/ecommerce"
                       >
                         Learn E-Commerce System More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
           </section>
+
           {/* new restro */}
           <section className="bg-light pt-50 pt-3  pb-50 mt-3 mt-md-5 ">
             <div className="container">
@@ -792,9 +883,9 @@ export default function Home() {
                   </p>
                   <div className="subpara ">
                     <div className="text-center newhome_btn mt-3 mt-md-0">
-                      <a className="btn bg-theme fs-6 mb-2 w-auto" href="oos.html">
+                      <Link className="btn bg-theme fs-6 mb-2 w-auto" href="/online-ordering-system">
                         Learn Online Ordering System More
-                      </a>
+                      </Link>
                     </div>
                   </div>
                 </div>
@@ -807,11 +898,11 @@ export default function Home() {
                       <div key={index} className="col-lg-4  col-sm-4">
                         <div className=" p-15  text-center">
                           <Link href={`/online-ordering-system/${item.link}`}>
-                            <img src={`assets/dist/image/hs${index + 7}.png`} alt={item.title} />
+                            <img src={`assets/dist/image/${item.imgSrc}.webp`} alt={`${item.title} Ordering`} title={`${item.title} Ordering`} />
                           </Link>
                           <div className="text-center newhome_btn store_btn">
                             <Link className="btn btn-white btn-red fs-6" href={`/online-ordering-system/${item.link}`}>
-                              {item.title} Ordering{" "}
+                              {item.title} Ordering
                             </Link>
                           </div>
                         </div>
@@ -820,29 +911,27 @@ export default function Home() {
                   }
                 </div>
                 {/* mobile view */}
-                <div className="">
+                <div>
                   <div className="d-md-none ">
-                    <div className="swiper mainswiper mySwiper">
-                      <div className="swiper-wrapper">
-                        {orderingList.map((item, index) => (
-                          <div className="swiper-slide">
-                            <div className=" p-15  text-center">
-                              <Link href={`/online-ordering-system/${item.link}`}>
-                                <img src={`assets/dist/image/hs${index + 7}.png`} alt={item.title} />
+                    <Carousel activeIndex={index} onSelect={handleSelect}>
+                      {orderingList.map((item, index) => (
+                        <Carousel.Item key={index} interval={1200}>
+                          <div className=" p-15  text-center">
+                            <Link href={`/online-ordering-system/${item.link}`}>
+                              <img src={`assets/dist/image/${item.imgSrc}.webp`} alt={`${item.title} Ordering`} title={`${item.title} Ordering`} />
+                            </Link>
+                            <div className="text-center newhome_btn store_btn">
+                              <Link className="btn btn-white btn-red fs-6" href={`/online-ordering-system/${item.link}`}>
+                                {item.title} Ordering
                               </Link>
-                              <div className="text-center newhome_btn store_btn">
-                                <Link className="btn btn-white btn-red fs-6" href={`/online-ordering-system/${item.link}`}>
-                                  {item.title} Ordering
-                                </Link>
-                              </div>
                             </div>
                           </div>
-                        ))}
-                      </div>
-                      <div className="swiper-pagination" />
-                    </div>
+                        </Carousel.Item>
+                      ))}
+                    </Carousel>
                   </div>
                 </div>
+
               </div>
             </div>
           </section>
@@ -851,307 +940,10 @@ export default function Home() {
             {...featureListData}
           />
 
-          {/* faq */}
-          <section className=" py-5  faqsec  bg-light ">
-            <div className="container">
-              <div className="row py-2 py-md-4 py-lg-5">
-                <div className="col-xl-4 col-md-5 text-center text-md-start pt-md-2 pb-2 pb-md-0 mb-4 mb-md-0">
-                  <div className="card cardbg py-4 border-0 shadow h-100">
-                    <div className="card-body">
-                      <h3 className="pb-3 mb-1 mb-lg-2 fs-47 ">
-                        We are happy <br /> to talk with you. Book a Free Consultation!
-                      </h3>
-                      <div className="subpara mt-3">
-                        <ul>
-                          <li className="d-flex">Speed Up Sales</li>
-                          <li className="d-flex">Manage Multiple Stores</li>
-                          <li className="d-flex">Real-Time Sales Reporting</li>
-                          <li className="d-flex">
-                            Keep Track &amp; Prevent Stock Spoilage
-                          </li>
-                          <li className="d-flex">
-                            Analyse &amp; Improve Business Profits
-                          </li>
-                        </ul>
-                        {/* <a class="btn btn-white btn-red fw-bold" href="#">Request a Demo</a> */}
-                      </div>
-                      <div className="text-center newhome_btn newbtn1">
-                        <a href=""></a>
-                        <a className="btn btn-white btn-red fs-6" href="#">
-                          Book a Consultation
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div className="col-md-7 offset-xl-1">
-                  <div className="heading_s1 mb-3">
-                    <h2 className=" fw-bold text-capitalize text-dark text-center">
-                      Frequently Asked Questions?
-                    </h2>
-                    {/* <p class="fs-2 text-center">Customers can order from anywhrere anytime</p> */}
-                  </div>
-                  <div className="accordion bg-white p-2" id="faq">
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q1-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q1"
-                          aria-expanded="false"
-                          aria-controls="q1"
-                        >
-                          What is POS System Software?
-                        </button>
-                      </h2>
-                      <div
-                        id="q1"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q1-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            Point of sale, or POS, refers to the place where a retail
-                            transaction such as buying or selling of goods takes place.
-                            While point-of-sale systems used to be your traditional cash
-                            register, they can now be found in a variety of forms,
-                            thanks to digital technologies.
-                            <br /> A POS system software typically records an item’s
-                            price, tracks sales, accepts payments and generates a
-                            receipt. POSApt can do these aforementioned tasks flawlessly
-                            and even help out with important business operations.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q2-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q2"
-                          aria-expanded="false"
-                          aria-controls="q2"
-                        >
-                          What are the Key Features of a Point of Sale Software?
-                        </button>
-                      </h2>
-                      <div
-                        id="q2"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q2-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            Key features of a Point of sale System software include:
-                          </p>
-                          <ul>
-                            <li>
-                              {" "}
-                              <strong>Sales processing:</strong> Accepting cash, credit
-                              cards, and debit cards is a simple procedure.
-                            </li>
-                            <li>
-                              <strong>Inventory management:</strong> Manage or track
-                              items in stock, alert when stocks run low, and produce
-                              purchase orders.
-                            </li>
-                            <li>
-                              <strong>Reporting:</strong> Tracks and records real-time
-                              data, prepares sales reports and analyzes data to find
-                              trends.
-                            </li>
-                            <li>
-                              <strong>Customer management:</strong> Track and manage
-                              customer information, purchasing history and preferences.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q3-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q3"
-                          aria-expanded="false"
-                          aria-controls="q3"
-                        >
-                          What are the Components of a Typical POS System?
-                        </button>
-                      </h2>
-                      <div
-                        id="q3"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q3-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>The components of a typical POS System include:</p>
-                          <ul>
-                            <li>
-                              <strong> Hardware:</strong> A computer/tablet, cash
-                              register, barcode scanner, and receipt printer.
-                            </li>
-                            <li>
-                              <strong>Software:</strong> A point-of-sale software runs
-                              on the hardware and manages the sales, inventory,
-                              reporting and many more features.
-                            </li>
-                            <li>
-                              <strong>Payment processing:</strong> Ability to accept
-                              different payment methods such as cash, credit cards/debit
-                              cards or contactless payment.
-                            </li>
-                            <li>
-                              <strong>Inventory management:</strong> Tools for tracking
-                              inventory, generating purchase orders, and managing new
-                              inventory.
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q6-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q6"
-                          aria-expanded="false"
-                          aria-controls="q6"
-                        >
-                          Who Uses POS Software in Australia?
-                        </button>
-                      </h2>
-                      <div
-                        id="q6"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q6-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            Different businesses across Australia like retail stores,
-                            restaurants, bars, grocery stores, hotels and pubs use POS
-                            software. And, if you’ve ever talked to owners of these
-                            businesses, they can attest to the fact that this system has
-                            proved to be a boon to their businesses. More often than
-                            not, a POS system brings a positive impact on a business’s
-                            operations, return on investments and returning customers.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q4-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q4"
-                          aria-expanded="false"
-                          aria-controls="q4"
-                        >
-                          How to Set up POSApt's All-in-One POS System?
-                        </button>
-                      </h2>
-                      <div
-                        id="q4"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q4-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p>
-                            When you sign up for a paid plan with POSApt, we send a
-                            professional to get everything set up on your premises. You
-                            do not have to worry about what you need to do, our
-                            professional will set up all the hardware, and software.
-                            Moreover, our team will give you a hands-on tour of the
-                            system when we make it live. This way, you can confidently
-                            start making the most out of POSApt’s POS solution from the
-                            get-go.{" "}
-                          </p>
-                          <p className="mb-0">
-                            Even when you’re on a free trial, you can easily set up our
-                            POSApt with the help of our{" "}
-                            <a href="" className="text-primary">
-                              Tutorial Videos
-                            </a>
-                            .
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item border-0 rounded-3 shadow-sm mb-3">
-                      <h2 className="accordion-header" id="q5-heading">
-                        <button
-                          className="accordion-button shadow-none rounded-3 collapsed"
-                          type="button"
-                          data-bs-toggle="collapse"
-                          data-bs-target="#q5"
-                          aria-expanded="false"
-                          aria-controls="q5"
-                        >
-                          How Much Does the POSApt's Point of Sale Software Cost?
-                        </button>
-                      </h2>
-                      <div
-                        id="q5"
-                        className="accordion-collapse collapse"
-                        aria-labelledby="q5-heading"
-                        data-bs-parent="#faq"
-                      >
-                        <div className="accordion-body fs-sm pt-0">
-                          <p className="mb-0">
-                            You can get POSApt’s POS Software for just $66 or $99 for
-                            hospitality or retail businesses respectively. Depending on
-                            your needs for additional features such as online ordering
-                            systems or dedicated mobile apps, the cost can change. Check
-                            out our complete
-                            <a href="pricing.html" className="text-primary">
-                              pricing plan
-                            </a>{" "}
-                            to learn more.
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div className="card card-hover bg-theme-green mt-2 py-2 rounded-3 border-0">
-                    <div className="card-body  d-flex d-mobile-block align-items-center justify-content-center text-center justify-content-md-between">
-                      <div>
-                        <p className="fs-4 mb-0 text-white">Connect with us</p>
-                      </div>
-                      <div className="social-links ">
-                        {" "}
-                        <a href="#" className="facebook">
-                          <i className="fab fa-facebook" />
-                        </a>{" "}
-                        <a href="#" className="instagram">
-                          <i className="fab fa-instagram" />
-                        </a>
-                        <a href="#" className="linkedin">
-                          <i className="fab fa-linkedin" />
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </section>
-        </main>
-
-
+          <FAQ
+            faqData={faqData}
+          />
+        </>
         <noscript>
           <img height="1" width="1" style={{ display: "none", visibility: "hidden" }}
             src="https://www.facebook.com/tr?id=10022972934381273&ev=PageView&noscript=1"

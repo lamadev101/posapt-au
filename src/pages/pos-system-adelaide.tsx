@@ -236,7 +236,7 @@ const PosSystemAdelaide = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className=" fw-bold text-capitalize mb-3"> POSApt as Your Adelaide <br /><span className="text-theme">POS Solution </span></h2>
+                      <h2 className=" fw-bold text-capitalize mb-3"> POSApt as Your <br /><span className="text-theme"> Adelaide POS Solution </span></h2>
 
                       {featureDatas2.map((item, index) => (
                         <div key={index} className="ordercard mt-2">

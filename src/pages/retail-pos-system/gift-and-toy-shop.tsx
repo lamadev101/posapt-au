@@ -51,10 +51,6 @@ const GiftToyShop = () => {
         desc: `Issues can arise at any time, even in a toy or gift shop. Our support team is available 24/7 to assist your success. Whether you have questions about features, or technical difficulties, or need advice, our experts are just a call away. We commit to guiding your journey to success, without any additional charges.`
       },
       {
-        title: `Try POSApt for 30 Days at No Cost`,
-        desc: `Explore the benefits of POSApt with our free 30-day trial. We believe in the positive impact our system can have. Delve into the features designed to enhance your gift or toy shop. During this risk-free period, explore our system's potential and decide if it suits your business needs. No obligations are required!`
-      },
-      {
         title: `Seamless Online Integration`,
         desc: `People tend to research online what toys and gifts to buy for their loved ones. That is why, having an online store for your shop is critical to target a wider audience. For this, what you need is an online ordering platform for your store. We offer not only an online ordering platform but also offer seamless integration with your physical store.  This omnichannel support will sync inventory, orders, and customer data in real time. This ensures a consistent shopping experience whether customers visit your store or shop online. `
       },
@@ -291,6 +287,7 @@ const GiftToyShop = () => {
         />
         <ContactFormSection
           businessTitle=""
+          price="99"
         />
       </Layout>
     </>

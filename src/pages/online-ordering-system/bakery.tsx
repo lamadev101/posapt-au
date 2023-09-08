@@ -70,14 +70,14 @@ const BakerySystem: FC = () => {
         {
             qus: `4. How can I implement a bakery online ordering system for my bakery?`,
             ans: `Implementing a bakery online ordering system involves the following steps:<p>
-        <ul>
-        <li type='circle'>Subscribe to POSApt’s online ordering system. </li>
-        <li type='circle'>Customise your menu and item details, including descriptions and prices.</li>
-        <li type='circle'>Configure order management processes, such as integration with your POS system or using a separate device to receive orders.</li>
-        <li type='circle'>Enable secure online payment options to facilitate smooth transactions.</li>
-        <li type='circle'>Market your online ordering system to attract customers and start receiving orders.</li>
-        </ul>
-        </p>`
+                <ul style={{marginLeft: "4px"}}>
+                <li type='circle'>Subscribe to POSApt’s online ordering system. </li>
+                <li type='circle'>Customise your menu and item details, including descriptions and prices.</li>
+                <li type='circle'>Configure order management processes, such as integration with your POS system or using a separate device to receive orders.</li>
+                <li type='circle'>Enable secure online payment options to facilitate smooth transactions.</li>
+                <li type='circle'>Market your online ordering system to attract customers and start receiving orders.</li>
+                </ul>
+                </p>`
         },
         {
             qus: `5. How much does it cost to implement a bakery online ordering system?`,
@@ -292,7 +292,7 @@ const BakerySystem: FC = () => {
                         </div>
                     </section>
 
-                
+
 
                     <section className="">
                         <div className="container">
@@ -379,9 +379,10 @@ const BakerySystem: FC = () => {
                                                         </button>
                                                     </h3>
                                                     <div id={'q' + index} className="accordion-collapse collapse" aria-labelledby={'#q' + index + '-heading"'} data-bs-parent="#faq">
-                                                        <div className="accordion-body fs-sm pt-0">
-                                                            {item.ans}
-                                                        </div>
+                                                        <div
+                                                            className="accordion-body fs-sm pt-0"
+                                                            dangerouslySetInnerHTML={{ __html: item.ans }}
+                                                        />
                                                     </div>
                                                 </div>
                                             ))

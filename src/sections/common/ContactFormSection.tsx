@@ -6,7 +6,7 @@ interface ContactFormSectionProps {
   price?: string;
 }
 
-const ContactFormSection: React.FC<ContactFormSectionProps> = ({ businessTitle , price=66}) => {
+const ContactFormSection: React.FC<ContactFormSectionProps> = ({ businessTitle, price = 66 }) => {
 
   return (
     <section className="serv_bg ptb-120 position-relative  pt-50">
@@ -34,10 +34,10 @@ const ContactFormSection: React.FC<ContactFormSectionProps> = ({ businessTitle ,
                   $ 66 <span className="d-block text-dark">Satisfied Clients</span>
                 </h3> */}
                 <h3 className="pt-md-4 pb-lg-2 text-center col-md-6 col-6 border-end text-theme">
-                      <span className="text-dark d-block">Starting at</span>
-                      ${price}<small style={{fontWeight: 200, color: "black", fontSize: "30px"}}>/mth</small>
-                      <span className="d-block text-dark"> <Link href="/pricing" style={{color:"blue"}}>Explore all Plans</Link></span>
-                    </h3>
+                  <span className="text-dark d-block">Starting at</span>
+                  ${price}<small style={{ fontWeight: 200, color: "black", fontSize: "30px" }}>/mth</small>
+                  <span className="d-block text-dark"> <Link href="/pricing" style={{ color: "blue" }}>Explore all Plans</Link></span>
+                </h3>
                 <h3 className="pb-md-2 pb-lg-4 text-center col-md-6 col-6 text-theme mt-4">
                   100%{" "}
                   <span className="d-block text-dark">Customer Satisfaction</span>
@@ -45,9 +45,11 @@ const ContactFormSection: React.FC<ContactFormSectionProps> = ({ businessTitle ,
               </div>
             </div>
           </div>
-          <div className="row ab1 bg-light py-3 mt-4  d-md-none">
-            <h3 className="pb-md-2 pb-lg-4 text-center col-md-6 col-6 border-end text-theme">
-              50+ <span className="d-block text-dark">Satisfied Clients</span>
+          <div className="row ab1 bg-light py-3 mt-4 d-md-none">
+            <h3 className="pt-md-4 pb-lg-2 text-center col-md-6 col-6 border-end text-theme">
+              <span className="text-dark d-block">Starting at</span>
+              ${price}<small style={{ fontWeight: 200, color: "black", fontSize: "30px" }}>/mth</small>
+              <span className="d-block text-dark"> <Link href="/pricing" style={{ color: "blue" }}>Explore all Plans</Link></span>
             </h3>
             <h3 className="pb-md-2 pb-lg-4 text-center col-md-6 col-6 text-theme">
               100%{" "}

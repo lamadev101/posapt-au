@@ -226,7 +226,7 @@ const PosSystemPerth = () => {
                 <div className="col-md-6">
                   <div className="new-list ">
                     <div className="heading_s1 hs2  text-start">
-                      <h2 className=" fw-bold text-capitalize mb-3"> Why POSApt Over Others <br /><span className="text-theme">in Perth?</span></h2>
+                      <h2 className=" fw-bold text-capitalize mb-3"> Why POSApt Over <br /><span className="text-theme">Others in Perth?</span></h2>
 
                       {featureDatas2.map((item, index) => (
                         <div className="ordercard mt-2" key={index}>

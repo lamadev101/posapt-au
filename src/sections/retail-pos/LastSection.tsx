@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 interface lastSectionList {
   title: string;
   desc: string;
@@ -42,7 +44,7 @@ const LastSection: React.FC<lastSectionProps> = ({ firstTitle, lastTitle, imgUrl
                 {/* <!-- <a className="btn btn-white btn-red fw-bold py-3 px-2" href="#">Request a Demo</a> --> */}
                 <p className="bg-warning mt-4 p-2 fw-bold">Don’t have a website?
                   <span>
-                    No Problem. We'll build you a Custom Website for absolutely FREE. <a href="#" className="text-decoration-underline"> Get A Website Now!</a>
+                    No Problem. We'll build you a Custom Website for absolutely FREE. <Link href="/enquiry" className="text-decoration-underline"> Get A Website Now!</Link>
                   </span>
                 </p>
               </div>

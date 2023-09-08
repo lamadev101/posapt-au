@@ -76,13 +76,12 @@ const Footer: FC = () => {
                   info@posapt.au
                 </a>
               </p>
+            </div>
+            <div className="col-lg-3 col-md-6 footer-info footer-links">
+              <p className="fw-bold text-uppercase fs-6 text-white">Follow us</p>
               <div className="social-links mt-3">
                 {" "}
-                <a
-                  href="https://twitter.com/posapt_au"
-                  target="_blank"
-                  className="twitter"
-                >
+                <a href="https://twitter.com/posapt_au" target="_blank" className="twitter">
                   <i className="fab fa-twitter" />
                 </a>{" "}
                 <a
@@ -102,7 +101,7 @@ const Footer: FC = () => {
                 <a
                   target="_blank"
                   href="https://www.youtube.com/channel/UCEbnQMG4QHXB5rk2TzROApA"
-                  className="linkedin"
+                  className="youtube"
                 >
                   <i className="fab fa-youtube" />
                 </a>
@@ -115,12 +114,13 @@ const Footer: FC = () => {
                 </a>
               </div>
             </div>
+
           </div>
           <hr />
           <div className="nav-active-theme text-center ">
             <ul className="d-flex flex-wrap gap-4 text-white mb-0 align-items-center justify-content-center">
               <li>
-                <Link href="">Perth</Link>
+                <Link href="/pos-system-perth">Perth</Link>
               </li>
               <li>
                 <Link href="/pos-system-sydney">Sydney</Link>
